@@ -1,0 +1,1299 @@
+[2017-02-16T12:30:28.464+0100] [] [INFO] [NCLS-GFLAUNCHER-00005] [javax.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487244628464] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk1.8.0_77\bin\java.exe
+-cp
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/modules/glassfish.jar
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-XX:MaxPermSize=192m
+-Xmx512m
+-client
+-javaagent:C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/monitor/flashlight-agent.jar
+-Djavax.xml.accessExternalSchema=all
+-Djavax.net.ssl.trustStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/cacerts.jks
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Dfelix.fileinstall.dir=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/autostart/
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dcom.sun.aas.installRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish
+-Dfelix.fileinstall.poll=5000
+-Djava.endorsed.dirs=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/endorsed;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/lib/endorsed
+-Djava.security.policy=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/server.policy
+-Dosgi.shell.telnet.maxconn=1
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dfelix.fileinstall.log.level=2
+-Djavax.net.ssl.keyStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/keystore.jks
+-Djava.security.auth.login.config=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/login.conf
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.grizzly.DEFAULT_MEMORY_MANAGER=org.glassfish.grizzly.memory.HeapMemoryManager
+-Dfelix.fileinstall.bundles.new.start=true
+-Dcom.sun.aas.instanceRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1
+-Dosgi.shell.telnet.port=6666
+-Dgosh.args=--nointeractive
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Dorg.jboss.weld.serialization.beanIdentifierIndexOptimization=false
+-Dosgi.shell.telnet.ip=127.0.0.1
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Djava.awt.headless=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djava.ext.dirs=C:\Program Files\Java\jdk1.8.0_77/lib/ext;C:\Program Files\Java\jdk1.8.0_77/jre/lib/ext;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/lib/ext
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-Djava.library.path=C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib;C:/ProgramData/Oracle/Java/javapath;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Windows/System32/config/systemprofile/.dnx/bin;C:/Program Files/Microsoft DNX/Dnvm;C:/Program Files/Microsoft SQL Server/120/Tools/Binn;C:/Program Files/Microsoft SQL Server/130/Tools/Binn;C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit;C:/Program Files (x86)/nodejs;C:/Program Files/Git/cmd;C:/Program Files (x86)/Microsoft VS Code/bin;C:/Users/bramd/AppData/Roaming/npm;C:/Program Files (x86)/Java/jdk1.7.0_55/bin;C:/Users/bramd/AppData/Local/Microsoft/WindowsApps;C:/tools/apache-maven-3.3.9/bin;C:/Program Files/Docker Toolbox;C:/Users/bramd/Documents/GitHub/kwetter/payara41
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=true,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain
+-watchdog
+false]]
+
+[2017-02-16T12:30:51.484+0100] [Payara 4.1] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487244646004] [timeMillis: 1487244651484] [levelValue: 800] [[
+  Running Payara Version: Payara Server  4.1.1.164 #badassfish (build 28)]]
+
+[2017-02-16T12:30:51.492+0100] [Payara 4.1] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487244646004] [timeMillis: 1487244651492] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2017-02-16T12:30:51.834+0100] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=20 _ThreadName=RunLevelControllerThread-1487244646013] [timeMillis: 1487244651834] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2017-02-16T12:30:51.834+0100] [Payara 4.1] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487244646004] [timeMillis: 1487244651834] [levelValue: 800] [[
+  HV000001: Hibernate Validator 5.1.2.Final]]
+
+[2017-02-16T12:30:53.630+0100] [Payara 4.1] [INFO] [SEC-SVCS-00100] [javax.enterprise.security.services] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487244646013] [timeMillis: 1487244653630] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2017-02-16T12:30:53.739+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=20 _ThreadName=RunLevelControllerThread-1487244646013] [timeMillis: 1487244653739] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-02-16T12:30:53.760+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=20 _ThreadName=RunLevelControllerThread-1487244646013] [timeMillis: 1487244653760] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-02-16T12:30:53.765+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=20 _ThreadName=RunLevelControllerThread-1487244646013] [timeMillis: 1487244653765] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2017-02-16T12:30:53.890+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487244646003] [timeMillis: 1487244653890] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 98ms - bound to [/0.0.0.0:8080]]]
+
+[2017-02-16T12:30:53.920+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487244646003] [timeMillis: 1487244653920] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 5ms - bound to [/0.0.0.0:8181]]]
+
+[2017-02-16T12:30:53.940+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487244646003] [timeMillis: 1487244653940] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 15ms - bound to [/0.0.0.0:4848]]]
+
+[2017-02-16T12:30:54.050+0100] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487244646004] [timeMillis: 1487244654050] [levelValue: 800] [[
+  Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry]]
+
+[2017-02-16T12:30:54.051+0100] [Payara 4.1] [INFO] [] [fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactory] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487244646004] [timeMillis: 1487244654051] [levelValue: 800] [[
+  Registered Hazelcast BackingStoreFactory with persistence-type = hazelcast]]
+
+[2017-02-16T12:30:54.087+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487244646004] [timeMillis: 1487244654087] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 3ms - bound to [/0.0.0.0:3700]]]
+
+[2017-02-16T12:30:54.349+0100] [Payara 4.1] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487244654349] [levelValue: 800] [[
+  Payara Server  4.1.1.164 #badassfish (28) startup time : Felix (16.965ms), startup services(8.351ms), total(25.316ms)]]
+
+[2017-02-16T12:30:54.350+0100] [Payara 4.1] [INFO] [] [fish.payara.nucleus.notification.NotificationService] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487244654350] [levelValue: 800] [[
+  Payara Notification Service Started with configuration: NotificationExecutionOptions{enabled=true, notifierConfigurationExecutionOptionsList={LOG=NotifierConfigurationExecutionOptions{notifierType=LOG, enabled=true}}}]]
+
+[2017-02-16T12:30:54.352+0100] [Payara 4.1] [INFO] [] [fish.payara.nucleus.util.CleanupPostBoot] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487244654352] [levelValue: 800] [[
+  Cleaning JarFileFactory Cache to prevent jar FD leaks]]
+
+[2017-02-16T12:30:54.839+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487244646004] [timeMillis: 1487244654839] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 3ms - bound to [/0.0.0.0:7676]]]
+
+[2017-02-16T12:30:54.961+0100] [Payara 4.1] [INFO] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=72 _ThreadName=Thread-13] [timeMillis: 1487244654961] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://Bramdb:8686/jndi/rmi://Bramdb:8686/jmxrmi]]
+
+[2017-02-16T12:30:54.973+0100] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00027] [javax.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487244654973] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@7bee8621 as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@1c628f6a.]]
+
+[2017-02-16T12:30:55.130+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=14 _ThreadName=FelixStartLevel] [timeMillis: 1487244655130] [levelValue: 800] [[
+  C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1\autodeploy\bundles does not exist, please create it.]]
+
+[2017-02-16T12:30:55.179+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=74 _ThreadName=pool-27-thread-1] [timeMillis: 1487244655179] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 18ms - bound to [/0.0.0.0:8080]]]
+
+[2017-02-16T12:30:55.195+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=74 _ThreadName=pool-27-thread-1] [timeMillis: 1487244655195] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 3ms - bound to [/0.0.0.0:8181]]]
+
+[2017-02-16T12:30:56.595+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244656595] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2017-02-16T12:30:56.600+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244656600] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2017-02-16T12:30:56.600+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244656600] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2017-02-16T12:30:56.630+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244656630] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2017-02-16T12:30:56.632+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244656632] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2017-02-16T12:30:56.876+0100] [Payara 4.1] [INFO] [AS-WEB-CORE-00306] [javax.enterprise.web.core] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244656876] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2017-02-16T12:30:56.877+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244656877] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2017-02-16T12:30:57.189+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244657189] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2017-02-16T12:30:57.190+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244657190] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2017-02-16T12:30:57.193+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244657193] [levelValue: 800] [[
+  Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2017-02-16T12:30:57.245+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244657245] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2017-02-16T12:30:58.471+0100] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=47 _ThreadName=admin-thread-pool(1)] [timeMillis: 1487244658471] [levelValue: 800] [[
+  Listening to REST requests at context: /management/domain.]]
+
+[2017-02-16T12:30:59.093+0100] [Payara 4.1] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244659093] [levelValue: 800] [[
+  Initializing Mojarra 2.2.13 ( 20160203-1910 unable to get svn info) for context '']]
+
+[2017-02-16T12:31:00.164+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244660164] [levelValue: 800] [[
+  Loading application [__admingui] at [/]]]
+
+[2017-02-16T12:31:00.165+0100] [Payara 4.1] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=108 _ThreadName=Thread-18] [timeMillis: 1487244660165] [levelValue: 800] [[
+  Loading application __admingui done in 4.600 ms]]
+
+[2017-02-16T12:31:00.387+0100] [Payara 4.1] [WARNING] [] [javax.enterprise.system.container.web.com.sun.web.security] [tid: _ThreadID=110 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487244660387] [levelValue: 900] [[
+  Context path from ServletContext:  differs from path from bundle: /]]
+
+[2017-02-16T12:31:02.342+0100] [Payara 4.1] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=110 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487244662342] [levelValue: 800] [[
+  Redirecting to /]]
+
+[2017-02-16T12:31:02.564+0100] [Payara 4.1] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=137 _ThreadName=admin-thread-pool(7)] [timeMillis: 1487244662564] [levelValue: 800] [[
+  Admin Console: Initializing Session Attributes...]]
+
+[2017-02-16T13:10:02.133+0100] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=47 _ThreadName=admin-thread-pool(1)] [timeMillis: 1487247002133] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2017-02-16T13:10:02.398+0100] [Payara 4.1] [INFO] [NCLS-CORE-00092] [javax.enterprise.system.core] [tid: _ThreadID=147 _ThreadName=Thread-33] [timeMillis: 1487247002398] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2017-02-16T13:10:02.422+0100] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00028] [javax.enterprise.bootstrap] [tid: _ThreadID=147 _ThreadName=Thread-33] [timeMillis: 1487247002422] [levelValue: 800] [[
+  Unregistered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@7bee8621 from service registry.]]
+
+[2017-02-16T13:10:02.423+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=147 _ThreadName=Thread-33] [timeMillis: 1487247002423] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2017-02-16T13:10:02.434+0100] [Payara 4.1] [INFO] [NCLS-JMX-00002] [javax.enterprise.system.jmx] [tid: _ThreadID=147 _ThreadName=Thread-33] [timeMillis: 1487247002434] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2017-02-16T13:10:02.435+0100] [Payara 4.1] [INFO] [NCLS-JMX-00001] [javax.enterprise.system.jmx] [tid: _ThreadID=147 _ThreadName=Thread-33] [timeMillis: 1487247002435] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2017-02-16T13:10:02.582+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=159 _ThreadName=RunLevelControllerThread-1487247002460] [timeMillis: 1487247002582] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
+
+[2017-02-16T13:10:48.817+0100] [] [INFO] [NCLS-GFLAUNCHER-00005] [javax.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487247048817] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk1.8.0_77\bin\java.exe
+-cp
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/modules/glassfish.jar
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-XX:MaxPermSize=192m
+-Xmx512m
+-client
+-javaagent:C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/monitor/flashlight-agent.jar
+-Djavax.xml.accessExternalSchema=all
+-Djavax.net.ssl.trustStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/cacerts.jks
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Dfelix.fileinstall.dir=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/autostart/
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dcom.sun.aas.installRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish
+-Dfelix.fileinstall.poll=5000
+-Djava.endorsed.dirs=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/endorsed;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/lib/endorsed
+-Djava.security.policy=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/server.policy
+-Dosgi.shell.telnet.maxconn=1
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dfelix.fileinstall.log.level=2
+-Djavax.net.ssl.keyStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/keystore.jks
+-Djava.security.auth.login.config=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/login.conf
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.grizzly.DEFAULT_MEMORY_MANAGER=org.glassfish.grizzly.memory.HeapMemoryManager
+-Dfelix.fileinstall.bundles.new.start=true
+-Dcom.sun.aas.instanceRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1
+-Dosgi.shell.telnet.port=6666
+-Dgosh.args=--nointeractive
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Dorg.jboss.weld.serialization.beanIdentifierIndexOptimization=false
+-Dosgi.shell.telnet.ip=127.0.0.1
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Djava.awt.headless=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djava.ext.dirs=C:\Program Files\Java\jdk1.8.0_77/lib/ext;C:\Program Files\Java\jdk1.8.0_77/jre/lib/ext;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/lib/ext
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-Djava.library.path=C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib;C:/ProgramData/Oracle/Java/javapath;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Windows/System32/config/systemprofile/.dnx/bin;C:/Program Files/Microsoft DNX/Dnvm;C:/Program Files/Microsoft SQL Server/120/Tools/Binn;C:/Program Files/Microsoft SQL Server/130/Tools/Binn;C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit;C:/Program Files (x86)/nodejs;C:/Program Files/Git/cmd;C:/Program Files (x86)/Microsoft VS Code/bin;C:/Users/bramd/AppData/Roaming/npm;C:/Program Files (x86)/Java/jdk1.7.0_55/bin;C:/Users/bramd/AppData/Local/Microsoft/WindowsApps;C:/tools/apache-maven-3.3.9/bin;C:/Program Files/Docker Toolbox;C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=false,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain
+-watchdog
+false]]
+
+[2017-02-16T13:10:50.770+0100] [Payara 4.1] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487247050691] [timeMillis: 1487247050770] [levelValue: 800] [[
+  Running Payara Version: Payara Server  4.1.1.164 #badassfish (build 28)]]
+
+[2017-02-16T13:10:50.771+0100] [Payara 4.1] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487247050691] [timeMillis: 1487247050771] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2017-02-16T13:10:50.939+0100] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487247050691] [timeMillis: 1487247050939] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2017-02-16T13:10:51.205+0100] [Payara 4.1] [INFO] [SEC-SVCS-00100] [javax.enterprise.security.services] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487247050691] [timeMillis: 1487247051205] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2017-02-16T13:10:51.237+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487247050697] [timeMillis: 1487247051237] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-02-16T13:10:51.238+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487247050697] [timeMillis: 1487247051238] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-02-16T13:10:51.242+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487247050697] [timeMillis: 1487247051242] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2017-02-16T13:10:51.284+0100] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487247050691] [timeMillis: 1487247051284] [levelValue: 800] [[
+  Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry]]
+
+[2017-02-16T13:10:51.284+0100] [Payara 4.1] [INFO] [] [fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactory] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487247050691] [timeMillis: 1487247051284] [levelValue: 800] [[
+  Registered Hazelcast BackingStoreFactory with persistence-type = hazelcast]]
+
+[2017-02-16T13:10:51.379+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487247050697] [timeMillis: 1487247051379] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 67ms - bound to [/0.0.0.0:8080]]]
+
+[2017-02-16T13:10:51.390+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487247050697] [timeMillis: 1487247051390] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 0ms - bound to [/0.0.0.0:8181]]]
+
+[2017-02-16T13:10:51.393+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487247050697] [timeMillis: 1487247051393] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 1ms - bound to [/0.0.0.0:4848]]]
+
+[2017-02-16T13:10:51.420+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487247050691] [timeMillis: 1487247051420] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 1ms - bound to [/0.0.0.0:3700]]]
+
+[2017-02-16T13:10:51.423+0100] [Payara 4.1] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487247051423] [levelValue: 800] [[
+  Payara Server  4.1.1.164 #badassfish (28) startup time : Felix (1.612ms), startup services(737ms), total(2.349ms)]]
+
+[2017-02-16T13:10:51.423+0100] [Payara 4.1] [INFO] [] [fish.payara.nucleus.notification.NotificationService] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487247051423] [levelValue: 800] [[
+  Payara Notification Service Started with configuration: NotificationExecutionOptions{enabled=true, notifierConfigurationExecutionOptionsList={LOG=NotifierConfigurationExecutionOptions{notifierType=LOG, enabled=true}}}]]
+
+[2017-02-16T13:10:51.424+0100] [Payara 4.1] [INFO] [] [fish.payara.nucleus.util.CleanupPostBoot] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487247051424] [levelValue: 800] [[
+  Cleaning JarFileFactory Cache to prevent jar FD leaks]]
+
+[2017-02-16T13:10:51.612+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487247050697] [timeMillis: 1487247051612] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 37ms - bound to [/0.0.0.0:7676]]]
+
+[2017-02-16T13:10:51.672+0100] [Payara 4.1] [INFO] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=60 _ThreadName=Thread-13] [timeMillis: 1487247051672] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://Bramdb:8686/jndi/rmi://Bramdb:8686/jmxrmi]]
+
+[2017-02-16T13:10:51.757+0100] [Payara 4.1] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=70 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487247051757] [levelValue: 800] [[
+  HV000001: Hibernate Validator 5.1.2.Final]]
+
+[2017-02-16T13:10:53.675+0100] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=53 _ThreadName=admin-thread-pool(1)] [timeMillis: 1487247053675] [levelValue: 800] [[
+  Listening to REST requests at context: /management/domain.]]
+
+[2017-02-16T13:10:53.751+0100] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00027] [javax.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487247053751] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@459cfcca as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@3bd3d05e.]]
+
+[2017-02-16T13:10:53.819+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=14 _ThreadName=FelixStartLevel] [timeMillis: 1487247053819] [levelValue: 800] [[
+  C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1\autodeploy\bundles does not exist, please create it.]]
+
+[2017-02-16T13:10:54.309+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247054309] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2017-02-16T13:10:54.313+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247054313] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2017-02-16T13:10:54.314+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247054314] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2017-02-16T13:10:54.332+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247054332] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2017-02-16T13:10:54.334+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247054334] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2017-02-16T13:10:54.493+0100] [Payara 4.1] [INFO] [AS-WEB-CORE-00306] [javax.enterprise.web.core] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247054493] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2017-02-16T13:10:54.494+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247054494] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2017-02-16T13:10:55.078+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247055078] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2017-02-16T13:10:55.078+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247055078] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2017-02-16T13:10:55.080+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247055080] [levelValue: 800] [[
+  Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2017-02-16T13:10:55.129+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247055129] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2017-02-16T13:10:56.302+0100] [Payara 4.1] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247056302] [levelValue: 800] [[
+  Initializing Mojarra 2.2.13 ( 20160203-1910 unable to get svn info) for context '']]
+
+[2017-02-16T13:10:57.249+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247057249] [levelValue: 800] [[
+  Loading application [__admingui] at [/]]]
+
+[2017-02-16T13:10:57.250+0100] [Payara 4.1] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=87 _ThreadName=Thread-20] [timeMillis: 1487247057250] [levelValue: 800] [[
+  Loading application __admingui done in 3.499 ms]]
+
+[2017-02-16T13:18:34.151+0100] [Payara 4.1] [WARNING] [] [javax.enterprise.system.container.web.com.sun.web.security] [tid: _ThreadID=70 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487247514151] [levelValue: 900] [[
+  Context path from ServletContext:  differs from path from bundle: /]]
+
+[2017-02-16T13:18:35.986+0100] [Payara 4.1] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=111 _ThreadName=admin-thread-pool(4)] [timeMillis: 1487247515986] [levelValue: 800] [[
+  Redirecting to /common/index.jsf]]
+
+[2017-02-16T13:18:36.125+0100] [Payara 4.1] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=112 _ThreadName=admin-thread-pool(5)] [timeMillis: 1487247516125] [levelValue: 800] [[
+  Admin Console: Initializing Session Attributes...]]
+
+[2017-02-16T13:29:53.419+0100] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=53 _ThreadName=admin-thread-pool(1)] [timeMillis: 1487248193419] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2017-02-16T13:29:53.449+0100] [Payara 4.1] [INFO] [NCLS-CORE-00092] [javax.enterprise.system.core] [tid: _ThreadID=118 _ThreadName=Thread-28] [timeMillis: 1487248193449] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2017-02-16T13:29:53.457+0100] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00028] [javax.enterprise.bootstrap] [tid: _ThreadID=118 _ThreadName=Thread-28] [timeMillis: 1487248193457] [levelValue: 800] [[
+  Unregistered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@459cfcca from service registry.]]
+
+[2017-02-16T13:29:53.458+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=118 _ThreadName=Thread-28] [timeMillis: 1487248193458] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2017-02-16T13:29:53.462+0100] [Payara 4.1] [INFO] [NCLS-JMX-00002] [javax.enterprise.system.jmx] [tid: _ThreadID=118 _ThreadName=Thread-28] [timeMillis: 1487248193462] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2017-02-16T13:29:53.463+0100] [Payara 4.1] [INFO] [NCLS-JMX-00001] [javax.enterprise.system.jmx] [tid: _ThreadID=118 _ThreadName=Thread-28] [timeMillis: 1487248193463] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2017-02-16T13:29:53.549+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=127 _ThreadName=RunLevelControllerThread-1487248193536] [timeMillis: 1487248193549] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
+
+[2017-02-16T13:30:03.427+0100] [] [INFO] [NCLS-GFLAUNCHER-00005] [javax.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487248203427] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk1.8.0_77\bin\java.exe
+-cp
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/modules/glassfish.jar
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-XX:MaxPermSize=192m
+-Xmx512m
+-client
+-javaagent:C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/monitor/flashlight-agent.jar
+-Djavax.xml.accessExternalSchema=all
+-Djavax.net.ssl.trustStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/cacerts.jks
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Dfelix.fileinstall.dir=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/autostart/
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dcom.sun.aas.installRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish
+-Dfelix.fileinstall.poll=5000
+-Djava.endorsed.dirs=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/endorsed;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/lib/endorsed
+-Djava.security.policy=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/server.policy
+-Dosgi.shell.telnet.maxconn=1
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dfelix.fileinstall.log.level=2
+-Djavax.net.ssl.keyStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/keystore.jks
+-Djava.security.auth.login.config=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/login.conf
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.grizzly.DEFAULT_MEMORY_MANAGER=org.glassfish.grizzly.memory.HeapMemoryManager
+-Dfelix.fileinstall.bundles.new.start=true
+-Dcom.sun.aas.instanceRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1
+-Dosgi.shell.telnet.port=6666
+-Dgosh.args=--nointeractive
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Dorg.jboss.weld.serialization.beanIdentifierIndexOptimization=false
+-Dosgi.shell.telnet.ip=127.0.0.1
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Djava.awt.headless=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djava.ext.dirs=C:\Program Files\Java\jdk1.8.0_77/lib/ext;C:\Program Files\Java\jdk1.8.0_77/jre/lib/ext;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/lib/ext
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-Djava.library.path=C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib;C:/ProgramData/Oracle/Java/javapath;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Windows/System32/config/systemprofile/.dnx/bin;C:/Program Files/Microsoft DNX/Dnvm;C:/Program Files/Microsoft SQL Server/120/Tools/Binn;C:/Program Files/Microsoft SQL Server/130/Tools/Binn;C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit;C:/Program Files (x86)/nodejs;C:/Program Files/Git/cmd;C:/Program Files (x86)/Microsoft VS Code/bin;C:/Users/bramd/AppData/Roaming/npm;C:/Program Files (x86)/Java/jdk1.7.0_55/bin;C:/Users/bramd/AppData/Local/Microsoft/WindowsApps;C:/tools/apache-maven-3.3.9/bin;C:/Program Files/Docker Toolbox;C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=false,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain
+-watchdog
+false]]
+
+[2017-02-16T13:30:05.236+0100] [Payara 4.1] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487248205156] [timeMillis: 1487248205236] [levelValue: 800] [[
+  Running Payara Version: Payara Server  4.1.1.164 #badassfish (build 28)]]
+
+[2017-02-16T13:30:05.237+0100] [Payara 4.1] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487248205156] [timeMillis: 1487248205237] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2017-02-16T13:30:05.366+0100] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487248205161] [timeMillis: 1487248205366] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2017-02-16T13:30:05.626+0100] [Payara 4.1] [INFO] [SEC-SVCS-00100] [javax.enterprise.security.services] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487248205161] [timeMillis: 1487248205626] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2017-02-16T13:30:05.637+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487248205161] [timeMillis: 1487248205637] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-02-16T13:30:05.638+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487248205161] [timeMillis: 1487248205638] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-02-16T13:30:05.642+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487248205161] [timeMillis: 1487248205642] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2017-02-16T13:30:05.691+0100] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487248205156] [timeMillis: 1487248205691] [levelValue: 800] [[
+  Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry]]
+
+[2017-02-16T13:30:05.692+0100] [Payara 4.1] [INFO] [] [fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactory] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487248205156] [timeMillis: 1487248205692] [levelValue: 800] [[
+  Registered Hazelcast BackingStoreFactory with persistence-type = hazelcast]]
+
+[2017-02-16T13:30:05.820+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487248205155] [timeMillis: 1487248205820] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 58ms - bound to [/0.0.0.0:8080]]]
+
+[2017-02-16T13:30:05.832+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487248205155] [timeMillis: 1487248205832] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 1ms - bound to [/0.0.0.0:8181]]]
+
+[2017-02-16T13:30:05.836+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487248205155] [timeMillis: 1487248205836] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 1ms - bound to [/0.0.0.0:4848]]]
+
+[2017-02-16T13:30:05.864+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487248205156] [timeMillis: 1487248205864] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 2ms - bound to [/0.0.0.0:3700]]]
+
+[2017-02-16T13:30:05.865+0100] [Payara 4.1] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487248205865] [levelValue: 800] [[
+  Payara Server  4.1.1.164 #badassfish (28) startup time : Felix (1.499ms), startup services(715ms), total(2.214ms)]]
+
+[2017-02-16T13:30:05.866+0100] [Payara 4.1] [INFO] [] [fish.payara.nucleus.notification.NotificationService] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487248205866] [levelValue: 800] [[
+  Payara Notification Service Started with configuration: NotificationExecutionOptions{enabled=true, notifierConfigurationExecutionOptionsList={LOG=NotifierConfigurationExecutionOptions{notifierType=LOG, enabled=true}}}]]
+
+[2017-02-16T13:30:05.867+0100] [Payara 4.1] [INFO] [] [fish.payara.nucleus.util.CleanupPostBoot] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487248205867] [levelValue: 800] [[
+  Cleaning JarFileFactory Cache to prevent jar FD leaks]]
+
+[2017-02-16T13:30:06.046+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487248205161] [timeMillis: 1487248206046] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 12ms - bound to [/0.0.0.0:7676]]]
+
+[2017-02-16T13:30:06.164+0100] [Payara 4.1] [INFO] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=62 _ThreadName=Thread-14] [timeMillis: 1487248206164] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://Bramdb:8686/jndi/rmi://Bramdb:8686/jmxrmi]]
+
+[2017-02-16T13:30:06.173+0100] [Payara 4.1] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=64 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487248206173] [levelValue: 800] [[
+  HV000001: Hibernate Validator 5.1.2.Final]]
+
+[2017-02-16T13:30:08.104+0100] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=53 _ThreadName=admin-thread-pool(1)] [timeMillis: 1487248208104] [levelValue: 800] [[
+  Listening to REST requests at context: /management/domain.]]
+
+[2017-02-16T13:30:08.179+0100] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00027] [javax.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487248208179] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@588307f7 as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@4eb45fec.]]
+
+[2017-02-16T13:30:08.244+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=14 _ThreadName=FelixStartLevel] [timeMillis: 1487248208244] [levelValue: 800] [[
+  C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1\autodeploy\bundles does not exist, please create it.]]
+
+[2017-02-16T13:30:08.806+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248208806] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2017-02-16T13:30:08.810+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248208810] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2017-02-16T13:30:08.812+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248208812] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2017-02-16T13:30:08.829+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248208829] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2017-02-16T13:30:08.831+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248208831] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2017-02-16T13:30:08.990+0100] [Payara 4.1] [INFO] [AS-WEB-CORE-00306] [javax.enterprise.web.core] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248208990] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2017-02-16T13:30:08.991+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248208991] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2017-02-16T13:30:09.583+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248209583] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2017-02-16T13:30:09.584+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248209584] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2017-02-16T13:30:09.586+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248209586] [levelValue: 800] [[
+  Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2017-02-16T13:30:09.637+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248209637] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2017-02-16T13:30:10.765+0100] [Payara 4.1] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248210765] [levelValue: 800] [[
+  Initializing Mojarra 2.2.13 ( 20160203-1910 unable to get svn info) for context '']]
+
+[2017-02-16T13:30:11.697+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248211697] [levelValue: 800] [[
+  Loading application [__admingui] at [/]]]
+
+[2017-02-16T13:30:11.699+0100] [Payara 4.1] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=88 _ThreadName=Thread-20] [timeMillis: 1487248211699] [levelValue: 800] [[
+  Loading application __admingui done in 3.521 ms]]
+
+[2017-02-16T13:31:02.999+0100] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=53 _ThreadName=admin-thread-pool(1)] [timeMillis: 1487248262999] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2017-02-16T13:31:03.042+0100] [Payara 4.1] [INFO] [NCLS-CORE-00092] [javax.enterprise.system.core] [tid: _ThreadID=109 _ThreadName=Thread-28] [timeMillis: 1487248263042] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2017-02-16T13:31:03.055+0100] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00028] [javax.enterprise.bootstrap] [tid: _ThreadID=109 _ThreadName=Thread-28] [timeMillis: 1487248263055] [levelValue: 800] [[
+  Unregistered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@588307f7 from service registry.]]
+
+[2017-02-16T13:31:03.055+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=109 _ThreadName=Thread-28] [timeMillis: 1487248263055] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2017-02-16T13:31:03.059+0100] [Payara 4.1] [INFO] [NCLS-JMX-00002] [javax.enterprise.system.jmx] [tid: _ThreadID=109 _ThreadName=Thread-28] [timeMillis: 1487248263059] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2017-02-16T13:31:03.059+0100] [Payara 4.1] [INFO] [NCLS-JMX-00001] [javax.enterprise.system.jmx] [tid: _ThreadID=109 _ThreadName=Thread-28] [timeMillis: 1487248263059] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2017-02-16T13:31:03.139+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=113 _ThreadName=RunLevelControllerThread-1487248263086] [timeMillis: 1487248263139] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
+
+[2017-02-16T13:33:41.344+0100] [] [INFO] [NCLS-GFLAUNCHER-00005] [javax.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487248421344] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk1.8.0_77\bin\java.exe
+-cp
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/modules/glassfish.jar
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-XX:MaxPermSize=192m
+-Xmx512m
+-client
+-javaagent:C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/monitor/flashlight-agent.jar
+-Djavax.xml.accessExternalSchema=all
+-Djavax.net.ssl.trustStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/cacerts.jks
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Dfelix.fileinstall.dir=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/autostart/
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dcom.sun.aas.installRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish
+-Dfelix.fileinstall.poll=5000
+-Djava.endorsed.dirs=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/endorsed;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/lib/endorsed
+-Djava.security.policy=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/server.policy
+-Dosgi.shell.telnet.maxconn=1
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dfelix.fileinstall.log.level=2
+-Djavax.net.ssl.keyStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/keystore.jks
+-Djava.security.auth.login.config=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/login.conf
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.grizzly.DEFAULT_MEMORY_MANAGER=org.glassfish.grizzly.memory.HeapMemoryManager
+-Dfelix.fileinstall.bundles.new.start=true
+-Dcom.sun.aas.instanceRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1
+-Dosgi.shell.telnet.port=6666
+-Dgosh.args=--nointeractive
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Dorg.jboss.weld.serialization.beanIdentifierIndexOptimization=false
+-Dosgi.shell.telnet.ip=127.0.0.1
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Djava.awt.headless=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djava.ext.dirs=C:\Program Files\Java\jdk1.8.0_77/lib/ext;C:\Program Files\Java\jdk1.8.0_77/jre/lib/ext;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/lib/ext
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-Djava.library.path=C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib;C:/ProgramData/Oracle/Java/javapath;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Windows/System32/config/systemprofile/.dnx/bin;C:/Program Files/Microsoft DNX/Dnvm;C:/Program Files/Microsoft SQL Server/120/Tools/Binn;C:/Program Files/Microsoft SQL Server/130/Tools/Binn;C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit;C:/Program Files (x86)/nodejs;C:/Program Files/Git/cmd;C:/Program Files (x86)/Microsoft VS Code/bin;C:/Users/bramd/AppData/Roaming/npm;C:/Program Files (x86)/Java/jdk1.7.0_55/bin;C:/Users/bramd/AppData/Local/Microsoft/WindowsApps;C:/tools/apache-maven-3.3.9/bin;C:/Program Files/Docker Toolbox;C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=false,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain
+-watchdog
+false]]
+
+[2017-02-16T13:33:43.202+0100] [Payara 4.1] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487248423112] [timeMillis: 1487248423202] [levelValue: 800] [[
+  Running Payara Version: Payara Server  4.1.1.164 #badassfish (build 28)]]
+
+[2017-02-16T13:33:43.203+0100] [Payara 4.1] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487248423112] [timeMillis: 1487248423203] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2017-02-16T13:33:43.343+0100] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487248423117] [timeMillis: 1487248423343] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2017-02-16T13:33:43.583+0100] [Payara 4.1] [INFO] [SEC-SVCS-00100] [javax.enterprise.security.services] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487248423117] [timeMillis: 1487248423583] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2017-02-16T13:33:43.648+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487248423117] [timeMillis: 1487248423648] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-02-16T13:33:43.650+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487248423117] [timeMillis: 1487248423650] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-02-16T13:33:43.654+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487248423117] [timeMillis: 1487248423654] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2017-02-16T13:33:43.686+0100] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487248423117] [timeMillis: 1487248423686] [levelValue: 800] [[
+  Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry]]
+
+[2017-02-16T13:33:43.687+0100] [Payara 4.1] [INFO] [] [fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactory] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487248423117] [timeMillis: 1487248423687] [levelValue: 800] [[
+  Registered Hazelcast BackingStoreFactory with persistence-type = hazelcast]]
+
+[2017-02-16T13:33:43.770+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487248423110] [timeMillis: 1487248423770] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 75ms - bound to [/0.0.0.0:8080]]]
+
+[2017-02-16T13:33:43.783+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487248423110] [timeMillis: 1487248423783] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 1ms - bound to [/0.0.0.0:8181]]]
+
+[2017-02-16T13:33:43.786+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487248423110] [timeMillis: 1487248423786] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 1ms - bound to [/0.0.0.0:4848]]]
+
+[2017-02-16T13:33:43.816+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487248423110] [timeMillis: 1487248423816] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 2ms - bound to [/0.0.0.0:3700]]]
+
+[2017-02-16T13:33:43.818+0100] [Payara 4.1] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487248423818] [levelValue: 800] [[
+  Payara Server  4.1.1.164 #badassfish (28) startup time : Felix (1.496ms), startup services(713ms), total(2.209ms)]]
+
+[2017-02-16T13:33:43.818+0100] [Payara 4.1] [INFO] [] [fish.payara.nucleus.notification.NotificationService] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487248423818] [levelValue: 800] [[
+  Payara Notification Service Started with configuration: NotificationExecutionOptions{enabled=true, notifierConfigurationExecutionOptionsList={LOG=NotifierConfigurationExecutionOptions{notifierType=LOG, enabled=true}}}]]
+
+[2017-02-16T13:33:43.819+0100] [Payara 4.1] [INFO] [] [fish.payara.nucleus.util.CleanupPostBoot] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487248423819] [levelValue: 800] [[
+  Cleaning JarFileFactory Cache to prevent jar FD leaks]]
+
+[2017-02-16T13:33:44.074+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487248423117] [timeMillis: 1487248424074] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 19ms - bound to [/0.0.0.0:7676]]]
+
+[2017-02-16T13:33:44.080+0100] [Payara 4.1] [INFO] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=61 _ThreadName=Thread-13] [timeMillis: 1487248424080] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://Bramdb:8686/jndi/rmi://Bramdb:8686/jmxrmi]]
+
+[2017-02-16T13:33:44.156+0100] [Payara 4.1] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=72 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487248424156] [levelValue: 800] [[
+  HV000001: Hibernate Validator 5.1.2.Final]]
+
+[2017-02-16T13:33:46.083+0100] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=54 _ThreadName=admin-thread-pool(1)] [timeMillis: 1487248426083] [levelValue: 800] [[
+  Listening to REST requests at context: /management/domain.]]
+
+[2017-02-16T13:33:46.160+0100] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00027] [javax.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487248426160] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@588307f7 as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@4eb45fec.]]
+
+[2017-02-16T13:33:46.223+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=14 _ThreadName=FelixStartLevel] [timeMillis: 1487248426223] [levelValue: 800] [[
+  C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1\autodeploy\bundles does not exist, please create it.]]
+
+[2017-02-16T13:33:46.816+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248426816] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2017-02-16T13:33:46.820+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248426820] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2017-02-16T13:33:46.821+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248426821] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2017-02-16T13:33:46.837+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248426837] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2017-02-16T13:33:46.838+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248426838] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2017-02-16T13:33:47.392+0100] [Payara 4.1] [INFO] [AS-WEB-CORE-00306] [javax.enterprise.web.core] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248427392] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2017-02-16T13:33:47.393+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248427393] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2017-02-16T13:33:47.598+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248427598] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2017-02-16T13:33:47.599+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248427599] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2017-02-16T13:33:47.601+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248427601] [levelValue: 800] [[
+  Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2017-02-16T13:33:47.655+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248427655] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2017-02-16T13:33:48.831+0100] [Payara 4.1] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248428831] [levelValue: 800] [[
+  Initializing Mojarra 2.2.13 ( 20160203-1910 unable to get svn info) for context '']]
+
+[2017-02-16T13:33:49.759+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248429759] [levelValue: 800] [[
+  Loading application [__admingui] at [/]]]
+
+[2017-02-16T13:33:49.760+0100] [Payara 4.1] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=89 _ThreadName=Thread-21] [timeMillis: 1487248429760] [levelValue: 800] [[
+  Loading application __admingui done in 3.601 ms]]
+
+[2017-02-16T13:39:23.110+0100] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=72 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487248763110] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2017-02-16T13:39:23.229+0100] [Payara 4.1] [INFO] [NCLS-CORE-00092] [javax.enterprise.system.core] [tid: _ThreadID=110 _ThreadName=Thread-29] [timeMillis: 1487248763229] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2017-02-16T13:39:23.235+0100] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00028] [javax.enterprise.bootstrap] [tid: _ThreadID=110 _ThreadName=Thread-29] [timeMillis: 1487248763235] [levelValue: 800] [[
+  Unregistered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@588307f7 from service registry.]]
+
+[2017-02-16T13:39:23.235+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=110 _ThreadName=Thread-29] [timeMillis: 1487248763235] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2017-02-16T13:39:23.241+0100] [Payara 4.1] [INFO] [NCLS-JMX-00002] [javax.enterprise.system.jmx] [tid: _ThreadID=110 _ThreadName=Thread-29] [timeMillis: 1487248763241] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2017-02-16T13:39:23.242+0100] [Payara 4.1] [INFO] [NCLS-JMX-00001] [javax.enterprise.system.jmx] [tid: _ThreadID=110 _ThreadName=Thread-29] [timeMillis: 1487248763242] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2017-02-16T13:39:23.325+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=115 _ThreadName=RunLevelControllerThread-1487248763267] [timeMillis: 1487248763325] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
+
+[2017-02-16T13:43:49.071+0100] [] [INFO] [NCLS-GFLAUNCHER-00005] [javax.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487249029071] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk1.8.0_77\bin\java.exe
+-cp
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/modules/glassfish.jar
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-XX:MaxPermSize=192m
+-Xmx512m
+-client
+-javaagent:C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/monitor/flashlight-agent.jar
+-Djavax.xml.accessExternalSchema=all
+-Djavax.net.ssl.trustStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/cacerts.jks
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Dfelix.fileinstall.dir=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/autostart/
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dcom.sun.aas.installRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish
+-Dfelix.fileinstall.poll=5000
+-Djava.endorsed.dirs=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/endorsed;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/lib/endorsed
+-Djava.security.policy=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/server.policy
+-Dosgi.shell.telnet.maxconn=1
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dfelix.fileinstall.log.level=2
+-Djavax.net.ssl.keyStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/keystore.jks
+-Djava.security.auth.login.config=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/login.conf
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.grizzly.DEFAULT_MEMORY_MANAGER=org.glassfish.grizzly.memory.HeapMemoryManager
+-Dfelix.fileinstall.bundles.new.start=true
+-Dcom.sun.aas.instanceRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1
+-Dosgi.shell.telnet.port=6666
+-Dgosh.args=--nointeractive
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Dorg.jboss.weld.serialization.beanIdentifierIndexOptimization=false
+-Dosgi.shell.telnet.ip=127.0.0.1
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Djava.awt.headless=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djava.ext.dirs=C:\Program Files\Java\jdk1.8.0_77/lib/ext;C:\Program Files\Java\jdk1.8.0_77/jre/lib/ext;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/lib/ext
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-Djava.library.path=C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib;C:/ProgramData/Oracle/Java/javapath;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Windows/System32/config/systemprofile/.dnx/bin;C:/Program Files/Microsoft DNX/Dnvm;C:/Program Files/Microsoft SQL Server/120/Tools/Binn;C:/Program Files/Microsoft SQL Server/130/Tools/Binn;C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit;C:/Program Files (x86)/nodejs;C:/Program Files/Git/cmd;C:/Program Files (x86)/Microsoft VS Code/bin;C:/Users/bramd/AppData/Roaming/npm;C:/Program Files (x86)/Java/jdk1.7.0_55/bin;C:/Users/bramd/AppData/Local/Microsoft/WindowsApps;C:/tools/apache-maven-3.3.9/bin;C:/Program Files/Docker Toolbox;C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=false,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain
+-watchdog
+false]]
+
+[2017-02-16T13:43:50.927+0100] [Payara 4.1] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487249030838] [timeMillis: 1487249030927] [levelValue: 800] [[
+  Running Payara Version: Payara Server  4.1.1.164 #badassfish (build 28)]]
+
+[2017-02-16T13:43:50.928+0100] [Payara 4.1] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487249030838] [timeMillis: 1487249030928] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2017-02-16T13:43:51.073+0100] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487249030837] [timeMillis: 1487249031073] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2017-02-16T13:43:51.319+0100] [Payara 4.1] [INFO] [SEC-SVCS-00100] [javax.enterprise.security.services] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487249030844] [timeMillis: 1487249031319] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2017-02-16T13:43:51.365+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487249030838] [timeMillis: 1487249031365] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-02-16T13:43:51.367+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487249030838] [timeMillis: 1487249031367] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-02-16T13:43:51.372+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487249030838] [timeMillis: 1487249031372] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2017-02-16T13:43:51.421+0100] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487249030837] [timeMillis: 1487249031421] [levelValue: 800] [[
+  Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry]]
+
+[2017-02-16T13:43:51.422+0100] [Payara 4.1] [INFO] [] [fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactory] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487249030837] [timeMillis: 1487249031422] [levelValue: 800] [[
+  Registered Hazelcast BackingStoreFactory with persistence-type = hazelcast]]
+
+[2017-02-16T13:43:51.509+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487249030845] [timeMillis: 1487249031509] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 56ms - bound to [/0.0.0.0:8080]]]
+
+[2017-02-16T13:43:51.521+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487249030845] [timeMillis: 1487249031521] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 1ms - bound to [/0.0.0.0:8181]]]
+
+[2017-02-16T13:43:51.525+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1487249030845] [timeMillis: 1487249031525] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 1ms - bound to [/0.0.0.0:4848]]]
+
+[2017-02-16T13:43:51.555+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487249030838] [timeMillis: 1487249031555] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 1ms - bound to [/0.0.0.0:3700]]]
+
+[2017-02-16T13:43:51.556+0100] [Payara 4.1] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487249031556] [levelValue: 800] [[
+  Payara Server  4.1.1.164 #badassfish (28) startup time : Felix (1.485ms), startup services(724ms), total(2.209ms)]]
+
+[2017-02-16T13:43:51.557+0100] [Payara 4.1] [INFO] [] [fish.payara.nucleus.notification.NotificationService] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487249031557] [levelValue: 800] [[
+  Payara Notification Service Started with configuration: NotificationExecutionOptions{enabled=true, notifierConfigurationExecutionOptionsList={LOG=NotifierConfigurationExecutionOptions{notifierType=LOG, enabled=true}}}]]
+
+[2017-02-16T13:43:51.558+0100] [Payara 4.1] [INFO] [] [fish.payara.nucleus.util.CleanupPostBoot] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487249031558] [levelValue: 800] [[
+  Cleaning JarFileFactory Cache to prevent jar FD leaks]]
+
+[2017-02-16T13:43:51.778+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487249030837] [timeMillis: 1487249031778] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 13ms - bound to [/0.0.0.0:7676]]]
+
+[2017-02-16T13:43:51.847+0100] [Payara 4.1] [INFO] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=56 _ThreadName=Thread-14] [timeMillis: 1487249031847] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://Bramdb:8686/jndi/rmi://Bramdb:8686/jmxrmi]]
+
+[2017-02-16T13:43:51.874+0100] [Payara 4.1] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=62 _ThreadName=admin-thread-pool(3)] [timeMillis: 1487249031874] [levelValue: 800] [[
+  HV000001: Hibernate Validator 5.1.2.Final]]
+
+[2017-02-16T13:43:53.918+0100] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=48 _ThreadName=admin-thread-pool(1)] [timeMillis: 1487249033918] [levelValue: 800] [[
+  Listening to REST requests at context: /management/domain.]]
+
+[2017-02-16T13:43:53.994+0100] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00027] [javax.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487249033994] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@588307f7 as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@4eb45fec.]]
+
+[2017-02-16T13:43:54.063+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=14 _ThreadName=FelixStartLevel] [timeMillis: 1487249034063] [levelValue: 800] [[
+  C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1\autodeploy\bundles does not exist, please create it.]]
+
+[2017-02-16T13:43:54.612+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249034612] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2017-02-16T13:43:54.616+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249034616] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2017-02-16T13:43:54.617+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249034617] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2017-02-16T13:43:54.635+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249034635] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2017-02-16T13:43:54.637+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249034637] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2017-02-16T13:43:54.800+0100] [Payara 4.1] [INFO] [AS-WEB-CORE-00306] [javax.enterprise.web.core] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249034800] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2017-02-16T13:43:54.801+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249034801] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2017-02-16T13:43:55.504+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249035504] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2017-02-16T13:43:55.505+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249035505] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2017-02-16T13:43:55.506+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249035506] [levelValue: 800] [[
+  Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2017-02-16T13:43:55.555+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249035555] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2017-02-16T13:43:56.758+0100] [Payara 4.1] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249036758] [levelValue: 800] [[
+  Initializing Mojarra 2.2.13 ( 20160203-1910 unable to get svn info) for context '']]
+
+[2017-02-16T13:43:57.727+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249037727] [levelValue: 800] [[
+  Loading application [__admingui] at [/]]]
+
+[2017-02-16T13:43:57.728+0100] [Payara 4.1] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=83 _ThreadName=Thread-20] [timeMillis: 1487249037728] [levelValue: 800] [[
+  Loading application __admingui done in 3.734 ms]]
+
+[2017-02-16T13:44:03.626+0100] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=48 _ThreadName=admin-thread-pool(1)] [timeMillis: 1487249043626] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2017-02-16T13:44:03.734+0100] [Payara 4.1] [INFO] [NCLS-CORE-00092] [javax.enterprise.system.core] [tid: _ThreadID=105 _ThreadName=Thread-28] [timeMillis: 1487249043734] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2017-02-16T13:44:03.739+0100] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00028] [javax.enterprise.bootstrap] [tid: _ThreadID=105 _ThreadName=Thread-28] [timeMillis: 1487249043739] [levelValue: 800] [[
+  Unregistered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@588307f7 from service registry.]]
+
+[2017-02-16T13:44:03.741+0100] [Payara 4.1] [INFO] [NCLS-JMX-00002] [javax.enterprise.system.jmx] [tid: _ThreadID=105 _ThreadName=Thread-28] [timeMillis: 1487249043741] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2017-02-16T13:44:03.742+0100] [Payara 4.1] [INFO] [NCLS-JMX-00001] [javax.enterprise.system.jmx] [tid: _ThreadID=105 _ThreadName=Thread-28] [timeMillis: 1487249043742] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2017-02-16T13:44:03.739+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=105 _ThreadName=Thread-28] [timeMillis: 1487249043739] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2017-02-16T13:44:03.819+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=108 _ThreadName=RunLevelControllerThread-1487249043762] [timeMillis: 1487249043819] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
+
+[2017-02-16T13:44:55.904+0100] [] [INFO] [NCLS-GFLAUNCHER-00005] [javax.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487249095904] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk1.8.0_77\bin\java.exe
+-cp
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/modules/glassfish.jar
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-XX:MaxPermSize=192m
+-Xmx512m
+-client
+-javaagent:C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/monitor/flashlight-agent.jar
+-Djavax.xml.accessExternalSchema=all
+-Djavax.net.ssl.trustStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/cacerts.jks
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Dfelix.fileinstall.dir=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/autostart/
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dcom.sun.aas.installRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish
+-Dfelix.fileinstall.poll=5000
+-Djava.endorsed.dirs=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/endorsed;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/lib/endorsed
+-Djava.security.policy=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/server.policy
+-Dosgi.shell.telnet.maxconn=1
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dfelix.fileinstall.log.level=2
+-Djavax.net.ssl.keyStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/keystore.jks
+-Djava.security.auth.login.config=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/login.conf
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.grizzly.DEFAULT_MEMORY_MANAGER=org.glassfish.grizzly.memory.HeapMemoryManager
+-Dfelix.fileinstall.bundles.new.start=true
+-Dcom.sun.aas.instanceRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1
+-Dosgi.shell.telnet.port=6666
+-Dgosh.args=--nointeractive
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Dorg.jboss.weld.serialization.beanIdentifierIndexOptimization=false
+-Dosgi.shell.telnet.ip=127.0.0.1
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Djava.awt.headless=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djava.ext.dirs=C:\Program Files\Java\jdk1.8.0_77/lib/ext;C:\Program Files\Java\jdk1.8.0_77/jre/lib/ext;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/lib/ext
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-Djava.library.path=C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib;C:/ProgramData/Oracle/Java/javapath;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Windows/System32/config/systemprofile/.dnx/bin;C:/Program Files/Microsoft DNX/Dnvm;C:/Program Files/Microsoft SQL Server/120/Tools/Binn;C:/Program Files/Microsoft SQL Server/130/Tools/Binn;C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit;C:/Program Files (x86)/nodejs;C:/Program Files/Git/cmd;C:/Program Files (x86)/Microsoft VS Code/bin;C:/Users/bramd/AppData/Roaming/npm;C:/Program Files (x86)/Java/jdk1.7.0_55/bin;C:/Users/bramd/AppData/Local/Microsoft/WindowsApps;C:/tools/apache-maven-3.3.9/bin;C:/Program Files/Docker Toolbox;C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=false,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain
+-watchdog
+false]]
+
+[2017-02-16T13:44:57.727+0100] [Payara 4.1] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487249097644] [timeMillis: 1487249097727] [levelValue: 800] [[
+  Running Payara Version: Payara Server  4.1.1.164 #badassfish (build 28)]]
+
+[2017-02-16T13:44:57.729+0100] [Payara 4.1] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487249097644] [timeMillis: 1487249097729] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2017-02-16T13:44:57.870+0100] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487249097650] [timeMillis: 1487249097870] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2017-02-16T13:44:58.105+0100] [Payara 4.1] [INFO] [SEC-SVCS-00100] [javax.enterprise.security.services] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487249097650] [timeMillis: 1487249098105] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2017-02-16T13:44:58.154+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487249097644] [timeMillis: 1487249098154] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-02-16T13:44:58.155+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487249097644] [timeMillis: 1487249098155] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-02-16T13:44:58.161+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487249097644] [timeMillis: 1487249098161] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2017-02-16T13:44:58.181+0100] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487249097650] [timeMillis: 1487249098181] [levelValue: 800] [[
+  Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry]]
+
+[2017-02-16T13:44:58.182+0100] [Payara 4.1] [INFO] [] [fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactory] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487249097650] [timeMillis: 1487249098182] [levelValue: 800] [[
+  Registered Hazelcast BackingStoreFactory with persistence-type = hazelcast]]
+
+[2017-02-16T13:44:58.289+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487249097643] [timeMillis: 1487249098289] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 60ms - bound to [/0.0.0.0:8080]]]
+
+[2017-02-16T13:44:58.302+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487249097643] [timeMillis: 1487249098302] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 1ms - bound to [/0.0.0.0:8181]]]
+
+[2017-02-16T13:44:58.306+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1487249097643] [timeMillis: 1487249098306] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 1ms - bound to [/0.0.0.0:4848]]]
+
+[2017-02-16T13:44:58.334+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1487249097650] [timeMillis: 1487249098334] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 1ms - bound to [/0.0.0.0:3700]]]
+
+[2017-02-16T13:44:58.336+0100] [Payara 4.1] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487249098336] [levelValue: 800] [[
+  Payara Server  4.1.1.164 #badassfish (28) startup time : Felix (1.478ms), startup services(696ms), total(2.174ms)]]
+
+[2017-02-16T13:44:58.336+0100] [Payara 4.1] [INFO] [] [fish.payara.nucleus.notification.NotificationService] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487249098336] [levelValue: 800] [[
+  Payara Notification Service Started with configuration: NotificationExecutionOptions{enabled=true, notifierConfigurationExecutionOptionsList={LOG=NotifierConfigurationExecutionOptions{notifierType=LOG, enabled=true}}}]]
+
+[2017-02-16T13:44:58.337+0100] [Payara 4.1] [INFO] [] [fish.payara.nucleus.util.CleanupPostBoot] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487249098337] [levelValue: 800] [[
+  Cleaning JarFileFactory Cache to prevent jar FD leaks]]
+
+[2017-02-16T13:44:58.545+0100] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1487249097644] [timeMillis: 1487249098545] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 19ms - bound to [/0.0.0.0:7676]]]
+
+[2017-02-16T13:44:58.646+0100] [Payara 4.1] [INFO] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=61 _ThreadName=Thread-13] [timeMillis: 1487249098646] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://Bramdb:8686/jndi/rmi://Bramdb:8686/jmxrmi]]
+
+[2017-02-16T13:44:58.673+0100] [Payara 4.1] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=68 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487249098673] [levelValue: 800] [[
+  HV000001: Hibernate Validator 5.1.2.Final]]
+
+[2017-02-16T13:45:00.983+0100] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=54 _ThreadName=admin-thread-pool(1)] [timeMillis: 1487249100983] [levelValue: 800] [[
+  Listening to REST requests at context: /management/domain.]]
+
+[2017-02-16T13:45:01.107+0100] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00027] [javax.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1487249101107] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@588307f7 as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@4eb45fec.]]
+
+[2017-02-16T13:45:01.242+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=14 _ThreadName=FelixStartLevel] [timeMillis: 1487249101242] [levelValue: 800] [[
+  C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1\autodeploy\bundles does not exist, please create it.]]
+
+[2017-02-16T13:45:01.696+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249101696] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2017-02-16T13:45:01.701+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249101701] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2017-02-16T13:45:01.707+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249101707] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2017-02-16T13:45:01.729+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249101729] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2017-02-16T13:45:01.731+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249101731] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2017-02-16T13:45:01.936+0100] [Payara 4.1] [INFO] [AS-WEB-CORE-00306] [javax.enterprise.web.core] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249101936] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2017-02-16T13:45:01.936+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249101936] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2017-02-16T13:45:02.548+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249102548] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2017-02-16T13:45:02.550+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249102550] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2017-02-16T13:45:02.552+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249102552] [levelValue: 800] [[
+  Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2017-02-16T13:45:02.636+0100] [Payara 4.1] [INFO] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249102636] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2017-02-16T13:45:03.950+0100] [Payara 4.1] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249103950] [levelValue: 800] [[
+  Initializing Mojarra 2.2.13 ( 20160203-1910 unable to get svn info) for context '']]
+
+[2017-02-16T13:45:05.044+0100] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249105044] [levelValue: 800] [[
+  Loading application [__admingui] at [/]]]
+
+[2017-02-16T13:45:05.046+0100] [Payara 4.1] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=93 _ThreadName=Thread-24] [timeMillis: 1487249105046] [levelValue: 800] [[
+  Loading application __admingui done in 3.959 ms]]
+
+[2017-02-16T13:45:09.345+0100] [Payara 4.1] [WARNING] [] [javax.enterprise.system.container.web.com.sun.web.security] [tid: _ThreadID=69 _ThreadName=admin-thread-pool(3)] [timeMillis: 1487249109345] [levelValue: 900] [[
+  Context path from ServletContext:  differs from path from bundle: /]]
+
+[2017-02-16T13:45:10.280+0100] [Payara 4.1] [INFO] [AS-WSMETROGLUE-10010] [javax.enterprise.webservices.metroglue] [tid: _ThreadID=68 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487249110280] [levelValue: 800] [[
+  Web service endpoint deployment events listener registered successfully.]]
+
+[2017-02-16T13:45:10.367+0100] [Payara 4.1] [SEVERE] [] [javax.enterprise.system.core] [tid: _ThreadID=68 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487249110367] [levelValue: 1000] [[
+  Exception while invoking class org.glassfish.ejb.startup.EjbDeployer prepare method]]
+
+[2017-02-16T13:45:10.370+0100] [Payara 4.1] [SEVERE] [] [javax.enterprise.system.core] [tid: _ThreadID=68 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487249110370] [levelValue: 1000] [[
+  Exception while preparing the app]]
+
+[2017-02-16T13:45:10.370+0100] [Payara 4.1] [SEVERE] [NCLS-CORE-00026] [javax.enterprise.system.core] [tid: _ThreadID=68 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487249110370] [levelValue: 1000] [[
+  Exception during lifecycle processing
+java.lang.RuntimeException: Unable to load the EJB module. DeploymentContext does not contain any EJB. Check the archive to ensure correct packaging for C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1\applications\kwetter.
+If you use EJB component annotations to define the EJB, and an ejb or web deployment descriptor is also used, please make sure that the deployment descriptor references a Java EE 5 or higher version schema, and that the metadata-complete attribute is not set to true, so the component annotations can be processed as expected
+	at org.glassfish.ejb.startup.EjbDeployer.prepare(EjbDeployer.java:189)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.prepareModule(ApplicationLifecycle.java:926)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:435)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:220)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:487)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:539)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:535)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:360)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:534)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:565)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:557)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:360)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:556)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1464)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:109)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1846)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1722)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:534)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:224)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:189)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:466)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:169)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:206)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:180)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:235)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:526)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:745)
+]]
+
+[2017-02-16T13:45:10.369+0100] [Payara 4.1] [SEVERE] [] [] [tid: _ThreadID=68 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487249110369] [levelValue: 1000] [[
+  java.lang.RuntimeException: Unable to load the EJB module. DeploymentContext does not contain any EJB. Check the archive to ensure correct packaging for C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1\applications\kwetter.
+If you use EJB component annotations to define the EJB, and an ejb or web deployment descriptor is also used, please make sure that the deployment descriptor references a Java EE 5 or higher version schema, and that the metadata-complete attribute is not set to true, so the component annotations can be processed as expected
+	at org.glassfish.ejb.startup.EjbDeployer.prepare(EjbDeployer.java:189)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.prepareModule(ApplicationLifecycle.java:926)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:435)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:220)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:487)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:539)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:535)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:360)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:534)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:565)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:557)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:360)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:556)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1464)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:109)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1846)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1722)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:534)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:224)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:189)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:466)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:169)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:206)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:180)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:235)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:526)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:745)]]
+
+[2017-02-16T13:45:10.437+0100] [Payara 4.1] [SEVERE] [] [javax.enterprise.system.core] [tid: _ThreadID=68 _ThreadName=admin-thread-pool(2)] [timeMillis: 1487249110437] [levelValue: 1000] [[
+  Exception while preparing the app : Unable to load the EJB module. DeploymentContext does not contain any EJB. Check the archive to ensure correct packaging for C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1\applications\kwetter.
+If you use EJB component annotations to define the EJB, and an ejb or web deployment descriptor is also used, please make sure that the deployment descriptor references a Java EE 5 or higher version schema, and that the metadata-complete attribute is not set to true, so the component annotations can be processed as expected]]
+
+[2017-02-16T13:45:13.880+0100] [Payara 4.1] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=135 _ThreadName=admin-thread-pool(5)] [timeMillis: 1487249113880] [levelValue: 800] [[
+  Redirecting to /common/index.jsf]]
+
+[2017-02-16T13:45:13.974+0100] [Payara 4.1] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=134 _ThreadName=admin-thread-pool(4)] [timeMillis: 1487249113974] [levelValue: 800] [[
+  Admin Console: Initializing Session Attributes...]]
+
