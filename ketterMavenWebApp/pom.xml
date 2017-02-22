@@ -23,6 +23,12 @@
       <groupId>fish.payara.extras</groupId>
       <artifactId>payara-embedded-all</artifactId>
       <version>4.1.152.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mariadb.jdbc</groupId>
+      <artifactId>mariadb-java-client</artifactId>
+      <version>1.5.8</version>
     </dependency>
   </dependencies>
   <build>
