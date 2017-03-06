@@ -19429,3 +19429,33 @@ false]]
 [2017-03-06T13:19:59.662+0100] [Payara 4.1] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-thread-pool(1)] [timeMillis: 1488802799662] [levelValue: 800] [[
   kwetter was successfully deployed in 2.508 milliseconds.]]
 
+[2017-03-06T14:31:34.875+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=53 _ThreadName=admin-thread-pool(1)] [timeMillis: 1488807094875] [levelValue: 800] [[
+  [EL Config]: connection: 2017-03-06 14:31:34.875--ServerSession(959209471)--Connection(435691985)--Thread(Thread[admin-thread-pool(1),5,main])--disconnect]]
+
+[2017-03-06T14:31:34.875+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=53 _ThreadName=admin-thread-pool(1)] [timeMillis: 1488807094875] [levelValue: 800] [[
+  [EL Info]: connection: 2017-03-06 14:31:34.875--ServerSession(959209471)--Thread(Thread[admin-thread-pool(1),5,main])--/file:/C:/Users/bramd/Documents/GitHub/kwetter/ketterMavenWebApp/target/kwetter/WEB-INF/classes/_KwetterPU logout successful]]
+
+[2017-03-06T14:31:36.031+0100] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=53 _ThreadName=admin-thread-pool(1)] [timeMillis: 1488807096031] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2017-03-06T14:31:36.077+0100] [Payara 4.1] [INFO] [NCLS-CORE-00092] [javax.enterprise.system.core] [tid: _ThreadID=297 _ThreadName=Thread-39] [timeMillis: 1488807096077] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2017-03-06T14:31:36.077+0100] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00028] [javax.enterprise.bootstrap] [tid: _ThreadID=297 _ThreadName=Thread-39] [timeMillis: 1488807096077] [levelValue: 800] [[
+  Unregistered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@3e48d38 from service registry.]]
+
+[2017-03-06T14:31:36.077+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=297 _ThreadName=Thread-39] [timeMillis: 1488807096077] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2017-03-06T14:31:36.096+0100] [Payara 4.1] [INFO] [NCLS-JMX-00002] [javax.enterprise.system.jmx] [tid: _ThreadID=297 _ThreadName=Thread-39] [timeMillis: 1488807096096] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2017-03-06T14:31:36.096+0100] [Payara 4.1] [INFO] [NCLS-JMX-00001] [javax.enterprise.system.jmx] [tid: _ThreadID=297 _ThreadName=Thread-39] [timeMillis: 1488807096096] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2017-03-06T14:31:36.199+0100] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=299 _ThreadName=RunLevelControllerThread-1488807096100] [timeMillis: 1488807096199] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource]]]
+
+[2017-03-06T14:31:36.199+0100] [Payara 4.1] [INFO] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.service] [tid: _ThreadID=305 _ThreadName=Thread-47] [timeMillis: 1488807096199] [levelValue: 800] [[
+  RAR7094: __ds_jdbc_ra shutdown successful.]]
+

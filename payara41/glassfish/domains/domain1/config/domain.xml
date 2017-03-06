@@ -62,7 +62,6 @@
   <servers>
     <server config-ref="server-config" name="server">
       <application-ref ref="__admingui" virtual-servers="__asadmin"></application-ref>
-      <application-ref ref="kwetter" virtual-servers="server"></application-ref>
       <resource-ref ref="jdbc/__TimerPool"></resource-ref>
       <resource-ref ref="jdbc/__default"></resource-ref>
       <resource-ref ref="jms/__defaultConnectionFactory"></resource-ref>
@@ -486,32 +485,5 @@
     <secure-admin-principal dn="CN=localhost-instance,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US"></secure-admin-principal>
   </secure-admin>
   <clusters></clusters>
-  <applications>
-    <application context-root="/kwetter" object-type="user" name="kwetter" directory-deployed="true" location="file:/C:/Users/bramd/Documents/GitHub/kwetter/ketterMavenWebApp/target/kwetter/">
-      <property name="archiveType" value="war"></property>
-      <property name="appLocation" value="file:/C:/Users/bramd/Documents/GitHub/kwetter/ketterMavenWebApp/target/kwetter/"></property>
-      <property name="org.glassfish.ejb.container.application_unique_id" value="97570045196894208"></property>
-      <property name="defaultAppName" value="kwetter"></property>
-      <module name="kwetter">
-        <engine sniffer="ejb"></engine>
-        <engine sniffer="security"></engine>
-        <engine sniffer="weld"></engine>
-        <engine sniffer="jpa"></engine>
-        <engine sniffer="resources"></engine>
-        <engine sniffer="web"></engine>
-      </module>
-      <resources>
-        <jdbc-connection-pool datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" name="java:app/mysql_localhost" wrap-jdbc-objects="false" connection-validation-method="auto-commit" res-type="javax.sql.DataSource">
-          <property name="URL" value="jdbc:mysql://localhost:3306/fontys?zeroDateTimeBehavior=convertToNull"></property>
-          <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
-          <property name="Password" value=""></property>
-          <property name="portNumber" value="3306"></property>
-          <property name="databaseName" value="kwetter"></property>
-          <property name="User" value="root"></property>
-          <property name="serverName" value="localhost"></property>
-        </jdbc-connection-pool>
-        <jdbc-resource pool-name="java:app/mysql_localhost" jndi-name="java:app/fontys"></jdbc-resource>
-      </resources>
-    </application>
-  </applications>
+  <applications></applications>
 </domain>

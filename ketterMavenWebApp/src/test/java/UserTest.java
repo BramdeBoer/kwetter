@@ -1,3 +1,5 @@
+package java;
+
 import junit.framework.TestCase;
 import model.User;
 
