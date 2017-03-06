@@ -1,0 +1,16 @@
+/* AUTOMATICALLY GENERATED ON Mon Mar 06 13:19:59 CET 2017*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "PostingDaoImp", "find,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "PostingDaoImp", "create,Local,model.Posting";
+  permission javax.security.jacc.EJBMethodPermission "WebLogService", "getPostings,Local,";
+  permission javax.security.jacc.EJBMethodPermission "WebLogService", "addPosting,Local,model.Posting,model.User";
+  permission javax.security.jacc.EJBMethodPermission "PostingDaoImp", "findAll,Local,";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "WebLogService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "PostingDaoImp", "**";
+};
+
