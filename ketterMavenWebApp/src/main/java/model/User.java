@@ -31,24 +31,27 @@ public class User {
     @ManyToMany
     private List<Tweet> tweets;
 
-    @PostConstruct
-    private void initUser() {
+    public User() {
         this.avatarURL = "/default/placeholder.png";
         this.tweets = new ArrayList<Tweet>();
         this.following = new ArrayList<User>();
         this.followers = new ArrayList<User>();
     }
 
-    public User() {
-
-    }
-
     public void addTweet(Tweet tweet){
         tweets.add(tweet);
     }
 
-    public void addFollowing(User user){
-        following.add(user);
+    public void follow(User user){
+        if(!this.following.contains(user)){
+            user.addFollower(this);
+            this.following.add(user);
+        }
+    }
+
+    private void addFollower(User user){
+        if(!this.followers.contains(user))
+            this.followers.add(user);
     }
 
     public List<Tweet> getRecentTweets(int offset, int limit){
@@ -64,16 +67,13 @@ public class User {
         for (User user: following) {
             result.addAll(user.getTweets());
         }
+
         Collections.sort(result);
-        return result.subList(offset, offset + limit);
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
+        if (result.size() >= offset + limit){
+            return result.subList(offset, offset + limit);
+        }else {
+            return result.subList(offset, result.size());
+        }
     }
 
     public String getName() {
@@ -84,83 +84,56 @@ public class User {
         this.name = name;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
     public String getBio() {
         return bio;
     }
 
-    public void setBio(String bio) {
+    public boolean setBio(String bio) {
         this.bio = bio;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
+        return true;
     }
 
     public String getAvatarURL() {
         return avatarURL;
     }
 
-    public void setAvatarURL(String avatarURL) {
+    public boolean setAvatarURL(String avatarURL) {
         this.avatarURL = avatarURL;
+        return true;
     }
 
     public String getWebsiteURL() {
         return websiteURL;
     }
 
-    public void setWebsiteURL(String websiteURL) {
+    public boolean setWebsiteURL(String websiteURL) {
         this.websiteURL = websiteURL;
+        return true;
     }
 
     public String getUsername() {
         return username;
     }
 
-    public void setUsername(String username) {
+    public boolean setUsername(String username) {
         this.username = username;
+        return true;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public boolean setLocation(String location) {
+        this.location = location;
+        return true;
     }
 
     public List<User> getFollowing() {
         return following;
     }
 
-    public void setFollowing(List<User> following) {
-        this.following = following;
-    }
-
     public List<User> getFollowers() {
         return followers;
     }
 
-    public void setFollowers(List<User> followers) {
-        this.followers = followers;
-    }
-
     public List<Tweet> getTweets() {
         return tweets;
-    }
-
-    public void setTweets(List<Tweet> tweets) {
-        this.tweets = tweets;
     }
 }

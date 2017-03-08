@@ -24,7 +24,7 @@ public class UserDaoImp implements UserDao {
         return null;
     }
 
-    public List<Tweet> getRecentTweets(User user) {
+    public List<Tweet> getRecentTweets(User user, int offset, int limit) {
         return null;
     }
 

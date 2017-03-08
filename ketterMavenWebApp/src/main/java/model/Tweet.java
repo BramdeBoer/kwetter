@@ -2,6 +2,7 @@ package model;
 
 import javax.enterprise.inject.Model;
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -28,6 +29,7 @@ public class Tweet implements Comparable<Tweet> {
         this.content = content;
         this.createdBy = creater;
         this.date = new Date(System.currentTimeMillis());
+        this.likedBy = new ArrayList();
 
         creater.addTweet(this);
     }
@@ -46,5 +48,13 @@ public class Tweet implements Comparable<Tweet> {
 
     public Date getDate() {
         return date;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public List<User> getLikedBy() {
+        return likedBy;
     }
 }

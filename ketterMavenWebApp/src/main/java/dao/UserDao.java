@@ -12,7 +12,7 @@ public interface UserDao {
 
     User getUserByUsername(String username);
 
-    List<Tweet> getRecentTweets(User user);
+    List<Tweet> getRecentTweets(User user, int offset, int limit);
 
     List<User> getFollowers(User user);
 
