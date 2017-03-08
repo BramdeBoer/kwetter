@@ -17,14 +17,21 @@ public class UserDaoColl implements UserDao {
         users = new ArrayList<User>();
     }
 
+    public User addUser(User user) {
+        if (!this.users.contains(user)) {
+            this.users.add(user);
+            return user;
+        }
+        return null;
+    }
+
     public User getUserByUsername(String username) {
-        User foundUser = null;
         for (User user : this.users) {
-            if (user.getUsername().equals(username)) {
-                foundUser = user;
+            if (user.getUsername() != null && user.getUsername().equals(username)) {
+                return user;
             }
         }
-        return foundUser;
+        return null;
     }
 
     public List<Tweet> getRecentTweets(User user, int offset, int limit) {
@@ -41,25 +48,5 @@ public class UserDaoColl implements UserDao {
 
     public List<Tweet> getTimelineTweets(User user, int offset, int limit) {
         return user.getTimelineTweets(offset, limit);
-    }
-
-    public boolean setAvatar(User user, String url) {
-        return user.setAvatarURL(url);
-    }
-
-    public boolean setWebsite(User user, String url) {
-        return user.setWebsiteURL(url);
-    }
-
-    public boolean setLocation(User user, String location) {
-        return user.setLocation(location);
-    }
-
-    public boolean setBio(User user, String bio) {
-        return user.setBio(bio);
-    }
-
-    public boolean setUsername(User user, String username) {
-        return user.setUsername(username);
     }
 }

@@ -9,7 +9,7 @@ public interface TweetDao {
 
     List<Tweet> findByContent(String query);
 
-    boolean create(String content, User user);
+    Tweet create(String content, User user);
 
     boolean remove(Tweet tweet);
 

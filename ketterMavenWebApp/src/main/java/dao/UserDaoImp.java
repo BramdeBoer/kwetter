@@ -20,6 +20,10 @@ public class UserDaoImp implements UserDao {
 
     }
 
+    public User addUser(User user) {
+        return null;
+    }
+
     public User getUserByUsername(String username) {
         return null;
     }
@@ -58,5 +62,25 @@ public class UserDaoImp implements UserDao {
 
     public boolean setUsername(User user, String username) {
         return false;
+    }
+
+    public String getBio(User u) {
+        return null;
+    }
+
+    public String getLocation(User u) {
+        return null;
+    }
+
+    public String getWebsiteURL(User u) {
+        return null;
+    }
+
+    public String getAvatarURL(User u) {
+        return null;
+    }
+
+    public String getUsername(User u) {
+        return null;
     }
 }

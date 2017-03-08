@@ -10,6 +10,8 @@ import java.util.List;
  */
 public interface UserDao {
 
+    User addUser(User user);
+
     User getUserByUsername(String username);
 
     List<Tweet> getRecentTweets(User user, int offset, int limit);
@@ -19,18 +21,4 @@ public interface UserDao {
     List<User> getFollowing(User user);
 
     List<Tweet> getTimelineTweets(User user, int offset, int limit);
-
-    boolean setAvatar(User user, String url);
-
-    boolean setWebsite(User user, String url);
-
-    boolean setLocation(User user, String location);
-
-    boolean setBio(User user, String bio);
-
-    boolean setUsername(User user, String username);
-
-
-
-
 }

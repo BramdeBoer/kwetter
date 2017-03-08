@@ -144,6 +144,13 @@ public class ModelTest extends TestCase {
         assertEquals(testString, u.getUsername());
     }
 
+    public void testSetLocation() throws Exception {
+        String testString = "Woensel";
+        User u = new User();
+        u.setLocation(testString);
+        assertEquals(testString, u.getLocation());
+    }
+
     public void testGetFollowing() throws Exception {
         assertEquals(3, user1.getFollowing().size());
     }
@@ -151,5 +158,10 @@ public class ModelTest extends TestCase {
     public void testGetFollowers() throws Exception {
         assertEquals(2, user3.getFollowers().size());
         assertEquals(0, user1.getFollowers().size());
+    }
+
+    public void testRemoveTweet() throws Exception{
+        user1.removeTweet(tweet1);
+        assertEquals(0, user1.getTweets().size());
     }
 }

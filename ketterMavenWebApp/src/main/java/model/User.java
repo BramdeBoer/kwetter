@@ -55,7 +55,14 @@ public class User {
     }
 
     public List<Tweet> getRecentTweets(int offset, int limit){
-        return tweets.subList(offset, offset + limit);
+        ArrayList<Tweet> result = new ArrayList<Tweet>(getTweets());
+
+        Collections.sort(result);
+        if (result.size() >= offset + limit){
+            return result.subList(offset, offset + limit);
+        } else {
+            return result.subList(offset, result.size());
+        }
     }
 
     public void likeTweet(Tweet tweet){
@@ -71,7 +78,7 @@ public class User {
         Collections.sort(result);
         if (result.size() >= offset + limit){
             return result.subList(offset, offset + limit);
-        }else {
+        } else {
             return result.subList(offset, result.size());
         }
     }
@@ -135,5 +142,15 @@ public class User {
 
     public List<Tweet> getTweets() {
         return tweets;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public boolean removeTweet(Tweet tweet){
+        if (this.tweets.contains(tweet))
+            return tweets.remove(tweet);
+        return false;
     }
 }

@@ -13,8 +13,8 @@ public class TweetDaoImp implements TweetDao{
         return null;
     }
 
-    public boolean create(String content, User user) {
-        return false;
+    public Tweet create(String content, User user) {
+        return null;
     }
 
     public boolean remove(Tweet tweet) {

@@ -57,4 +57,8 @@ public class Tweet implements Comparable<Tweet> {
     public List<User> getLikedBy() {
         return likedBy;
     }
+
+    public User getCreatedBy() {
+        return createdBy;
+    }
 }

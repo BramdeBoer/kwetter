@@ -26,18 +26,19 @@ public class TweetDaoColl implements TweetDao {
         return foundTweets;
     }
 
-    public boolean create(String content, User user) {
+    public Tweet create(String content, User user) {
         Tweet newTweet = new Tweet(content, user);
         if (!this.tweets.contains(newTweet)) {
             this.tweets.add(newTweet);
-            return true;
+            return newTweet;
         }
-        return false;
+        return null;
     }
 
     public boolean remove(Tweet tweet) {
         if (this.tweets.contains(tweet)) {
             this.tweets.remove(tweet);
+            tweet.getCreatedBy().removeTweet(tweet);
             return true;
         }
         return false;
