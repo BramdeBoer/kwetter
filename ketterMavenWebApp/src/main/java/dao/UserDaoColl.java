@@ -4,12 +4,15 @@ import model.Tweet;
 import model.User;
 
 import javax.annotation.PostConstruct;
+import javax.ejb.Stateless;
+import javax.enterprise.inject.Default;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by bramd on 6-3-2017.
  */
+@Stateless @Default
 public class UserDaoColl implements UserDao {
     private List<User> users;
 

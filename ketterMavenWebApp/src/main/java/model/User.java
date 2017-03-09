@@ -9,6 +9,12 @@ import java.util.Collections;
 import java.util.List;
 
 @Entity @Model
+@NamedQueries({
+        @NamedQuery(name="user.findByName",
+                query="SELECT u FROM User u WHERE u.username LIKE :username"),
+        @NamedQuery(name="user.getRecentTweets",
+                query="SELECT u FROM User u WHERE u.username LIKE :username")
+})
 public class User {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,9 +26,6 @@ public class User {
     private String avatarURL;
     private String websiteURL;
     private String username;
-    private String password;
-
-
 
     @ManyToMany
     private List<User> following;

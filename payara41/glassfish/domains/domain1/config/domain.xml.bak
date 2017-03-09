@@ -490,7 +490,7 @@
     <application context-root="/kwetter" object-type="user" name="kwetter" directory-deployed="true" location="file:/C:/Users/bramd/Documents/GitHub/kwetter/ketterMavenWebApp/target/kwetter/">
       <property name="archiveType" value="war"></property>
       <property name="appLocation" value="file:/C:/Users/bramd/Documents/GitHub/kwetter/ketterMavenWebApp/target/kwetter/"></property>
-      <property name="org.glassfish.ejb.container.application_unique_id" value="97570045196894208"></property>
+      <property name="org.glassfish.ejb.container.application_unique_id" value="97587620083269632"></property>
       <property name="defaultAppName" value="kwetter"></property>
       <module name="kwetter">
         <engine sniffer="ejb"></engine>

@@ -3,12 +3,15 @@ package dao;
 import model.Tweet;
 import model.User;
 
+import javax.ejb.Stateless;
+import javax.enterprise.inject.Default;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by bramd on 6-3-2017.
  */
+@Stateless @Default
 public class TweetDaoColl implements TweetDao {
     private List<Tweet> tweets;
 
