@@ -1,0 +1,67 @@
+/* AUTOMATICALLY GENERATED ON Mon Mar 13 15:35:35 CET 2017*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "TweetRest", "create,Local,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "UserRest", "newUser,Local,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "WebLogService", "getPostings,Local,";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoColl", "getUsers,Local,";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoColl", "addUser,Local,model.User";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoImp", "getFollowers,Local,model.User";
+  permission javax.security.jacc.EJBMethodPermission "TweetDaoImp", "remove,Local,model.Tweet";
+  permission javax.security.jacc.EJBMethodPermission "TweetDaoImp", "findByContent,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoColl", "getRecentTweets,Local,model.User,int,int";
+  permission javax.security.jacc.EJBMethodPermission "TweetDaoColl", "create,Local,java.lang.String,model.User";
+  permission javax.security.jacc.EJBMethodPermission "TweetDaoColl", "getTweet,Local,int";
+  permission javax.security.jacc.EJBMethodPermission "UserRest", "getFollowing,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "TweetService", "create,Local,java.lang.String,model.User";
+  permission javax.security.jacc.EJBMethodPermission "UserService", "getTimelineTweets,Local,model.User,int,int";
+  permission javax.security.jacc.EJBMethodPermission "UserRest", "getRecentTweets,Local,java.lang.String,int,int";
+  permission javax.security.jacc.EJBMethodPermission "TweetDaoColl", "remove,Local,model.Tweet";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoImp", "getFollowing,Local,model.User";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoColl", "getFollowing,Local,model.User";
+  permission javax.security.jacc.EJBMethodPermission "WebLogService", "addPosting,Local,model.Posting,model.User";
+  permission javax.security.jacc.EJBMethodPermission "TweetService", "getTweet,Local,int";
+  permission javax.security.jacc.EJBMethodPermission "UserService", "getRecentTweets,Local,model.User,int,int";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoColl", "getTimelineTweets,Local,model.User,int,int";
+  permission javax.security.jacc.EJBMethodPermission "TweetDaoColl", "findByContent,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "UserService", "getUserByUsername,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "UserRest", "getFollowers,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "TweetService", "findByContent,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoImp", "getUsers,Local,";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoImp", "getTimelineTweets,Local,model.User,int,int";
+  permission javax.security.jacc.EJBMethodPermission "PostingDaoImp", "findAll,Local,";
+  permission javax.security.jacc.EJBMethodPermission "UserRest", "getTimelineTweets,Local,java.lang.String,int,int";
+  permission javax.security.jacc.EJBMethodPermission "PostingDaoImp", "find,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "TweetService", "remove,Local,model.Tweet";
+  permission javax.security.jacc.EJBMethodPermission "PostingDaoImp", "create,Local,model.Posting";
+  permission javax.security.jacc.EJBMethodPermission "UserService", "getFollowers,Local,model.User";
+  permission javax.security.jacc.EJBMethodPermission "UserRest", "getUsers,Local,";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoColl", "getFollowers,Local,model.User";
+  permission javax.security.jacc.EJBMethodPermission "TweetDaoImp", "getTweet,Local,int";
+  permission javax.security.jacc.EJBMethodPermission "UserService", "getUsers,Local,";
+  permission javax.security.jacc.EJBMethodPermission "UserService", "addUser,Local,model.User";
+  permission javax.security.jacc.EJBMethodPermission "TweetRest", "remove,Local,int";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoImp", "addUser,Local,model.User";
+  permission javax.security.jacc.EJBMethodPermission "TweetDaoImp", "create,Local,java.lang.String,model.User";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoColl", "getUserByUsername,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "UserRest", "getUserByUsername,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoImp", "getRecentTweets,Local,model.User,int,int";
+  permission javax.security.jacc.EJBMethodPermission "UserDaoImp", "getUserByUsername,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "UserService", "getFollowing,Local,model.User";
+  permission javax.security.jacc.EJBMethodPermission "TweetRest", "findTweetByContent,Local,java.lang.String";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "UserDaoColl", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "TweetDaoColl", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "UserRest", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "WebLogService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "UserService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "TweetRest", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "TweetDaoImp", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "PostingDaoImp", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "UserDaoImp", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "TweetService", "**";
+};
+

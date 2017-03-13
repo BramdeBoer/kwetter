@@ -28,6 +28,10 @@ public class UserDaoColl implements UserDao {
         return null;
     }
 
+    public List<User> getUsers() {
+        return this.users;
+    }
+
     public User getUserByUsername(String username) {
         for (User user : this.users) {
             if (user.getUsername() != null && user.getUsername().equals(username)) {

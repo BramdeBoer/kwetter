@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface TweetDao {
 
+    Tweet getTweet(int id);
+
     List<Tweet> findByContent(String query);
 
     Tweet create(String content, User user);

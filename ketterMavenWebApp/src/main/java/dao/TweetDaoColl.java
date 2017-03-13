@@ -19,6 +19,15 @@ public class TweetDaoColl implements TweetDao {
         this.tweets = new ArrayList<Tweet>();
     }
 
+    public Tweet getTweet(int id) {
+        for (Tweet tweet : this.tweets) {
+            if (tweet.getId() == id) {
+                return tweet;
+            }
+        }
+        return null;
+    }
+
     public List<Tweet> findByContent(String query) {
         List<Tweet> foundTweets = new ArrayList<Tweet>();
         for (Tweet tweet : this.tweets) {

@@ -61,4 +61,8 @@ public class Tweet implements Comparable<Tweet> {
     public User getCreatedBy() {
         return createdBy;
     }
+
+    public long getId() {
+        return id;
+    }
 }

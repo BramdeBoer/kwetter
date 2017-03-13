@@ -12,6 +12,8 @@ public interface UserDao {
 
     User addUser(User user);
 
+    List<User> getUsers();
+
     User getUserByUsername(String username);
 
     List<Tweet> getRecentTweets(User user, int offset, int limit);

@@ -1,5 +1,6 @@
 package service;
 
+import dao.JPA;
 import dao.UserDao;
 import dao.UserDaoColl;
 import model.Tweet;
@@ -14,11 +15,15 @@ import java.util.List;
  */
 @Stateless
 public class UserService {
-    @Inject
+    @Inject @JPA
     private UserDao userDao;
 
     public UserService() {
         userDao = new UserDaoColl();
+    }
+
+    public List<User> getUsers() {
+        return userDao.getUsers();
     }
 
     public User addUser(User user) {

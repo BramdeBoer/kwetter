@@ -11,9 +11,9 @@ import java.util.List;
 @Entity @Model
 @NamedQueries({
         @NamedQuery(name="user.findByName",
-                query="SELECT u FROM User u WHERE u.username LIKE :username"),
+                query="SELECT u FROM User u WHERE u.username LIKE CONCAT('%',:username,'%')"),
         @NamedQuery(name="user.getRecentTweets",
-                query="SELECT u FROM User u WHERE u.username LIKE :username")
+                query="SELECT u FROM User u WHERE u.username LIKE CONCAT('%',:username,'%')")
 })
 public class User {
 

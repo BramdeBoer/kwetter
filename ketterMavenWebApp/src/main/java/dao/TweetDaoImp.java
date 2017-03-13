@@ -14,8 +14,18 @@ import java.util.List;
  */
 @Stateless @JPA
 public class TweetDaoImp implements TweetDao{
-    @PersistenceContext(unitName = "KwetterPU", type = PersistenceContextType.EXTENDED)
+    @PersistenceContext(unitName = "KwetterPU")
     EntityManager em;
+
+    public Tweet getTweet(int id) {
+        Tweet tweet;
+        try{
+            tweet = em.find(Tweet.class, id);
+        }catch (Exception ex){
+            tweet = null;
+        }
+        return tweet;
+    }
 
     public List<Tweet> findByContent(String query) {
         return null;
@@ -24,10 +34,8 @@ public class TweetDaoImp implements TweetDao{
     public Tweet create(String content, User user) {
         Tweet tweet = null;
         try{
-            em.getTransaction().begin();
             tweet = new Tweet(content, user);
             em.persist(tweet);
-            em.getTransaction().commit();
         }catch (Exception ex){
             System.out.println(ex.getMessage());
             tweet = null;
@@ -37,9 +45,7 @@ public class TweetDaoImp implements TweetDao{
 
     public boolean remove(Tweet tweet) {
         try{
-            em.getTransaction().begin();
             em.remove(tweet);
-            em.getTransaction().commit();
         }catch (Exception ex){
             System.out.println(ex.getMessage());
             return false;

@@ -1,9 +1,12 @@
 package service;
 
+import dao.JPA;
+import dao.TweetDao;
 import dao.TweetDaoColl;
 import model.Tweet;
 import model.User;
 
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +14,14 @@ import java.util.List;
 /**
  * Created by bramd on 9-3-2017.
  */
+@Stateless
 public class TweetService {
-    @Inject
-    private TweetDaoColl tweetDao;
+    @Inject @JPA
+    private TweetDao tweetDao;
+
+    public Tweet getTweet(int id){
+        return tweetDao.getTweet(id);
+    }
 
     public TweetService(){
         tweetDao = new TweetDaoColl();

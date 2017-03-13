@@ -15,7 +15,7 @@ import java.util.List;
  */
 @Stateless @JPA
 public class UserDaoImp implements UserDao {
-    @PersistenceContext(unitName = "KwetterPU", type = PersistenceContextType.EXTENDED)
+    @PersistenceContext(unitName = "KwetterPU")
     EntityManager em;
 
     public UserDaoImp() {
@@ -24,9 +24,7 @@ public class UserDaoImp implements UserDao {
 
     public User addUser(User user) {
         try{
-            em.getTransaction().begin();
             em.persist(user);
-            em.getTransaction().commit();
         }catch (Exception ex){
             System.out.println(ex.getMessage());
             user = null;
@@ -34,11 +32,18 @@ public class UserDaoImp implements UserDao {
         return user;
     }
 
+    public List<User> getUsers() {
+        List<User> results = em
+                .createQuery("Select u from User u", User.class)
+                .getResultList();
+        return results;
+    }
+
     public User getUserByUsername(String username) {
         User user;
         try{
-            TypedQuery<User> query = em.createNamedQuery("user.findByUsername", User.class);
-            query.setParameter("useruame", username);
+            TypedQuery<User> query = em.createNamedQuery("user.findByName", User.class);
+            query.setParameter("username", username);
             user = query.getSingleResult();
         }catch (Exception ex){
             user = null;
