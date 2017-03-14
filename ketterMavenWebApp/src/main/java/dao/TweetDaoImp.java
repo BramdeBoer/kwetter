@@ -22,22 +22,33 @@ public class TweetDaoImp implements TweetDao{
         try{
             tweet = em.find(Tweet.class, id);
         }catch (Exception ex){
+            System.out.println("ERROR " + ex.getMessage());
             tweet = null;
         }
         return tweet;
     }
 
     public List<Tweet> findByContent(String query) {
-        return null;
+        List tweets;
+        try{
+            tweets = em.createQuery("SELECT t FROM Tweet t where t.content = :content")
+                        .setParameter("content", query).getResultList();
+            return tweets;
+        }catch (Exception ex){
+            System.out.println("ERROR " + ex.getMessage());
+            tweets = null;
+        }
+        return tweets;
     }
 
     public Tweet create(String content, User user) {
-        Tweet tweet = null;
+        Tweet tweet;
         try{
             tweet = new Tweet(content, user);
+            System.out.println(tweet.toString());
             em.persist(tweet);
         }catch (Exception ex){
-            System.out.println(ex.getMessage());
+            System.out.println("ERROR " + ex.getMessage());
             tweet = null;
         }
         return tweet;
@@ -47,7 +58,7 @@ public class TweetDaoImp implements TweetDao{
         try{
             em.remove(tweet);
         }catch (Exception ex){
-            System.out.println(ex.getMessage());
+            System.out.println("ERROR " + ex.getMessage());
             return false;
         }
         return true;

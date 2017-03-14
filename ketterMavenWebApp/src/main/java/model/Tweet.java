@@ -25,13 +25,13 @@ public class Tweet implements Comparable<Tweet> {
     public Tweet() {
     }
 
-    public Tweet(String content, User creater) {
+    public Tweet(String content, User createdBy) {
         this.content = content;
-        this.createdBy = creater;
+        this.createdBy = createdBy;
         this.date = new Date(System.currentTimeMillis());
         this.likedBy = new ArrayList();
 
-        creater.addTweet(this);
+        createdBy.addTweet(this);
     }
 
     public boolean addLike(User user){
@@ -64,5 +64,36 @@ public class Tweet implements Comparable<Tweet> {
 
     public long getId() {
         return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public void setCreatedBy(User createdBy) {
+        this.createdBy = createdBy;
+    }
+
+    public void setLikedBy(List<User> likedBy) {
+        this.likedBy = likedBy;
+    }
+
+    @Override
+    public String toString() {
+        return "Tweet{" +
+                "id=" + id +
+                ", content='" + content + '\'' +
+                ", date=" + date +
+                ", createdBy=" + createdBy +
+                ", likedBy=" + likedBy +
+                '}';
     }
 }

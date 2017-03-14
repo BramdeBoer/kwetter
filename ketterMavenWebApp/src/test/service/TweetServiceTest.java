@@ -5,6 +5,7 @@ import dao.TweetDaoColl;
 import junit.framework.TestCase;
 import model.Tweet;
 import model.User;
+import org.junit.runner.RunWith;
 
 /**
  * Created by bramd on 9-3-2017.

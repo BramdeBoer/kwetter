@@ -84,7 +84,8 @@ public class UserDaoImp implements UserDao {
     public List<Tweet> getTimelineTweets(User user, int offset, int limit) {
         List<Tweet> tweets;
         try{
-            tweets = em.find(User.class, user).getTimelineTweets(offset, limit);
+            System.out.println( em.find(User.class, user.getId()).getUsername());
+            tweets = em.find(User.class, user.getId()).getTimelineTweets(offset, limit);
         }catch (Exception ex){
             tweets = null;
         }

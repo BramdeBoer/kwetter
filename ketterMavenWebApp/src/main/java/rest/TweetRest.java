@@ -34,7 +34,9 @@ public class TweetRest {
     @POST
     @Path("{content}/{username}")
     public Tweet create(@PathParam("content") String content, @PathParam("username") String username) {
-        return tweetService.create(content, userService.getUserByUsername(username));
+        Tweet tweet = tweetService.create(content, userService.getUserByUsername(username));
+        System.out.println(tweet.toString());
+        return tweet;
     }
 
     @DELETE

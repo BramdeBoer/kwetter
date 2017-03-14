@@ -24,7 +24,7 @@ public class TweetService {
     }
 
     public TweetService(){
-        tweetDao = new TweetDaoColl();
+        //tweetDao = new TweetDao();
     }
 
     public List<Tweet> findByContent(String query) {

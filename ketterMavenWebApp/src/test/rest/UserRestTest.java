@@ -3,6 +3,7 @@ package rest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.TypeFactory;
 import junit.framework.TestCase;
+import model.Tweet;
 import model.User;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -20,9 +21,13 @@ import java.util.List;
 public class UserRestTest extends TestCase {
 
     ObjectMapper mapper;
+    DatabaseCleaner databaseCleaner;
 
     public void setUp() throws Exception {
         super.setUp();
+        databaseCleaner = new DatabaseCleaner(Persistence.createEntityManagerFactory("KwetterPU").createEntityManager());
+        databaseCleaner.clean();
+
         mapper = new ObjectMapper();
 
         HttpUriRequest request;
@@ -30,13 +35,19 @@ public class UserRestTest extends TestCase {
         request = new HttpPost("http://localhost:8080/kwetter/API/users/username1/name1");
         HttpClientBuilder.create().build().execute(request);
 
-
         request = new HttpPost("http://localhost:8080/kwetter/API/users/username2/name2");
+        HttpClientBuilder.create().build().execute(request);
+
+
+        request = new HttpPost("http://localhost:8080/kwetter/API/tweets/TWEETCONTENT1/username1");
+        HttpClientBuilder.create().build().execute(request);
+
+        request = new HttpPost("http://localhost:8080/kwetter/API/tweets/TWEETCONTENT2/username2");
         HttpClientBuilder.create().build().execute(request);
     }
 
     public void tearDown() throws Exception {
-        DatabaseCleaner databaseCleaner = new DatabaseCleaner(Persistence.createEntityManagerFactory("KwetterPU").createEntityManager());
+        databaseCleaner = new DatabaseCleaner(Persistence.createEntityManagerFactory("KwetterPU").createEntityManager());
         databaseCleaner.clean();
     }
 
@@ -58,19 +69,22 @@ public class UserRestTest extends TestCase {
         assertEquals("username1", resource.getUsername());
     }
 
-    public void testGetRecentTweets() throws Exception {
-        
-    }
+    public void testGetTweet() throws Exception {
+        HttpUriRequest request = new HttpGet("http://localhost:8080/kwetter/API/tweets/TWEETCONTENT1");
+        HttpResponse  httpResponse = HttpClientBuilder.create().build().execute(request);
 
-    public void testGetFollowers() throws Exception {
+        List<Tweet> resource = mapper.readValue(httpResponse.getEntity().getContent(), TypeFactory.defaultInstance().constructCollectionType(List.class, Tweet.class));
 
-    }
-
-    public void testGetFollowing() throws Exception {
-
+        assertEquals("username1", resource.get(0).getCreatedBy().getUsername());
     }
 
     public void testGetTimelineTweets() throws Exception {
+        HttpUriRequest request = new HttpGet("http://localhost:8080/kwetter/API/users/username1/timeline/0/5");
+        HttpResponse  httpResponse = HttpClientBuilder.create().build().execute(request);
+
+        List<Tweet> resource = mapper.readValue(httpResponse.getEntity().getContent(), TypeFactory.defaultInstance().constructCollectionType(List.class, Tweet.class));
+
+        assertEquals(1, resource.size());
 
     }
 

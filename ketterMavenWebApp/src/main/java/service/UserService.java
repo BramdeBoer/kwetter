@@ -19,7 +19,7 @@ public class UserService {
     private UserDao userDao;
 
     public UserService() {
-        userDao = new UserDaoColl();
+        //userDao = new UserDaoColl();
     }
 
     public List<User> getUsers() {
