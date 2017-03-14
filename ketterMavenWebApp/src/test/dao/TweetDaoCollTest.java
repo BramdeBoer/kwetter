@@ -11,17 +11,10 @@ public class TweetDaoCollTest extends TestCase {
 
     TweetDao tweetdao;
 
-    User user1;
-    User user2;
-    User user3;
-    User user4;
-    User user5;
 
-    Tweet tweet1;
-    Tweet tweet2;
-    Tweet tweet3;
-    Tweet tweet4;
-    Tweet tweet5;
+    User user1, user2, user3, user4, user5;
+
+    Tweet tweet1, tweet2, tweet3, tweet4, tweet5;
 
     public void setUp() throws Exception {
         super.setUp();

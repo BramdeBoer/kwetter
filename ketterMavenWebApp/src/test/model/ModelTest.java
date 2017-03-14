@@ -7,27 +7,10 @@ import junit.framework.TestCase;
  */
 public class ModelTest extends TestCase {
 
-    User user1;
-    User user2;
-    User user3;
-    User user4;
-    User user5;
-    User user6;
-    User user7;
-    User user8;
-    User user9;
-    User user10;
 
-    Tweet tweet1;
-    Tweet tweet2;
-    Tweet tweet3;
-    Tweet tweet4;
-    Tweet tweet5;
-    Tweet tweet6;
-    Tweet tweet7;
-    Tweet tweet8;
-    Tweet tweet9;
-    Tweet tweet10;
+    User user1, user2, user3, user4, user5, user6, user7, user8, user9, user10;
+
+    Tweet tweet1, tweet2, tweet3, tweet4, tweet5, tweet6, tweet7, tweet8, tweet9, tweet10;
 
     public void setUp() throws Exception {
         super.setUp();

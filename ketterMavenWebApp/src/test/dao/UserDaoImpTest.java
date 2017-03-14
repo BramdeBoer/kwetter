@@ -3,14 +3,17 @@ package dao;
 import junit.framework.TestCase;
 import model.Tweet;
 import model.User;
+import org.jglue.cdiunit.CdiRunner;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
+import util.DatabaseCleaner;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Persistence;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,39 +22,27 @@ import static org.mockito.Mockito.mock;
 /**
  * Created by bramd on 9-3-2017.
  */
-@RunWith(MockitoJUnitRunner.class)
+//@RunWith(CdiRunner.class)
 public class UserDaoImpTest extends TestCase {
-    @Mock
+
     UserDao userdao;
 
-    User user1;
-    User user2;
-    User user3;
-    User user4;
-    User user5;
-    User user6;
-    User user7;
-    User user8;
-    User user9;
-    User user10;
+    DatabaseCleaner databaseCleaner;
 
-    Tweet tweet1;
-    Tweet tweet2;
-    Tweet tweet3;
-    Tweet tweet4;
-    Tweet tweet5;
-    Tweet tweet6;
-    Tweet tweet7;
-    Tweet tweet8;
-    Tweet tweet9;
-    Tweet tweet10;
+    User user1, user2, user3, user4, user5, user6, user7, user8, user9, user10;
+
+    Tweet tweet1, tweet2, tweet3, tweet4, tweet5, tweet6, tweet7, tweet8, tweet9, tweet10;
 
     @Before
     public void setUp() throws Exception {
         super.setUp();
 
+
+        databaseCleaner = new DatabaseCleaner(Persistence.createEntityManagerFactory("KwetterPU").createEntityManager());
+        databaseCleaner.clean();
+
         userdao = new UserDaoImp();
-        ((UserDaoImp)userdao).em = mock(EntityManager.class);
+        ((UserDaoImp)userdao).em = Persistence.createEntityManagerFactory("KwetterPU").createEntityManager();
 
         user1 = userdao.addUser(new User());
         tweet1 = new Tweet("1 #TEST", user1);
@@ -96,6 +87,8 @@ public class UserDaoImpTest extends TestCase {
     @After
     public void tearDown() throws Exception {
 
+        databaseCleaner = new DatabaseCleaner(Persistence.createEntityManagerFactory("KwetterPU").createEntityManager());
+        databaseCleaner.clean();
     }
 
     @Test
