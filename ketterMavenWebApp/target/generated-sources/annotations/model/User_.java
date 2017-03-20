@@ -7,7 +7,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 import model.Tweet;
 import model.User;
 
-@Generated(value="EclipseLink-2.6.0.v20150330-rNA", date="2017-03-14T14:14:54")
+@Generated(value="EclipseLink-2.6.0.v20150330-rNA", date="2017-03-20T10:43:31")
 @StaticMetamodel(User.class)
 public class User_ { 
 

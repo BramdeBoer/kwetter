@@ -3,13 +3,9 @@ package dao;
 import junit.framework.TestCase;
 import model.Tweet;
 import model.User;
-import org.jglue.cdiunit.CdiRunner;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
 import util.DatabaseCleaner;
 
 import javax.persistence.EntityManager;
@@ -17,7 +13,6 @@ import javax.persistence.Persistence;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.mockito.Mockito.mock;
 
 /**
  * Created by bramd on 9-3-2017.
