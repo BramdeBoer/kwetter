@@ -1,9 +1,8 @@
-/* AUTOMATICALLY GENERATED ON Mon Mar 20 10:43:51 CET 2017*/
+/* AUTOMATICALLY GENERATED ON Wed Mar 22 11:01:03 CET 2017*/
 /* DO NOT EDIT */
 
 grant {
-  permission javax.security.jacc.WebResourcePermission "/";
-  permission javax.security.jacc.WebUserDataPermission "/";
+  permission javax.security.jacc.WebUserDataPermission "/*";
 };
 
 grant      principal * * {
@@ -13,5 +12,9 @@ grant      principal * * {
   permission javax.security.jacc.WebRoleRefPermission "kwetter", "**";
   permission javax.security.jacc.WebRoleRefPermission "default", "**";
   permission javax.security.jacc.WebRoleRefPermission "rest.ConfigRest", "**";
+};
+
+grant      principal org.glassfish.security.common.Group "regulars" {
+  permission javax.security.jacc.WebResourcePermission "/*";
 };
 

@@ -27,14 +27,30 @@ public class TweetService {
         //tweetDao = new TweetDao();
     }
 
+    /**
+     * Search tweets with content contain query
+     * @param query
+     * @return List of tweets
+     */
     public List<Tweet> findByContent(String query) {
         return tweetDao.findByContent(query);
     }
 
+    /**
+     * Create a tweet
+     * @param content
+     * @param user
+     * @return Tweet thats created if succesfull
+     */
     public Tweet create(String content, User user) {
         return tweetDao.create(content, user);
     }
 
+    /**
+     * Remove tweet
+     * @param tweet
+     * @return return true if success, false if not
+     */
     public boolean remove(Tweet tweet) {
         return tweetDao.remove(tweet);
     }

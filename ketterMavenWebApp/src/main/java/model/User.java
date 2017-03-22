@@ -26,6 +26,7 @@ public class User {
     private String avatarURL;
     private String websiteURL;
     private String username;
+    private String password;
 
     @ManyToMany
     private List<User> following;
@@ -33,12 +34,15 @@ public class User {
     private List<User> followers;
     @ManyToMany
     private List<Tweet> tweets;
+    @ManyToMany(mappedBy = "users")
+    private List<Group> groups;
 
     public User() {
         this.avatarURL = "/default/placeholder.png";
         this.tweets = new ArrayList<Tweet>();
         this.following = new ArrayList<User>();
         this.followers = new ArrayList<User>();
+        this.groups = new ArrayList<Group>();
     }
 
     public void addTweet(Tweet tweet){
@@ -159,5 +163,9 @@ public class User {
 
     public long getId() {
         return id;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }

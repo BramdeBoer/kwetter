@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * Created by bramd on 13-3-2017.
  */
-public class UserRestTest extends TestCase {
+public class RestTest extends TestCase {
 
     ObjectMapper mapper;
     DatabaseCleaner databaseCleaner;
