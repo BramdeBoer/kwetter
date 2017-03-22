@@ -3,17 +3,21 @@ package service;
 import dao.JPA;
 import dao.TweetDao;
 import dao.TweetDaoColl;
+import interceptor.VolgTrend;
+import interceptor.VolgTrendInterceptor;
 import model.Tweet;
 import model.User;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
+import javax.interceptor.Interceptors;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by bramd on 9-3-2017.
  */
+@Interceptors(VolgTrendInterceptor.class)
 @Stateless
 public class TweetService {
     @Inject @JPA
@@ -42,6 +46,7 @@ public class TweetService {
      * @param user
      * @return Tweet thats created if succesfull
      */
+    @VolgTrend
     public Tweet create(String content, User user) {
         return tweetDao.create(content, user);
     }

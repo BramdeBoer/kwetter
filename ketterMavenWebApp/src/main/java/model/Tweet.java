@@ -1,5 +1,7 @@
 package model;
 
+import interceptor.VolgTrend;
+
 import javax.enterprise.inject.Model;
 import javax.persistence.*;
 import java.util.ArrayList;
