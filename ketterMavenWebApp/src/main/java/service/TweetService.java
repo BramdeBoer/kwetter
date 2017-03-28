@@ -48,6 +48,8 @@ public class TweetService {
      */
     @VolgTrend
     public Tweet create(String content, User user) {
+
+        System.out.println("SERVICE CREATE");
         return tweetDao.create(content, user);
     }
 

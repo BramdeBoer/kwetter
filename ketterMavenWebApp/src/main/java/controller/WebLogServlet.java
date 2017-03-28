@@ -15,7 +15,7 @@ import model.User;
 @WebServlet(name = "kwetter", urlPatterns = {"/kwetter"})
 public class WebLogServlet extends HttpServlet {
 
-    @Inject
+    //@Inject
     //WebLogService webLogService;
     //User user = new User("JEA");
 
