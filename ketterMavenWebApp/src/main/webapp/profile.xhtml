@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Profile - #{UserBean.user.username}</title>
+    </h:head>
+    <f:metadata>
+        <f:viewParam name="nameId" value="#{UserBean.username}" required="false"/>
+        <f:event type="preRenderComponent" listener="#{UserBean.loadUser()}"/>
+    </f:metadata>
+
+    <h:body>
+        <img src="/kwetter#{UserBean.user.avatarURL}"  alt=""/>
+        <h:panelGrid columns="2">
+            <h:outputLabel value ="Username:"/>
+            <h:outputLabel value ="#{UserBean.user.username}"/>
+            <h:outputLabel value ="Name:"/>
+            <h:outputLabel value ="#{UserBean.user.name}"/>
+            <h:outputLabel value ="Bio:"/>
+            <h:outputLabel value ="#{UserBean.user.bio}"/>
+        </h:panelGrid>
+
+        <h:dataTable value="#{UserBean.getRecentTweets(UserBean.user, 0, 50)}" var="tweet">
+            <h:column>
+                <h:outputText value="#{tweet.content}" />
+            </h:column>
+        </h:dataTable>
+    </h:body>
+</html>
+

@@ -80,6 +80,7 @@ public class TweetReader implements ItemReader {
                         } else if (item.content == null) {
                             item.content = parser.getString();
                             System.out.println("CONTENT " + item.content);
+                            itemFound = true;
                         }
                     }
                     break;

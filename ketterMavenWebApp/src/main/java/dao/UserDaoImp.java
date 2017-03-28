@@ -56,6 +56,7 @@ public class UserDaoImp implements UserDao {
         try{
             tweets = em.find(User.class, user).getRecentTweets(offset, limit);
         }catch (Exception ex){
+            System.out.println(ex.getMessage());
             tweets = null;
         }
         return tweets;
