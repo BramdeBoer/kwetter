@@ -46,6 +46,7 @@ public class UserDaoImp implements UserDao {
             query.setParameter("username", username);
             user = query.getSingleResult();
         }catch (Exception ex){
+            System.out.println("AAAAAAAAAAAAAAAAAAAA" +  ex);
             user = null;
         }
         return user;
@@ -54,9 +55,10 @@ public class UserDaoImp implements UserDao {
     public List<Tweet> getRecentTweets(User user, int offset, int limit) {
         List<Tweet> tweets;
         try{
-            tweets = em.find(User.class, user).getRecentTweets(offset, limit);
+            tweets = em.find(User.class, user.getId()).getRecentTweets(offset, limit);
         }catch (Exception ex){
-            System.out.println(ex.getMessage());
+            System.out.println("AAAAAAAAAAAAAAAAAAAA" +  ex);
+            ex.printStackTrace(System.out);
             tweets = null;
         }
         return tweets;
@@ -65,7 +67,7 @@ public class UserDaoImp implements UserDao {
     public List<User> getFollowers(User user) {
         List<User> users;
         try{
-            users = em.find(User.class, user).getFollowers();
+            users = em.find(User.class, user.getId()).getFollowers();
         }catch (Exception ex){
             users = null;
         }
@@ -75,7 +77,7 @@ public class UserDaoImp implements UserDao {
     public List<User> getFollowing(User user) {
         List<User> users;
         try{
-            users = em.find(User.class, user).getFollowing();
+            users = em.find(User.class, user.getId()).getFollowing();
         }catch (Exception ex){
             users = null;
         }
@@ -91,5 +93,13 @@ public class UserDaoImp implements UserDao {
             tweets = null;
         }
         return tweets;
+    }
+
+    public void follow(User user, User followUser) {
+        try{
+            em.find(User.class, user.getId()).follow(followUser);
+        }catch (Exception ex){
+            System.out.println("AAAAAAAAAAAAAAAAAAAA" +  ex);
+        }
     }
 }

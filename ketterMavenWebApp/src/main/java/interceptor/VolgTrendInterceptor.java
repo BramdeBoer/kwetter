@@ -16,7 +16,6 @@ public class VolgTrendInterceptor {
 
     @AroundInvoke
     public Object aroundInvoke(InvocationContext ic) throws Exception {
-        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         Object[] params = ic.getParameters();
         params[0] = ((String)params[0]).replace("vet", "dik").replace("cool", "hard");
         ic.setParameters(params);

@@ -87,4 +87,8 @@ public class UserService {
     public List<Tweet> getTimelineTweets(User user, int offset, int limit) {
         return userDao.getTimelineTweets(user, offset, limit);
     }
+
+    public void follow(User user, User followUser){
+        userDao.follow(user, followUser);
+    }
 }

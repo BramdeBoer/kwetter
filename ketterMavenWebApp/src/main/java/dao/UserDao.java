@@ -23,4 +23,6 @@ public interface UserDao {
     List<User> getFollowing(User user);
 
     List<Tweet> getTimelineTweets(User user, int offset, int limit);
+
+    void follow(User user, User followUser);
 }

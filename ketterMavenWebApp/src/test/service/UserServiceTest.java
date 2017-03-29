@@ -3,6 +3,7 @@ package service;
 import junit.framework.TestCase;
 import model.Tweet;
 import model.User;
+import org.mockito.Mockito;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
  */
 public class UserServiceTest extends TestCase {
 
-    UserService userService;
+    UserService userService = Mockito.mock(UserService.class);
 
 
     User user1, user2, user3, user4, user5, user6, user7, user8, user9, user10;
@@ -21,7 +22,11 @@ public class UserServiceTest extends TestCase {
 
     public void setUp() throws Exception {
         super.setUp();
-        userService = new UserService();
+
+        Mockito.when(userService.addUser(new User())).thenReturn(new User());
+        Mockito.when(userService.getUserByUsername("Peter Monroe")).thenReturn(user1);
+        Mockito.when(userService.getUserByUsername("Theo Hubers")).thenReturn(user2);
+        Mockito.when(userService.getUserByUsername("Theo Hubers")).thenReturn(user8);
 
         user1 = userService.addUser(new User());
         tweet1 = new Tweet("1 #TEST", user1);
@@ -81,35 +86,4 @@ public class UserServiceTest extends TestCase {
         assertEquals(user8, userService.getUserByUsername("Hackerman"));
         assertEquals(null, userService.getUserByUsername("Herman"));
     }
-
-    public void testGetRecentTweets() throws Exception {
-        List<Tweet> user1Tweets = new ArrayList<Tweet>();
-        user1Tweets.add(tweet1);
-        assertEquals(user1Tweets, userService.getRecentTweets(user1, 0, 2));
-        user1Tweets.add(new Tweet("#11 Test", user1));
-        assertEquals(user1Tweets, userService.getRecentTweets(user1, 0, 2));
-    }
-
-    public void testGetFollowers() throws Exception {
-        List<User> userList = new ArrayList<User>();
-        userList.add(user1);
-        assertEquals(userList, userService.getFollowers(user2));
-        user2.follow(user3);
-        userList.add(user2);
-        assertEquals(userList, userService.getFollowers(user3));
-    }
-
-    public void testGetFollowing() throws Exception {
-        List<User> userList = new ArrayList<User>();
-        userList.add(user2);
-        userList.add(user3);
-        userList.add(user4);
-        assertEquals(userList, userService.getFollowing(user1));
-    }
-
-    public void testGetTimelineTweets() throws Exception {
-        assertEquals(4, userService.getTimelineTweets(user1, 0, 8).size());
-        assertEquals(tweet3, userService.getTimelineTweets(user1, 2, 1).get(0));
-    }
-
 }

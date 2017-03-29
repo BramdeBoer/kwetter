@@ -28,21 +28,27 @@ public class User {
     private String username;
     private String password;
 
-    @ManyToMany
+    @OneToMany @JoinTable( name = "user_follows")
     private List<User> following;
-    @ManyToMany
+    @OneToMany @JoinTable(name = "user_followers")
     private List<User> followers;
-    @ManyToMany
+    @OneToMany(mappedBy = "createdBy")
     private List<Tweet> tweets;
     @ManyToMany(mappedBy = "users")
     private List<Group> groups;
 
     public User() {
-        this.avatarURL = "/default/placeholder.png";
+        this.avatarURL = "/kwetter/default/placeholder.png";
         this.tweets = new ArrayList<Tweet>();
         this.following = new ArrayList<User>();
         this.followers = new ArrayList<User>();
+
         this.groups = new ArrayList<Group>();
+        Group group = new Group();
+        group.setGroupName("regulars");
+        this.groups.add(group);
+
+        this.password = "f148389d080cfe85952998a8a367e2f7eaf35f2d72d2599a5b0412fe4094d65c";
     }
 
     public void addTweet(Tweet tweet){

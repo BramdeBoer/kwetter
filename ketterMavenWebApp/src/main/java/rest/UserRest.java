@@ -41,6 +41,13 @@ public class UserRest {
         return userService.addUser(user);
     }
 
+
+    @POST
+    @Path("{username}/follow/{followUsername}")
+    public void follow(@PathParam("username") String username, @PathParam("followUsername") String followUsername) {
+        userService.follow(userService.getUserByUsername(username), userService.getUserByUsername(followUsername));
+    }
+
     @GET
     @Path("{username}/tweets/{offset}/{limit}")
     public List<Tweet> getRecentTweets(@PathParam("username") String username, @PathParam("offset") int offset, @PathParam("limit") int limit) {

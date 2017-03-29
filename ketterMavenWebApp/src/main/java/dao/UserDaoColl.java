@@ -56,4 +56,8 @@ public class UserDaoColl implements UserDao {
     public List<Tweet> getTimelineTweets(User user, int offset, int limit) {
         return user.getTimelineTweets(offset, limit);
     }
+
+    public void follow(User user, User followUser) {
+        user.follow(followUser);
+    }
 }

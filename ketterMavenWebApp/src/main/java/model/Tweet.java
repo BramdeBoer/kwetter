@@ -19,7 +19,7 @@ public class Tweet implements Comparable<Tweet> {
     private String content;
     private Date date;
 
-    @OneToOne
+    @ManyToOne
     private User createdBy;
     @OneToMany
     private List<User> likedBy;

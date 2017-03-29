@@ -28,7 +28,6 @@ public class StartUp {
     private void intData(){
         System.out.println("START IMPORT");
         jobOperator = BatchRuntime.getJobOperator();
-
         //execID = jobOperator.start("tweetimport", null);
     }
     
