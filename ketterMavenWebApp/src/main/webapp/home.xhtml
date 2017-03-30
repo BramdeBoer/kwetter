@@ -17,10 +17,10 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <h2>Whats happening?</h2>
-                    <h:inputText id="input" value="#{TweetBean.content}" />
-                    <h:commandButton value="Submit" action="#{indexBean.submit}" onclick="return check();"/>
-                    <h:outputText value="#{indexBean.userInput}"/>
-
+                    <h:form>
+                        <h:inputText id="input" placeholder="tell me" value="#{TweetBean.content}" />
+                        <h:commandButton value="Submit" action="#{TweetBean.create()}" onclick=""/>
+                    </h:form>
                 </div>
             </div>
 

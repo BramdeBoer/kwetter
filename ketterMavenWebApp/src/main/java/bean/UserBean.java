@@ -68,4 +68,7 @@ public class UserBean implements Serializable {
         this.setUser(user);
     }
 
+    public void setUsername(String username) {
+        this.username = username;
+    }
 }

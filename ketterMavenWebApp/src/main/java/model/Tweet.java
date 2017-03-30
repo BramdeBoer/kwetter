@@ -45,7 +45,7 @@ public class Tweet implements Comparable<Tweet> {
     }
 
     public int compareTo(Tweet o) {
-        return getDate().compareTo(o.getDate());
+        return o.getDate().compareTo(getDate());
     }
 
     public Date getDate() {

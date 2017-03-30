@@ -7,6 +7,8 @@ import service.TweetService;
 import service.UserService;
 
 import javax.enterprise.context.RequestScoped;
+import javax.faces.bean.ManagedProperty;
+import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
@@ -22,7 +24,12 @@ public class TweetBean implements Serializable {
     @Inject
     private TweetService tweetService;
 
+    @Inject
+    private UserService userService;
+    private String username = FacesContext.getCurrentInstance().getExternalContext().getRemoteUser();
+
     private User user;
+
     private String content;
 
     public Tweet getTweet(int id){
@@ -33,11 +40,42 @@ public class TweetBean implements Serializable {
         return tweetService.findByContent(query);
     }
 
-    public Tweet create(String content, User user) {
-        return tweetService.create(content, user);
+    public Tweet create() {
+        return tweetService.create(this.content, userService.getUserByUsername(username));
     }
 
     public boolean remove(Tweet tweet) {
         return tweetService.remove(tweet);
     }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void loadUser() {
+        User user = userService.getUserByUsername(username);
+        this.setUser(user);
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+
 }
