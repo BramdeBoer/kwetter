@@ -1,4 +1,4 @@
-/* AUTOMATICALLY GENERATED ON Wed Mar 29 12:21:49 CEST 2017*/
+/* AUTOMATICALLY GENERATED ON Thu Mar 30 22:45:01 CEST 2017*/
 /* DO NOT EDIT */
 
 grant {
@@ -8,8 +8,8 @@ grant {
 grant      principal * * {
   permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
   permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "LogoutServlet", "**";
   permission javax.security.jacc.WebRoleRefPermission "FacesServlet", "**";
-  permission javax.security.jacc.WebRoleRefPermission "kwetter", "**";
   permission javax.security.jacc.WebRoleRefPermission "default", "**";
   permission javax.security.jacc.WebRoleRefPermission "rest.ConfigRest", "**";
 };

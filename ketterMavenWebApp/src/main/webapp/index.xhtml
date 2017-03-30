@@ -6,6 +6,7 @@
     <h:head>
         <title>Home - #{UserBean.user.username}</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+        <h:outputStylesheet library="css" name="style.css"/>
     </h:head>
     <f:metadata>
         <f:viewParam name="nameId" value="#{UserBean.username}" required="false"/>
@@ -13,6 +14,11 @@
     </f:metadata>
 
     <h:body>
+        <h:form>
+            <h:commandLink value="Logout" action="#{UserBean.logout}" />
+        </h:form>
+        <a href="profile.xhtml"> Profile</a>
+
         <div class=".container" style="padding: 50px;">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
@@ -29,7 +35,7 @@
                     <h2>Timeline</h2>
                     <h:dataTable value="#{UserBean.getTimelineTweets(UserBean.user, 0, 50)}" var="_tweet">
                         <h:column>
-                            <div class="panel panel-default">
+                            <div class="panel panel-default container-full" style="width: 100%">
                                 <div class="panel-body">
                                     <h:outputText value="#{_tweet.createdBy.name}"/><br/>
                                     <h:outputText value="#{_tweet.content}"/><br/>

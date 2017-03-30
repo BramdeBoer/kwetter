@@ -1,0 +1,12 @@
+.user-image-small{
+    height: 50px;
+    width: 50px;
+}
+.user-image-big{
+    height: 170px;
+    width: 170px;
+}
+.container-full {
+    width: 100%;
+    position: relative;
+}

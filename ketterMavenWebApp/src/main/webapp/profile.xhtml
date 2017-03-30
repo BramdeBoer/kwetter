@@ -6,17 +6,20 @@
     <h:head>
         <title>Profile - #{UserBean.user.username}</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+        <h:outputStylesheet library="css" name="style.css"/>
     </h:head>
     <f:metadata>
         <f:viewParam name="nameId" value="#{UserBean.username}" required="false"/>
         <f:event type="preRenderComponent" listener="#{UserBean.loadUser()}"/>
     </f:metadata>
 
+    <a href="index.xhtml"> Home</a>
+
     <h:body>
         <div class=".container" style="padding: 50px;">
             <div class="row">
                 <div class="col-md-1 col-md-offset-2">
-                    <img src="#{UserBean.user.avatarURL}" style="width: 170px; height: 170px;" class="img-circle"  alt=""/>
+                    <img src="#{UserBean.user.avatarURL}" style="width: 170px; height: 170px;" class="img-circle user-image-big"  alt=""/>
                 </div>
                 <div class="col-md-6">
                     <dl class="dl-horizontal">
@@ -31,11 +34,11 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 col-md-offset-2">
+                <div class="col-md-3 col-md-offset-3">
                     <h2>Tweets #{UserBean.getRecentTweets(UserBean.user, 0, 50).size()}</h2>
                     <h:dataTable value="#{UserBean.getRecentTweets(UserBean.user, 0, 50)}" var="_tweet">
                         <h:column>
-                            <div class="panel panel-default">
+                            <div class="panel panel-default container-full">
                                 <div class="panel-body">
                                         <h:outputText value="#{_tweet.content}"/><br/>
                                         <h:outputText value="#{_tweet.date}"/>
@@ -46,12 +49,12 @@
                     </h:dataTable>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <h2>Followers #{UserBean.getFollowers(UserBean.user).size()}</h2>
                     <h:dataTable value="#{UserBean.getFollowers(UserBean.user)}" var="_follower">
                         <div id="followers">
                             <h:column>
-                                <img src="#{_follower.avatarURL}" style="width: 70px; height: 70px;" alt=""/>
+                                <img src="#{_follower.avatarURL}" class="img-circle user-image-small" alt=""/>
                                 <h:outputText value=" #{_follower.name}"/><br/>
                                 <!--<h:outputText value="#{_follower.username}"/>-->
                             </h:column>
@@ -60,12 +63,12 @@
                 </div>
 
 
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <h2>Following #{UserBean.getFollowing(UserBean.user).size()}</h2>
                     <h:dataTable value="#{UserBean.getFollowing(UserBean.user)}" var="_following">
                         <div id="following">
                             <h:column >
-                                <img src="#{_following.avatarURL}" style="width: 70px; height: 70px;" class="img-circle" alt=""/>
+                                <img src="#{_following.avatarURL}" class="img-circle user-image-small" alt=""/>
                                 <h:outputText value=" #{_following.name}"/><br/>
                                 <!--<h:outputText value="#{_following.username}"/>-->
                             </h:column>

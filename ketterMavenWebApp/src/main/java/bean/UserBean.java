@@ -27,12 +27,9 @@ public class UserBean implements Serializable {
         return user;
     }
 
-    public List<User> getUsers() {
-        return userService.getUsers();
-    }
-
-    public User addUser(User user) {
-        return userService.addUser(user);
+    public void logout(){
+        FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
+        FacesContext.getCurrentInstance().getApplication().getNavigationHandler().handleNavigation(FacesContext.getCurrentInstance(), null, "login.xhtml");
     }
 
     public User getUserByUsername(String username) {
