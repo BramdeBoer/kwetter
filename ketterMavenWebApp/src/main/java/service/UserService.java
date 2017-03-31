@@ -91,4 +91,18 @@ public class UserService {
     public void follow(User user, User followUser){
         userDao.follow(user, followUser);
     }
+
+
+    /**
+     * search user object by its username
+     * @param username
+     * @return user corresponding with username
+     */
+    public List<User> searchByUsername(String username) {
+        if(username.length() > 2){
+            return userDao.searchByUsername(username);
+        }
+        return null;
+    }
+
 }

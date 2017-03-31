@@ -23,6 +23,10 @@ public class UserBean implements Serializable {
     private User user;
     private String username = FacesContext.getCurrentInstance().getExternalContext().getRemoteUser();
 
+    private String query;
+
+    private List<User> searchUsers;
+
     public User getUser() {
         return user;
     }
@@ -67,5 +71,25 @@ public class UserBean implements Serializable {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getQuery() {
+        return query;
+    }
+
+    public void setQuery(String query) {
+        this.query = query;
+    }
+
+    public List<User> getSearchUsers() {
+        return searchUsers;
+    }
+
+    public void setSearchUsers(List<User> searchUsers) {
+        this.searchUsers = searchUsers;
+    }
+
+    public void searchByUsername(){
+        this.searchUsers = userService.searchByUsername(this.query);
     }
 }

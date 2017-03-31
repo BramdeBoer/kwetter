@@ -47,6 +47,7 @@ public class TweetDaoImp implements TweetDao{
             tweet = new Tweet(content, user);
             System.out.println(tweet.toString());
             em.persist(tweet);
+            em.merge(user);
         }catch (Exception ex){
             System.out.println("ERROR " + ex.getMessage());
             tweet = null;

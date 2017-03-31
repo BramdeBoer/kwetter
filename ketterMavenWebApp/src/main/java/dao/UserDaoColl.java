@@ -60,4 +60,9 @@ public class UserDaoColl implements UserDao {
     public void follow(User user, User followUser) {
         user.follow(followUser);
     }
+
+    @Override
+    public List<User> searchByUsername(String username) {
+        return null;
+    }
 }

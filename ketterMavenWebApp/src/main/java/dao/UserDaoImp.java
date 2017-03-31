@@ -102,4 +102,18 @@ public class UserDaoImp implements UserDao {
             System.out.println("AAAAAAAAAAAAAAAAAAAA" +  ex);
         }
     }
+
+    @Override
+    public List<User> searchByUsername(String username) {
+        List<User> users;
+        try{
+            TypedQuery<User> query = em.createNamedQuery("user.searchByUsername", User.class);
+            query.setParameter("username", username);
+            users = query.getResultList();
+        }catch (Exception ex){
+            System.out.println("AAAAAAAAAAAAAAAAAAAA" +  ex);
+            users = null;
+        }
+        return users;
+    }
 }

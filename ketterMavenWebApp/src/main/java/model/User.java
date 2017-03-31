@@ -12,7 +12,7 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(name="user.findByName",
                 query="SELECT u FROM User u WHERE u.username = :username"),
-        @NamedQuery(name="user.getRecentTweets",
+        @NamedQuery(name="user.searchByUsername",
                 query="SELECT u FROM User u WHERE u.username LIKE CONCAT('%',:username,'%')")
 })
 public class User {

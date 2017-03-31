@@ -25,4 +25,6 @@ public interface UserDao {
     List<Tweet> getTimelineTweets(User user, int offset, int limit);
 
     void follow(User user, User followUser);
+
+    List<User> searchByUsername(String username);
 }
