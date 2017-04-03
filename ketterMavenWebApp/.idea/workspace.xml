@@ -5,35 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1efa48e7-12b3-42a8-855c-7058d8c22cb1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/event/AddTweetEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/bean/UserBean.class" afterPath="$PROJECT_DIR$/target/classes/bean/UserBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/TweetDaoImp.class" afterPath="$PROJECT_DIR$/target/classes/dao/TweetDaoImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/classes/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/UserDaoColl.class" afterPath="$PROJECT_DIR$/target/classes/dao/UserDaoColl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/UserDaoImp.class" afterPath="$PROJECT_DIR$/target/classes/dao/UserDaoImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/model/User.class" afterPath="$PROJECT_DIR$/target/classes/model/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/bean/UserBean.class" afterPath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/bean/UserBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/TweetDaoImp.class" afterPath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/TweetDaoImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/UserDaoColl.class" afterPath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/UserDaoColl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/UserDaoImp.class" afterPath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/UserDaoImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/model/User.class" afterPath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/model/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/service/UserService.class" afterPath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/TweetDao.class" afterPath="$PROJECT_DIR$/target/classes/dao/TweetDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/TweetDaoColl.class" afterPath="$PROJECT_DIR$/target/classes/dao/TweetDaoColl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/service/TweetService.class" afterPath="$PROJECT_DIR$/target/classes/service/TweetService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/TweetDao.class" afterPath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/TweetDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/TweetDaoColl.class" afterPath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/TweetDaoColl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/service/TweetService.class" afterPath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/service/TweetService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/TweetDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/TweetDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/TweetDaoColl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/TweetDaoColl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/TweetDaoImp.java" afterPath="$PROJECT_DIR$/src/main/java/dao/TweetDaoImp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/service/TweetService.java" afterPath="$PROJECT_DIR$/src/main/java/service/TweetService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/profile.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/profile.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/User_.java" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/User_.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/config/domain.xml" afterPath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/config/domain.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/config/local-password" afterPath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/config/local-password" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/config/pid.prev" afterPath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/config/pid.prev" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/generated/policy/kwetter/kwetter/granted.policy" afterPath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/generated/policy/kwetter/kwetter/granted.policy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/generated/policy/kwetter/kwetter_internal/granted.policy" afterPath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/generated/policy/kwetter/kwetter_internal/granted.policy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/config/domain.xml.bak" afterPath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/config/domain.xml.bak" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/logs/server.log" afterPath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/logs/server.log" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -107,17 +86,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-92">
-              <caret line="17" column="58" lean-forward="false" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+            <state relative-caret-position="136">
+              <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserBean.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bean/UserBean.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="248">
@@ -1721,7 +1700,7 @@
       <workItem from="1490862316873" duration="5968000" />
       <workItem from="1490900473140" duration="6774000" />
       <workItem from="1490943296272" duration="7038000" />
-      <workItem from="1491211781069" duration="7883000" />
+      <workItem from="1491211781069" duration="8830000" />
     </task>
     <task id="LOCAL-00001" summary="het werk nu wel godverju">
       <created>1487761672742</created>
@@ -1835,7 +1814,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490955715899</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="front end oplevering done">
+      <created>1491220388864</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1491220388864</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1871,7 +1857,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183218000" />
+    <option name="totallyTimeSpent" value="184165000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1991,7 +1977,8 @@
     <MESSAGE value="new tweet done" />
     <MESSAGE value="login/logout/basic nav done" />
     <MESSAGE value="zoeken done" />
-    <option name="LAST_COMMIT_MESSAGE" value="zoeken done" />
+    <MESSAGE value="front end oplevering done" />
+    <option name="LAST_COMMIT_MESSAGE" value="front end oplevering done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2203,6 +2190,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="60" lean-forward="false" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2264,44 +2252,6 @@
           <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1678#1679#0" expanded="false" />
-            <element signature="e#1711#1712#0" expanded="false" />
-            <element signature="e#2415#2416#0" expanded="false" />
-            <element signature="e#2450#2451#0" expanded="false" />
-            <element signature="e#2939#2940#0" expanded="false" />
-            <element signature="e#2966#2967#0" expanded="false" />
-            <element signature="e#3006#3007#0" expanded="false" />
-            <element signature="e#3038#3039#0" expanded="false" />
-            <element signature="e#3068#3069#0" expanded="false" />
-            <element signature="e#3094#3095#0" expanded="false" />
-            <element signature="e#3222#3223#0" expanded="false" />
-            <element signature="e#3254#3255#0" expanded="false" />
-            <element signature="e#3407#3408#0" expanded="false" />
-            <element signature="e#3440#3441#0" expanded="false" />
-            <element signature="e#3595#3596#0" expanded="false" />
-            <element signature="e#3626#3627#0" expanded="false" />
-            <element signature="e#3890#3891#0" expanded="false" />
-            <element signature="e#3922#3923#0" expanded="false" />
-            <element signature="e#3962#3963#0" expanded="false" />
-            <element signature="e#3994#3995#0" expanded="false" />
-            <element signature="e#4032#4033#0" expanded="false" />
-            <element signature="e#4061#4062#0" expanded="false" />
-            <element signature="e#4096#4097#0" expanded="false" />
-            <element signature="e#4127#4128#0" expanded="false" />
-            <element signature="e#4310#4311#0" expanded="false" />
-            <element signature="e#4335#4336#0" expanded="false" />
-            <element signature="e#4370#4371#0" expanded="false" />
-            <element signature="e#4401#4402#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2482,6 +2432,14 @@
             <element signature="e#2045#2046#0" expanded="true" />
             <element signature="e#2079#2080#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>

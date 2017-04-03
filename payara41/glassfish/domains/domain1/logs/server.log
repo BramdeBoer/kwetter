@@ -17839,3 +17839,18 @@ false]]
 [2017-04-03T13:45:59.951+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491219959951] [levelValue: 800] [[
   bramdb]]
 
+[2017-04-03T14:32:35.653+0200] [Payara 4.1] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=338 _ThreadName=Thread-41] [timeMillis: 1491222755653] [levelValue: 800] [[
+  Initializing Mojarra 2.2.13 ( 20160203-1910 unable to get svn info) for context '']]
+
+[2017-04-03T14:32:36.143+0200] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=338 _ThreadName=Thread-41] [timeMillis: 1491222756143] [levelValue: 800] [[
+  Loading application [__admingui] at [/]]]
+
+[2017-04-03T14:32:36.147+0200] [Payara 4.1] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=338 _ThreadName=Thread-41] [timeMillis: 1491222756147] [levelValue: 800] [[
+  Loading application __admingui done in 1.867 ms]]
+
+[2017-04-03T14:32:36.817+0200] [Payara 4.1] [WARNING] [] [javax.enterprise.system.container.web.com.sun.web.security] [tid: _ThreadID=39 _ThreadName=admin-thread-pool(1)] [timeMillis: 1491222756817] [levelValue: 900] [[
+  Context path from ServletContext:  differs from path from bundle: /]]
+
+[2017-04-03T14:32:38.319+0200] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=371 _ThreadName=admin-thread-pool(4)] [timeMillis: 1491222758319] [levelValue: 800] [[
+  Listening to REST requests at context: /management/domain.]]
+
