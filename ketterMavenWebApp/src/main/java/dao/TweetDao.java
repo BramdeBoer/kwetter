@@ -1,8 +1,10 @@
 package dao;
 
+import event.AddTweetEvent;
 import model.Tweet;
 import model.User;
 
+import javax.enterprise.event.Observes;
 import java.util.List;
 
 public interface TweetDao {
@@ -15,6 +17,6 @@ public interface TweetDao {
 
     boolean remove(Tweet tweet);
 
-
+    void addKweet(@Observes AddTweetEvent addTweetEvent);
 
 }

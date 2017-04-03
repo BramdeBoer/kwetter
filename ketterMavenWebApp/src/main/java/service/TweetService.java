@@ -3,12 +3,14 @@ package service;
 import dao.JPA;
 import dao.TweetDao;
 import dao.TweetDaoColl;
+import event.AddTweetEvent;
 import interceptor.VolgTrend;
 import interceptor.VolgTrendInterceptor;
 import model.Tweet;
 import model.User;
 
 import javax.ejb.Stateless;
+import javax.enterprise.event.Event;
 import javax.inject.Inject;
 import javax.interceptor.Interceptors;
 import java.util.ArrayList;
@@ -22,6 +24,9 @@ import java.util.List;
 public class TweetService {
     @Inject @JPA
     private TweetDao tweetDao;
+
+    @Inject
+    private Event<AddTweetEvent> addTweetEventEvent;
 
     public Tweet getTweet(int id){
         return tweetDao.getTweet(id);
@@ -48,9 +53,10 @@ public class TweetService {
      */
     @VolgTrend
     public Tweet create(String content, User user) {
-
-        System.out.println("SERVICE CREATE");
-        return tweetDao.create(content, user);
+        Tweet tweet = new Tweet(content, user);
+        AddTweetEvent event = new AddTweetEvent(tweet);
+        addTweetEventEvent.fire(event);
+        return tweet;
     }
 
     /**

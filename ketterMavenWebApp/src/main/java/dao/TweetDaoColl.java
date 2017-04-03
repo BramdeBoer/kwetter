@@ -1,9 +1,11 @@
 package dao;
 
+import event.AddTweetEvent;
 import model.Tweet;
 import model.User;
 
 import javax.ejb.Stateless;
+import javax.enterprise.event.Observes;
 import javax.enterprise.inject.Default;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,5 +56,10 @@ public class TweetDaoColl implements TweetDao {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public void addKweet(@Observes AddTweetEvent addTweetEvent) {
+        this.tweets.add(addTweetEvent.getTweet());
     }
 }

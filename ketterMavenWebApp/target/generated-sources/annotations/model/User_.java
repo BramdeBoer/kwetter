@@ -8,7 +8,7 @@ import model.Group;
 import model.Tweet;
 import model.User;
 
-@Generated(value="EclipseLink-2.6.0.v20150330-rNA", date="2017-03-29T11:30:13")
+@Generated(value="EclipseLink-2.6.0.v20150330-rNA", date="2017-03-31T12:13:04")
 @StaticMetamodel(User.class)
 public class User_ { 
 

@@ -16,24 +16,35 @@
     </f:metadata>
 
     <h:body>
-        <h:form>
-            <h:commandLink value="Logout" action="#{UserBean.logout}" />
-        </h:form>
-        <a href="profile.xhtml"> Profile</a>
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="profile.xhtml">Profile</a></li>
+            <li role="presentation" class="navbar-text navbar-right">
+                <h:form class="logout">
+                    <h:commandLink class="nav-item nav-link" value="Logout" action="#{UserBean.logout}" />
+                </h:form>
+            </li>
+        </ul>
 
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h:form>
                     <h:commandLink action="#{UserBean.searchByUsername}">
-                        <h:inputText id="search" value="#{UserBean.query}"></h:inputText>
-                        <h:outputText value="Search" class="btn btn-success"/>
+                        <div class="input-group">
+                            <h:inputText id="search" type="text" class="form-control" placeholder="Search..." value="#{UserBean.query}"></h:inputText>
+                            <span class="input-group-btn">
+                                <h:outputText value="Search" class="btn btn-default" type="button"/>
+                            </span>
+                        </div><!-- /input-group -->
                         <f:ajax execute="@form" render="users" />
                     </h:commandLink><br/>
 
                     <h:panelGroup id="users">
                         <ui:repeat value="#{UserBean.searchUsers}" var="_user">
-                            <img src="#{_user.avatarURL}" class="img-circle user-image-small" alt=""/>
-                            <h:outputText value="#{_user.username}" />
+                            <div class="well">
+                                <img src="#{_user.avatarURL}" class="img-circle user-image-small" alt=""/>
+                                <h:outputText value="#{_user.username}" />
+                            </div>
                         </ui:repeat>
                     </h:panelGroup>
                 </h:form>
@@ -41,13 +52,17 @@
             </div>
         </div>
 
-        <div class=".container" style="padding: 50px;">
+        <div class=".container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <h2>Whats happening?</h2>
                     <h:form>
-                        <h:inputText id="input" placeholder="tell me" value="#{TweetBean.content}" />
-                        <h:commandButton value="Submit" type="submit" action="#{TweetBean.create()}" onclick=""/>
+                        <div class="input-group">
+                            <h:inputText id="input" placeholder="So?..." class="form-control" value="#{TweetBean.content}" />
+                            <span class="input-group-btn">
+                                <h:commandButton value="Submit" type="submit" class="btn btn-default" action="#{TweetBean.create()}" onclick=""/>
+                            </span>
+                        </div><!-- /input-group -->
                     </h:form>
                 </div>
             </div>
@@ -55,7 +70,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <h2>Timeline</h2>
-                    <h:dataTable value="#{UserBean.getTimelineTweets(UserBean.user, 0, 50)}" var="_tweet">
+                    <h:dataTable value="#{UserBean.getTimelineTweets(UserBean.user, 0, 50)}" class="table-wide" var="_tweet">
                         <h:column>
                             <div class="panel panel-default container-full" style="width: 100%">
                                 <div class="panel-body">

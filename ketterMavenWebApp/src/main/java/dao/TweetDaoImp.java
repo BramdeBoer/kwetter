@@ -1,9 +1,11 @@
 package dao;
 
+import event.AddTweetEvent;
 import model.Tweet;
 import model.User;
 
 import javax.ejb.Stateless;
+import javax.enterprise.event.Observes;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.PersistenceContextType;
@@ -63,5 +65,15 @@ public class TweetDaoImp implements TweetDao{
             return false;
         }
         return true;
+    }
+
+    @Override
+    public void addKweet(@Observes AddTweetEvent addTweetEvent) {
+        try{
+            em.persist(addTweetEvent.getTweet());
+            em.merge(addTweetEvent.getTweet().getCreatedBy());
+        }catch (Exception ex){
+            System.out.println("ERROR " + ex.getMessage());
+        }
     }
 }
