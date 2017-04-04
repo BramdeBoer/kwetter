@@ -1,0 +1,17 @@
+.user-image-small{
+    height: 50px;
+    width: 50px;
+}
+.user-image-big{
+    height: 170px;
+    width: 170px;
+}
+.table-wide {
+    width: 100%;
+}
+.nav{
+    margin-bottom: 20px;
+}
+.logout{
+    margin-right: 20px;
+}

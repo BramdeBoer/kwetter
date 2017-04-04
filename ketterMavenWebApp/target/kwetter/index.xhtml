@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <h:head>
+        <title>Home - #{UserBean.user.username}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+        <h:outputStylesheet library="css" name="style.css"/>
+    </h:head>
+    <f:metadata>
+        <f:viewParam name="nameId" value="#{UserBean.username}" required="false"/>
+        <f:event type="preRenderComponent" listener="#{UserBean.loadUser()}"/>
+    </f:metadata>
+
+    <h:body>
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="profile.xhtml">Profile</a></li>
+            <li role="presentation" class="navbar-text navbar-right">
+                <h:form class="logout">
+                    <h:commandLink class="nav-item nav-link" value="Logout" action="#{UserBean.logout}" />
+                </h:form>
+            </li>
+        </ul>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h:form>
+                    <h:commandLink action="#{UserBean.searchByUsername}">
+                        <div class="input-group">
+                            <h:inputText id="search" type="text" class="form-control" placeholder="Search..." value="#{UserBean.query}"></h:inputText>
+                            <span class="input-group-btn">
+                                <h:outputText value="Search" class="btn btn-default" type="button"/>
+                            </span>
+                        </div><!-- /input-group -->
+                        <f:ajax execute="@form" render="users" />
+                    </h:commandLink><br/>
+
+                    <h:panelGroup id="users">
+                        <ui:repeat value="#{UserBean.searchUsers}" var="_user">
+                            <div class="well">
+                                <img src="#{_user.avatarURL}" class="img-circle user-image-small" alt=""/>
+                                <h:outputText value="#{_user.username}" />
+                            </div>
+                        </ui:repeat>
+                    </h:panelGroup>
+                </h:form>
+
+            </div>
+        </div>
+
+        <div class=".container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2>Whats happening?</h2>
+                    <h:form>
+                        <div class="input-group">
+                            <h:inputText id="input" placeholder="So?..." class="form-control" value="#{TweetBean.content}" />
+                            <span class="input-group-btn">
+                                <h:commandButton value="Submit" type="submit" class="btn btn-default" action="#{TweetBean.create()}" onclick=""/>
+                            </span>
+                        </div><!-- /input-group -->
+                    </h:form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2>Timeline</h2>
+                    <h:dataTable value="#{UserBean.getTimelineTweets(UserBean.user, 0, 50)}" class="table-wide" var="_tweet">
+                        <h:column>
+                            <div class="panel panel-default container-full" style="width: 100%">
+                                <div class="panel-body">
+                                    <h:outputText value="#{_tweet.createdBy.name}"/><br/>
+                                    <h:outputText value="#{_tweet.content}"/><br/>
+                                    <h:outputText value="#{_tweet.date}"/>
+                                    <!--<h:outputText value="Likes: #{_tweet.likedBy.size()}"/>-->
+                                </div>
+                            </div>
+                        </h:column>
+                    </h:dataTable>
+                </div>
+            </div>
+        </div>
+    </h:body>
+</html>
+

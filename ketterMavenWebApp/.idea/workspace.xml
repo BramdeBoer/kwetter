@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1efa48e7-12b3-42a8-855c-7058d8c22cb1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/TweetDao.class" afterPath="$PROJECT_DIR$/target/classes/dao/TweetDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/TweetDaoColl.class" afterPath="$PROJECT_DIR$/target/classes/dao/TweetDaoColl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/service/TweetService.class" afterPath="$PROJECT_DIR$/target/classes/service/TweetService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/TweetDao.class" afterPath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/TweetDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/TweetDaoColl.class" afterPath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/dao/TweetDaoColl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/service/TweetService.class" afterPath="$PROJECT_DIR$/target/kwetter/WEB-INF/classes/service/TweetService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/config/domain.xml.bak" afterPath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/config/domain.xml.bak" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/logs/server.log" afterPath="$PROJECT_DIR$/../payara41/glassfish/domains/domain1/logs/server.log" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1700,7 +1692,7 @@
       <workItem from="1490862316873" duration="5968000" />
       <workItem from="1490900473140" duration="6774000" />
       <workItem from="1490943296272" duration="7038000" />
-      <workItem from="1491211781069" duration="8830000" />
+      <workItem from="1491211781069" duration="8871000" />
     </task>
     <task id="LOCAL-00001" summary="het werk nu wel godverju">
       <created>1487761672742</created>
@@ -1821,7 +1813,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491220388864</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="angular">
+      <created>1491224646635</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1491224646635</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1857,7 +1856,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184165000" />
+    <option name="totallyTimeSpent" value="184206000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1978,7 +1977,8 @@
     <MESSAGE value="login/logout/basic nav done" />
     <MESSAGE value="zoeken done" />
     <MESSAGE value="front end oplevering done" />
-    <option name="LAST_COMMIT_MESSAGE" value="front end oplevering done" />
+    <MESSAGE value="angular" />
+    <option name="LAST_COMMIT_MESSAGE" value="angular" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

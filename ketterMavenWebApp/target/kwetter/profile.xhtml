@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <h:head>
+        <title>Profile - #{UserBean.user.username}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+        <h:outputStylesheet library="css" name="style.css"/>
+    </h:head>
+    <f:metadata>
+        <f:viewParam name="nameId" value="#{UserBean.username}" required="false"/>
+        <f:event type="preRenderComponent" listener="#{UserBean.loadUser()}"/>
+    </f:metadata>
+
+
+    <ul class="nav nav-tabs">
+        <li role="presentation"><a href="index.xhtml">Home</a></li>
+        <li role="presentation" class="active"><a href="profile.xhtml">Profile</a></li>
+    </ul>
+
+    <h:body>
+        <div class=".container" style="padding: 50px;">
+            <div class="row">
+                <div class="col-md-1 col-md-offset-4">
+                    <img src="#{UserBean.user.avatarURL}" style="width: 170px; height: 170px;" class="img-circle user-image-big"  alt=""/>
+                </div>
+                <div class="col-md-6">
+                    <dl class="dl-horizontal">
+                        <dt>Username</dt>
+                        <dd>#{UserBean.user.username}</dd>
+                        <dt>Name</dt>
+                        <dd>#{UserBean.user.name}</dd>
+                        <dt>Bio</dt>
+                        <dd>#{UserBean.user.bio}</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-md-offset-2">
+                    <h2>Tweets #{UserBean.getRecentTweets(UserBean.user, 0, 50).size()}</h2>
+                    <h:dataTable value="#{UserBean.getRecentTweets(UserBean.user, 0, 50)}" var="_tweet">
+                        <h:column>
+                            <div class="panel panel-default container-full">
+                                <div class="panel-body">
+                                        <h:outputText value="#{_tweet.content}"/><br/>
+                                        <h:outputText value="#{_tweet.date}"/>
+                                        <!--<h:outputText value="Likes: #{_tweet.likedBy.size()}"/>-->
+                                </div>
+                            </div>
+                        </h:column>
+                    </h:dataTable>
+                </div>
+
+                <div class="col-md-3">
+                    <h2>Followers #{UserBean.getFollowers(UserBean.user).size()}</h2>
+                    <h:dataTable value="#{UserBean.getFollowers(UserBean.user)}" var="_follower">
+                        <div id="followers">
+                            <h:column>
+                                <img src="#{_follower.avatarURL}" class="img-circle user-image-small" alt=""/>
+                                <h:outputText value=" #{_follower.name}"/><br/>
+                                <!--<h:outputText value="#{_follower.username}"/>-->
+                            </h:column>
+                        </div>
+                    </h:dataTable>
+                </div>
+
+
+                <div class="col-md-3">
+                    <h2>Following #{UserBean.getFollowing(UserBean.user).size()}</h2>
+                    <h:dataTable value="#{UserBean.getFollowing(UserBean.user)}" var="_following">
+                        <div id="following">
+                            <h:column >
+                                <img src="#{_following.avatarURL}" class="img-circle user-image-small" alt=""/>
+                                <h:outputText value=" #{_following.name}"/><br/>
+                                <!--<h:outputText value="#{_following.username}"/>-->
+                            </h:column>
+                        </div>
+                    </h:dataTable>
+                </div>
+            </div>
+        </div>
+    </h:body>
+</html>
+
