@@ -1,8 +1,10 @@
-/* AUTOMATICALLY GENERATED ON Mon Apr 03 13:23:03 CEST 2017*/
+/* AUTOMATICALLY GENERATED ON Wed Apr 05 11:36:33 CEST 2017*/
 /* DO NOT EDIT */
 
 grant {
-  permission javax.security.jacc.WebUserDataPermission "/*";
+  permission javax.security.jacc.WebUserDataPermission "/:*.xhtml";
+  permission javax.security.jacc.WebUserDataPermission "*.xhtml";
+  permission javax.security.jacc.WebResourcePermission "/:*.xhtml";
 };
 
 grant      principal * * {
@@ -15,6 +17,6 @@ grant      principal * * {
 };
 
 grant      principal org.glassfish.security.common.Group "regulars" {
-  permission javax.security.jacc.WebResourcePermission "/*";
+  permission javax.security.jacc.WebResourcePermission "*.xhtml";
 };
 

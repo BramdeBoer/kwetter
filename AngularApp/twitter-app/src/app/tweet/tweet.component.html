@@ -1,0 +1,13 @@
+<div *ngIf="tweet">
+  <div class="card" style="margin-top: 10px">
+    <div class="card-header">
+      <a [routerLink]="['/profile']" [queryParams]="{username: tweet.createdBy.username}">{{tweet.createdBy.username}}</a>
+    </div>
+    <div class="card-block">
+      <p class="card-text">{{tweet.content}}</p>
+        <p class="text-muted">
+          <small>{{tweet.date}}</small>
+        </p>
+    </div>
+  </div>
+</div>
