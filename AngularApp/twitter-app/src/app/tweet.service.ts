@@ -22,4 +22,9 @@ export class TweetService {
     return this.httpService.get(`${API_URL}/users/${username}/timeline/${offset}/${limit}`)
       .map(response => response.json());
   }
+
+  public getRecentTweets(username: String, offset: number, limit: number): Observable<Tweet[]> {
+    return this.httpService.get(`${API_URL}/users/${username}/tweets/${offset}/${limit}`)
+      .map(response => response.json());
+  }
 }

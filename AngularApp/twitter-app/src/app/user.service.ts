@@ -17,4 +17,14 @@ export class UserService {
     return this.httpService.get(`${API_URL}/users/${username}`)
       .map(response => response.json());
   }
+
+  public getFollowing(username: String): Observable<User[]> {
+    return this.httpService.get(`${API_URL}/users/${username}/following`)
+      .map(response => response.json());
+  }
+
+  public getFollowers(username: String): Observable<User[]> {
+    return this.httpService.get(`${API_URL}/users/${username}/followers`)
+      .map(response => response.json());
+  }
 }

@@ -14,19 +14,15 @@ import { HttpService } from "app/http.service";
 export class TimelineComponent implements OnInit {
 
   private tweets: Tweet[];
-  private user: User;
 
-  constructor(private tweetService: TweetService,
-    private userService: UserService) { }
+  constructor(private tweetService: TweetService) { }
 
   ngOnInit() {
-    this.user = {id: 1,
-      username: 'bramdb'};
     this.getTweets();
   }
 
   public getTweets() {
-    this.tweetService.getTimeline(this.user.username, 0, 50).subscribe(tweets => {
+    this.tweetService.getTimeline('bramdb', 0, 50).subscribe(tweets => {
       this.tweets = tweets;
     });
   }

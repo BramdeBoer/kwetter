@@ -23,7 +23,6 @@ export class ProfileComponent implements OnInit {
   private getAccount(username: string) {
     this.userService.getByUsername(username).subscribe(user => {
       this.user = user;
-      console.log(user);
     });
   }
 }

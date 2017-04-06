@@ -14,6 +14,11 @@ import { HttpService } from "app/http.service";
 import { TweetService } from "app/tweet.service";
 import { UserService } from "app/user.service";
 import { TweetComponent } from './tweet/tweet.component';
+import { UsertweetsComponent } from './usertweets/usertweets.component';
+import { FollowingComponent } from './following/following.component';
+import { FollowersComponent } from './followers/followers.component';
+import { UserComponent } from './user/user.component';
+import { NewtweetComponent } from './newtweet/newtweet.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { TweetComponent } from './tweet/tweet.component';
     HomeComponent,
     ProfileComponent,
     LoginComponent,
-    TweetComponent
+    TweetComponent,
+    UsertweetsComponent,
+    FollowingComponent,
+    FollowersComponent,
+    UserComponent,
+    NewtweetComponent
   ],
   imports: [
     BrowserModule,

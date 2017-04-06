@@ -1,0 +1,13 @@
+<div *ngIf="user">
+  <div class="card" style="margin-top: 10px">
+    <div class="card-header">
+      <a [routerLink]="['/profile']" [queryParams]="{username: user.username}">{{user.username}}</a>
+    </div>
+    <div class="card-block">
+      <p class="card-text">{{user.name}}</p>
+        <p class="text-muted">
+          <small>{{user.bio}}</small>
+        </p>
+    </div>
+  </div>
+</div>
