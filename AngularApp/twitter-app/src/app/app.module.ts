@@ -19,6 +19,7 @@ import { FollowingComponent } from './following/following.component';
 import { FollowersComponent } from './followers/followers.component';
 import { UserComponent } from './user/user.component';
 import { NewtweetComponent } from './newtweet/newtweet.component';
+import {TranslateModule} from 'ng2-translate';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { NewtweetComponent } from './newtweet/newtweet.component';
     FormsModule,
     HttpModule,
     routing,
+    TranslateModule.forRoot()
   ],
   providers: [
     HttpService,

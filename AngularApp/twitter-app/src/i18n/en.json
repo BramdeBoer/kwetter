@@ -1,0 +1,15 @@
+{
+  "HEADER": {
+    "HOME": "Home",
+    "PROFILE": "Profile"
+  },
+  "HOME":{
+    "POST": "Post!",
+    "WHATSHAPPENING": "Whats happening?"
+  },
+  "PROFILE":{
+    "BIO": "Bio",
+    "USERNAME": "Username",
+    "NAME": "Name"
+  }
+}

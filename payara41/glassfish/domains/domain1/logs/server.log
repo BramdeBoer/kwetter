@@ -4292,3 +4292,497 @@ false]]
 [2017-04-06T13:57:03.466+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool(3)] [timeMillis: 1491479823466] [levelValue: 800] [[
   bramdb]]
 
+[2017-04-06T15:11:55.888+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315888] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.888--ServerSession(446038416)--Connection(864421008)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:11:55.892+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315892] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:11:55.893+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315893] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.892--ServerSession(446038416)--Connection(1967878057)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, CONTENT, DATE, CREATEDBY_ID FROM TWEET WHERE (CREATEDBY_ID = ?)
+	bind => [1]]]
+
+[2017-04-06T15:11:55.903+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315903] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.903--ServerSession(446038416)--Connection(147605957)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM user_follows t0, USER t1 WHERE ((t0.User_ID = ?) AND (t1.ID = t0.following_ID))
+	bind => [1]]]
+
+[2017-04-06T15:11:55.906+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315906] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.906--ServerSession(446038416)--Connection(1215558566)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, CONTENT, DATE, CREATEDBY_ID FROM TWEET WHERE (CREATEDBY_ID = ?)
+	bind => [2]]]
+
+[2017-04-06T15:11:55.908+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315908] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.908--ServerSession(446038416)--Connection(572201228)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [114]]]
+
+[2017-04-06T15:11:55.911+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315911] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.911--ServerSession(446038416)--Connection(407257547)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [113]]]
+
+[2017-04-06T15:11:55.913+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315913] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.913--ServerSession(446038416)--Connection(1720075728)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [112]]]
+
+[2017-04-06T15:11:55.915+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315915] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.915--ServerSession(446038416)--Connection(834630757)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [110]]]
+
+[2017-04-06T15:11:55.918+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315918] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.918--ServerSession(446038416)--Connection(1259788327)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [111]]]
+
+[2017-04-06T15:11:55.920+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315920] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.92--ServerSession(446038416)--Connection(1635025047)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [109]]]
+
+[2017-04-06T15:11:55.923+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315923] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.922--ServerSession(446038416)--Connection(889774508)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [108]]]
+
+[2017-04-06T15:11:55.924+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315924] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.924--ServerSession(446038416)--Connection(2145302324)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [107]]]
+
+[2017-04-06T15:11:55.925+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315925] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.925--ServerSession(446038416)--Connection(49581832)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [106]]]
+
+[2017-04-06T15:11:55.927+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315927] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.927--ServerSession(446038416)--Connection(1195497465)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [105]]]
+
+[2017-04-06T15:11:55.928+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315928] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.928--ServerSession(446038416)--Connection(901143356)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [104]]]
+
+[2017-04-06T15:11:55.930+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315930] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.93--ServerSession(446038416)--Connection(1062944169)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [103]]]
+
+[2017-04-06T15:11:55.931+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315931] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.931--ServerSession(446038416)--Connection(435255685)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [102]]]
+
+[2017-04-06T15:11:55.933+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315933] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.933--ServerSession(446038416)--Connection(1346804573)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [101]]]
+
+[2017-04-06T15:11:55.934+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315934] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.934--ServerSession(446038416)--Connection(1462650322)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [100]]]
+
+[2017-04-06T15:11:55.936+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315936] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.936--ServerSession(446038416)--Connection(830377195)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [99]]]
+
+[2017-04-06T15:11:55.937+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315937] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.937--ServerSession(446038416)--Connection(600962576)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [98]]]
+
+[2017-04-06T15:11:55.939+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315939] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.939--ServerSession(446038416)--Connection(1193876804)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [97]]]
+
+[2017-04-06T15:11:55.940+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315940] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.94--ServerSession(446038416)--Connection(1645002918)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [96]]]
+
+[2017-04-06T15:11:55.942+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315942] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.942--ServerSession(446038416)--Connection(659554776)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [95]]]
+
+[2017-04-06T15:11:55.943+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315943] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.943--ServerSession(446038416)--Connection(194843220)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [94]]]
+
+[2017-04-06T15:11:55.944+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315944] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.944--ServerSession(446038416)--Connection(72482142)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [93]]]
+
+[2017-04-06T15:11:55.946+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315946] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.946--ServerSession(446038416)--Connection(6034562)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [83]]]
+
+[2017-04-06T15:11:55.947+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315947] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.947--ServerSession(446038416)--Connection(665164688)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [84]]]
+
+[2017-04-06T15:11:55.949+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315949] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.949--ServerSession(446038416)--Connection(1154032258)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [85]]]
+
+[2017-04-06T15:11:55.950+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315950] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.95--ServerSession(446038416)--Connection(1333369928)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [86]]]
+
+[2017-04-06T15:11:55.951+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315951] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.951--ServerSession(446038416)--Connection(803301665)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [87]]]
+
+[2017-04-06T15:11:55.953+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315953] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.953--ServerSession(446038416)--Connection(613617238)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [88]]]
+
+[2017-04-06T15:11:55.954+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315954] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.954--ServerSession(446038416)--Connection(692315508)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [89]]]
+
+[2017-04-06T15:11:55.955+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315955] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.955--ServerSession(446038416)--Connection(710649800)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [90]]]
+
+[2017-04-06T15:11:55.957+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315957] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.957--ServerSession(446038416)--Connection(249002947)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [91]]]
+
+[2017-04-06T15:11:55.958+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315958] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.958--ServerSession(446038416)--Connection(847918577)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [92]]]
+
+[2017-04-06T15:11:55.959+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315959] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.959--ServerSession(446038416)--Connection(81010321)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [73]]]
+
+[2017-04-06T15:11:55.961+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315961] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.961--ServerSession(446038416)--Connection(1942395940)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [74]]]
+
+[2017-04-06T15:11:55.962+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315962] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.962--ServerSession(446038416)--Connection(1190852860)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [75]]]
+
+[2017-04-06T15:11:55.964+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315964] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.964--ServerSession(446038416)--Connection(633104495)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [76]]]
+
+[2017-04-06T15:11:55.965+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315965] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.965--ServerSession(446038416)--Connection(20503263)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [77]]]
+
+[2017-04-06T15:11:55.966+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315966] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.966--ServerSession(446038416)--Connection(1180193120)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [78]]]
+
+[2017-04-06T15:11:55.968+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315968] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.968--ServerSession(446038416)--Connection(1475636303)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [79]]]
+
+[2017-04-06T15:11:55.969+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315969] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.969--ServerSession(446038416)--Connection(298682830)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [80]]]
+
+[2017-04-06T15:11:55.970+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315970] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.97--ServerSession(446038416)--Connection(1449416458)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [81]]]
+
+[2017-04-06T15:11:55.972+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315972] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.972--ServerSession(446038416)--Connection(1387515895)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [82]]]
+
+[2017-04-06T15:11:55.973+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315973] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.973--ServerSession(446038416)--Connection(651253754)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [63]]]
+
+[2017-04-06T15:11:55.975+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315975] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.975--ServerSession(446038416)--Connection(1538205975)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [64]]]
+
+[2017-04-06T15:11:55.976+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315976] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.976--ServerSession(446038416)--Connection(797436271)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [65]]]
+
+[2017-04-06T15:11:55.978+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315978] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.978--ServerSession(446038416)--Connection(1661425439)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [66]]]
+
+[2017-04-06T15:11:55.979+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315979] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.979--ServerSession(446038416)--Connection(1338356226)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [67]]]
+
+[2017-04-06T15:11:55.981+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315981] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.981--ServerSession(446038416)--Connection(1837161852)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [68]]]
+
+[2017-04-06T15:11:55.982+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315982] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.982--ServerSession(446038416)--Connection(2103217458)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [69]]]
+
+[2017-04-06T15:11:55.983+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484315983] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.983--ServerSession(446038416)--Connection(616206889)--Thread(Thread[http-thread-pool(5),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [70]]]
+
+[2017-04-06T15:11:55.988+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491484315988] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:11:55.987--ServerSession(446038416)--Connection(1706601039)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:11:55.990+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491484315990] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:13:10.253+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491484390253] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:13:10.253--ServerSession(446038416)--Connection(1531535430)--Thread(Thread[http-thread-pool(2),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:13:10.256+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491484390256] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:13:10.268+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484390268] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:13:10.268--ServerSession(446038416)--Connection(1175281950)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:13:10.271+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484390271] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:23:07.115+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491484987115] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:23:07.115--ServerSession(446038416)--Connection(439015891)--Thread(Thread[http-thread-pool(1),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:23:07.117+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491484987117] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:23:07.123+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491484987123] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:23:07.123--ServerSession(446038416)--Connection(1887551570)--Thread(Thread[http-thread-pool(2),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:23:07.126+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491484987126] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:23:10.214+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484990214] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:23:10.214--ServerSession(446038416)--Connection(634684880)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:23:10.217+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491484990217] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:23:10.223+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491484990223] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:23:10.223--ServerSession(446038416)--Connection(1761261265)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:23:10.226+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491484990226] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:24:57.062+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491485097062] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:24:57.061--ServerSession(446038416)--Connection(1571308745)--Thread(Thread[http-thread-pool(2),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:24:57.063+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491485097063] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:24:57.075+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491485097075] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:24:57.075--ServerSession(446038416)--Connection(502279975)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:24:57.077+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491485097077] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:25:23.204+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool(3)] [timeMillis: 1491485123204] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:25:23.204--ServerSession(446038416)--Connection(1487719366)--Thread(Thread[http-thread-pool(3),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:25:23.206+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool(3)] [timeMillis: 1491485123206] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:31:13.595+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491485473595] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:31:13.595--ServerSession(446038416)--Connection(2054549295)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:31:13.597+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491485473597] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:31:37.370+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool(3)] [timeMillis: 1491485497370] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:31:37.37--ServerSession(446038416)--Connection(641142720)--Thread(Thread[http-thread-pool(3),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:31:37.373+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool(3)] [timeMillis: 1491485497373] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:32:56.925+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491485576925] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:32:56.925--ServerSession(446038416)--Connection(1582261052)--Thread(Thread[http-thread-pool(2),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:32:56.927+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491485576927] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:37:24.743+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491485844743] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:37:24.743--ServerSession(446038416)--Connection(1856695457)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:37:24.745+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491485844745] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:37:50.826+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491485870826] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:37:50.826--ServerSession(446038416)--Connection(338289946)--Thread(Thread[http-thread-pool(1),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:37:50.830+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491485870830] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:37:55.113+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491485875113] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:37:55.113--ServerSession(446038416)--Connection(2136766815)--Thread(Thread[http-thread-pool(2),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:37:55.116+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491485875116] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:38:59.936+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491485939936] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:38:59.935--ServerSession(446038416)--Connection(759993828)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:38:59.937+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491485939937] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:43:54.540+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491486234540] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:43:54.54--ServerSession(446038416)--Connection(1813978133)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [undefined]]]
+
+[2017-04-06T15:43:54.544+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491486234544] [levelValue: 800] [[
+  AAAAAAAAAAAAAAAAAAAAjavax.persistence.NoResultException: getSingleResult() did not retrieve any entities.]]
+
+[2017-04-06T15:43:54.546+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool(3)] [timeMillis: 1491486234546] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:43:54.546--ServerSession(446038416)--Connection(1696848451)--Thread(Thread[http-thread-pool(3),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:43:54.549+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool(3)] [timeMillis: 1491486234549] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:43:54.549--ServerSession(446038416)--Connection(221262594)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM user_followers t0, USER t1 WHERE ((t0.User_ID = ?) AND (t1.ID = t0.followers_ID))
+	bind => [1]]]
+
+[2017-04-06T15:43:54.554+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491486234554] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:43:54.554--ServerSession(446038416)--Connection(231093785)--Thread(Thread[http-thread-pool(2),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:43:54.555+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491486234555] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:43:54.554--ServerSession(446038416)--Connection(1983248991)--Thread(Thread[http-thread-pool(1),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:46:31.723+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491486391723] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:46:31.723--ServerSession(446038416)--Connection(146826411)--Thread(Thread[http-thread-pool(1),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [undefined]]]
+
+[2017-04-06T15:46:31.724+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491486391724] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:46:31.723--ServerSession(446038416)--Connection(2124787837)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:46:31.726+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491486391726] [levelValue: 800] [[
+  AAAAAAAAAAAAAAAAAAAAjavax.persistence.NoResultException: getSingleResult() did not retrieve any entities.]]
+
+[2017-04-06T15:46:31.727+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491486391727] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:46:31.727--ServerSession(446038416)--Connection(2051796410)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:46:31.731+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491486391731] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:46:31.731--ServerSession(446038416)--Connection(997858357)--Thread(Thread[http-thread-pool(2),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:47:02.723+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491486422723] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:47:02.723--ServerSession(446038416)--Connection(1590277334)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [undefined]]]
+
+[2017-04-06T15:47:02.724+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool(3)] [timeMillis: 1491486422724] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:47:02.724--ServerSession(446038416)--Connection(1874544830)--Thread(Thread[http-thread-pool(3),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:47:02.725+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491486422725] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:47:02.725--ServerSession(446038416)--Connection(2075027457)--Thread(Thread[http-thread-pool(1),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:47:02.726+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491486422726] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:47:02.725--ServerSession(446038416)--Connection(1959151070)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:47:02.729+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491486422729] [levelValue: 800] [[
+  AAAAAAAAAAAAAAAAAAAAjavax.persistence.NoResultException: getSingleResult() did not retrieve any entities.]]
+
+[2017-04-06T15:49:45.761+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491486585761] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:49:45.761--ServerSession(446038416)--Connection(515204876)--Thread(Thread[http-thread-pool(1),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:49:45.765+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491486585765] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:49:45.765--ServerSession(446038416)--Connection(7952387)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [undefined]]]
+
+[2017-04-06T15:49:45.768+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491486585768] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:49:45.768--ServerSession(446038416)--Connection(927445908)--Thread(Thread[http-thread-pool(2),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:49:45.783+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491486585783] [levelValue: 800] [[
+  AAAAAAAAAAAAAAAAAAAAjavax.persistence.NoResultException: getSingleResult() did not retrieve any entities.]]
+
+[2017-04-06T15:49:45.789+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool(3)] [timeMillis: 1491486585789] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:49:45.789--ServerSession(446038416)--Connection(56316084)--Thread(Thread[http-thread-pool(3),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:53:41.843+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool(3)] [timeMillis: 1491486821843] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:53:41.843--ServerSession(446038416)--Connection(482523853)--Thread(Thread[http-thread-pool(3),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [undefined]]]
+
+[2017-04-06T15:53:41.847+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491486821847] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:53:41.847--ServerSession(446038416)--Connection(2028845035)--Thread(Thread[http-thread-pool(1),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:53:41.850+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491486821850] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:53:41.85--ServerSession(446038416)--Connection(1591724604)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:53:41.854+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491486821854] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:53:41.854--ServerSession(446038416)--Connection(847361881)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:53:41.855+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool(3)] [timeMillis: 1491486821855] [levelValue: 800] [[
+  AAAAAAAAAAAAAAAAAAAAjavax.persistence.NoResultException: getSingleResult() did not retrieve any entities.]]
+
+[2017-04-06T15:54:01.083+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491486841083] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:54:01.082--ServerSession(446038416)--Connection(857090166)--Thread(Thread[http-thread-pool(1),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:54:01.087+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491486841087] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:54:02.655+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool(3)] [timeMillis: 1491486842655] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:54:02.655--ServerSession(446038416)--Connection(424910266)--Thread(Thread[http-thread-pool(3),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:54:02.656+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491486842656] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:54:02.656--ServerSession(446038416)--Connection(1326483936)--Thread(Thread[http-thread-pool(1),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:54:02.656+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491486842656] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:54:02.656--ServerSession(446038416)--Connection(1218511097)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:54:02.712+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=http-thread-pool(2)] [timeMillis: 1491486842712] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:54:02.712--ServerSession(446038416)--Connection(160383522)--Thread(Thread[http-thread-pool(2),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:54:12.875+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491486852875] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:54:12.875--ServerSession(446038416)--Connection(1226745755)--Thread(Thread[http-thread-pool(1),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:54:12.904+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491486852904] [levelValue: 800] [[
+  bramdb]]
+
+[2017-04-06T15:54:15.467+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=http-thread-pool(1)] [timeMillis: 1491486855467] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:54:15.467--ServerSession(446038416)--Connection(2067848504)--Thread(Thread[http-thread-pool(1),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:54:15.468+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491486855468] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:54:15.467--ServerSession(446038416)--Connection(513153098)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:54:15.468+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491486855468] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:54:15.467--ServerSession(446038416)--Connection(2070719421)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:54:15.469+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool(3)] [timeMillis: 1491486855469] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:54:15.467--ServerSession(446038416)--Connection(639982703)--Thread(Thread[http-thread-pool(3),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:54:18.287+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(4)] [timeMillis: 1491486858287] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:54:18.287--ServerSession(446038416)--Connection(1631162102)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bobber]]]
+
+[2017-04-06T15:54:25.014+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491486865014] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-04-06 15:54:25.014--ServerSession(446038416)--Connection(801198978)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-04-06T15:54:25.019+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(5)] [timeMillis: 1491486865019] [levelValue: 800] [[
+  bramdb]]
+
