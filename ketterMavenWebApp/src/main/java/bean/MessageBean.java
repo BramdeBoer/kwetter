@@ -1,9 +1,5 @@
 package bean;
 
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import model.Tweet;
 import service.TweetService;
 import service.UserService;
 

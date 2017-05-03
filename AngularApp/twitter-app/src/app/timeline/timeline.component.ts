@@ -14,17 +14,39 @@ import { HttpService } from "app/http.service";
 export class TimelineComponent implements OnInit {
 
   private tweets: Tweet[];
+  private websocket: WebSocket;
 
-  constructor(private tweetService: TweetService) { }
+  constructor(private tweetService: TweetService) { 
+    this.websocket = new WebSocket(`ws://localhost:8080/kwetter/tweetsocket?username=bramdb`);
+    this.initializeWebSocket();
+  }
 
   ngOnInit() {
     this.getTweets();
   }
 
+  initializeWebSocket() {
+    this.websocket.onmessage = (event) => this.kweetReceived(event);
+  }
+
+
+  kweetReceived(event) {
+    console.log(event.data);
+    this.getTweets();
+  }
+
   public createTweet(content) {
-    this.tweetService.create(content, 'bramdb').subscribe(tweet => {
-      this.getTweets();
-    });
+    // this.tweetService.create(content, 'bramdb').subscribe(tweet => {
+    //   this.getTweets();
+    // });
+
+    if (this.websocket.readyState === this.websocket.OPEN) {
+      this.websocket.send(content);
+    } else {
+      this.tweetService.create(content, 'bramdb').subscribe(data => 
+        location.reload()
+      );
+    }
   }
 
   public getTweets() {

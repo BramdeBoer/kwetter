@@ -10711,3 +10711,1655 @@ Caused by: java.lang.AbstractMethodError: org.apache.activemq.command.ActiveMQTe
 [2017-05-03T12:14:35.889+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=53 _ThreadName=p: thread-pool-1; w: 4] [timeMillis: 1493806475889] [levelValue: 800] [[
   [EL Fine]: sql: 2017-05-03 12:14:35.889--ClientSession(656897785)--Connection(199744327)--Thread(Thread[p: thread-pool-1; w: 4,5,main])--SELECT LAST_INSERT_ID()]]
 
+[2017-05-03T13:51:30.610+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=345 _ThreadName=__ejb-thread-pool13] [timeMillis: 1493812290610] [levelValue: 800] [[
+  2017-05-03 13:51:30,609 [b-thread-pool13] INFO  ActiveMQEndpointWorker         - Stopping]]
+
+[2017-05-03T13:51:30.651+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812290651] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 13:51:30.65--ServerSession(610891358)--Connection(821563730)--Thread(Thread[admin-thread-pool(1),5,main])--disconnect]]
+
+[2017-05-03T13:51:30.652+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812290652] [levelValue: 800] [[
+  [EL Info]: connection: 2017-05-03 13:51:30.652--ServerSession(610891358)--Thread(Thread[admin-thread-pool(1),5,main])--/file:/C:/Users/bramd/Documents/GitHub/kwetter/ketterMavenWebApp/target/kwetter/WEB-INF/classes/_KwetterPU logout successful]]
+
+[2017-05-03T13:51:32.617+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292617] [levelValue: 800] [[
+  [EL Fine]: server: 2017-05-03 13:51:32.617--Thread(Thread[admin-thread-pool(1),5,main])--Configured server platform: org.eclipse.persistence.platform.server.glassfish.GlassfishPlatform]]
+
+[2017-05-03T13:51:32.675+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292675] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.675--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The access type for the persistent class [class model.Group] is set to [FIELD].]]
+
+[2017-05-03T13:51:32.676+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292676] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.676--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the many to many mapping element [field users] is being defaulted to: class model.User.]]
+
+[2017-05-03T13:51:32.677+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292677] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.677--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The access type for the persistent class [class model.User] is set to [FIELD].]]
+
+[2017-05-03T13:51:32.677+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292677] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.677--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the many to many mapping element [field groups] is being defaulted to: class model.Group.]]
+
+[2017-05-03T13:51:32.678+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292678] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.678--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the one to many mapping element [field tweets] is being defaulted to: class model.Tweet.]]
+
+[2017-05-03T13:51:32.678+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292678] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.678--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the one to many mapping element [field followers] is being defaulted to: class model.User.]]
+
+[2017-05-03T13:51:32.678+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292678] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.678--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the one to many mapping element [field following] is being defaulted to: class model.User.]]
+
+[2017-05-03T13:51:32.679+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292679] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.679--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The access type for the persistent class [class model.Tweet] is set to [FIELD].]]
+
+[2017-05-03T13:51:32.679+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292679] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.679--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the many to one mapping element [field createdBy] is being defaulted to: class model.User.]]
+
+[2017-05-03T13:51:32.680+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292680] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.68--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the one to many mapping element [field likedBy] is being defaulted to: class model.User.]]
+
+[2017-05-03T13:51:32.680+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292680] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.68--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The alias name for the entity class [class model.Group] is being defaulted to: Group.]]
+
+[2017-05-03T13:51:32.681+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292681] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.681--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [groupName] is being defaulted to: GROUPNAME.]]
+
+[2017-05-03T13:51:32.681+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292681] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.681--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The alias name for the entity class [class model.User] is being defaulted to: User.]]
+
+[2017-05-03T13:51:32.682+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292682] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.681--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The table name for entity [class model.User] is being defaulted to: USER.]]
+
+[2017-05-03T13:51:32.682+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292682] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.682--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [avatarURL] is being defaulted to: AVATARURL.]]
+
+[2017-05-03T13:51:32.682+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292682] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.682--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [bio] is being defaulted to: BIO.]]
+
+[2017-05-03T13:51:32.682+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292682] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.682--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [type] is being defaulted to: TYPE.]]
+
+[2017-05-03T13:51:32.682+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292682] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.682--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [password] is being defaulted to: PASSWORD.]]
+
+[2017-05-03T13:51:32.683+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292683] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.683--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [websiteURL] is being defaulted to: WEBSITEURL.]]
+
+[2017-05-03T13:51:32.683+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292683] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.683--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [name] is being defaulted to: NAME.]]
+
+[2017-05-03T13:51:32.683+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292683] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.683--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [location] is being defaulted to: LOCATION.]]
+
+[2017-05-03T13:51:32.683+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292683] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.683--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [id] is being defaulted to: ID.]]
+
+[2017-05-03T13:51:32.685+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292685] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.684--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [username] is being defaulted to: USERNAME.]]
+
+[2017-05-03T13:51:32.685+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292685] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.685--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The alias name for the entity class [class model.Tweet] is being defaulted to: Tweet.]]
+
+[2017-05-03T13:51:32.686+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292686] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.685--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The table name for entity [class model.Tweet] is being defaulted to: TWEET.]]
+
+[2017-05-03T13:51:32.686+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292686] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.686--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [date] is being defaulted to: DATE.]]
+
+[2017-05-03T13:51:32.686+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292686] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.686--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [id] is being defaulted to: ID.]]
+
+[2017-05-03T13:51:32.687+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292687] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.687--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [content] is being defaulted to: CONTENT.]]
+
+[2017-05-03T13:51:32.688+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292688] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.688--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The source primary key column name for the many to many mapping [field followers] is being defaulted to: ID.]]
+
+[2017-05-03T13:51:32.688+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292688] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.688--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The source foreign key column name for the many to many mapping [followers] is being defaulted to: User_ID.]]
+
+[2017-05-03T13:51:32.688+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292688] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.688--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The target primary key column name for the many to many mapping [field followers] is being defaulted to: ID.]]
+
+[2017-05-03T13:51:32.688+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292688] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.688--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The target foreign key column name for the many to many mapping [followers] is being defaulted to: followers_ID.]]
+
+[2017-05-03T13:51:32.689+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292689] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.689--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The source primary key column name for the many to many mapping [field following] is being defaulted to: ID.]]
+
+[2017-05-03T13:51:32.689+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292689] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.689--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The source foreign key column name for the many to many mapping [following] is being defaulted to: User_ID.]]
+
+[2017-05-03T13:51:32.689+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292689] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.689--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The target primary key column name for the many to many mapping [field following] is being defaulted to: ID.]]
+
+[2017-05-03T13:51:32.689+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292689] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.689--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The target foreign key column name for the many to many mapping [following] is being defaulted to: following_ID.]]
+
+[2017-05-03T13:51:32.690+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292690] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.69--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The primary key column name for the mapping element [field createdBy] is being defaulted to: ID.]]
+
+[2017-05-03T13:51:32.691+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292691] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.691--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The foreign key column name for the mapping element [createdBy] is being defaulted to: CREATEDBY_ID.]]
+
+[2017-05-03T13:51:32.691+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292691] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.691--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The join table name for the many to many mapping [field likedBy] is being defaulted to: TWEET_USER.]]
+
+[2017-05-03T13:51:32.692+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292692] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.692--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The source primary key column name for the many to many mapping [field likedBy] is being defaulted to: ID.]]
+
+[2017-05-03T13:51:32.692+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292692] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.692--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The source foreign key column name for the many to many mapping [likedBy] is being defaulted to: Tweet_ID.]]
+
+[2017-05-03T13:51:32.692+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292692] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.692--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The target primary key column name for the many to many mapping [field likedBy] is being defaulted to: ID.]]
+
+[2017-05-03T13:51:32.692+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292692] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:51:32.692--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--The target foreign key column name for the many to many mapping [likedBy] is being defaulted to: likedBy_ID.]]
+
+[2017-05-03T13:51:32.717+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292717] [levelValue: 800] [[
+  [EL Info]: 2017-05-03 13:51:32.716--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--EclipseLink, version: Eclipse Persistence Services - 2.6.3.qualifier]]
+
+[2017-05-03T13:51:32.718+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292718] [levelValue: 800] [[
+  [EL Fine]: connection: 2017-05-03 13:51:32.718--Thread(Thread[admin-thread-pool(1),5,main])--Detected database platform: org.eclipse.persistence.platform.database.MySQLPlatform]]
+
+[2017-05-03T13:51:32.719+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292719] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 13:51:32.718--ServerSession(992581928)--Connection(96082073)--Thread(Thread[admin-thread-pool(1),5,main])--connecting(DatabaseLogin(
+	platform=>DatabasePlatform
+	user name=> "root"
+	connector=>JNDIConnector datasource name=>null
+))]]
+
+[2017-05-03T13:51:32.719+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292719] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 13:51:32.719--ServerSession(992581928)--Connection(1244840615)--Thread(Thread[admin-thread-pool(1),5,main])--Connected: jdbc:mysql://localhost:3306/kwetter
+	User: root
+	Database: MySQL  Version: 10.1.10-MariaDB
+	Driver: MariaDB connector/J  Version: 1.5.8]]
+
+[2017-05-03T13:51:32.720+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292720] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 13:51:32.719--ServerSession(992581928)--Connection(609496956)--Thread(Thread[admin-thread-pool(1),5,main])--connecting(DatabaseLogin(
+	platform=>MySQLPlatform
+	user name=> "root"
+	connector=>JNDIConnector datasource name=>null
+))]]
+
+[2017-05-03T13:51:32.720+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292720] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 13:51:32.72--ServerSession(992581928)--Connection(212223111)--Thread(Thread[admin-thread-pool(1),5,main])--Connected: jdbc:mysql://localhost:3306/kwetter
+	User: root
+	Database: MySQL  Version: 10.1.10-MariaDB
+	Driver: MariaDB connector/J  Version: 1.5.8]]
+
+[2017-05-03T13:51:32.725+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292725] [levelValue: 800] [[
+  [EL Info]: connection: 2017-05-03 13:51:32.725--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--/file:/C:/Users/bramd/Documents/GitHub/kwetter/ketterMavenWebApp/target/kwetter/WEB-INF/classes/_KwetterPU login successful]]
+
+[2017-05-03T13:51:32.736+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292736] [levelValue: 800] [[
+  Portable JNDI names for EJB TweetService: [java:global/kwetter/TweetService, java:global/kwetter/TweetService!service.TweetService]]]
+
+[2017-05-03T13:51:32.746+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292746] [levelValue: 800] [[
+  Portable JNDI names for EJB TweetRest: [java:global/kwetter/TweetRest!rest.TweetRest, java:global/kwetter/TweetRest]]]
+
+[2017-05-03T13:51:32.755+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292755] [levelValue: 800] [[
+  Portable JNDI names for EJB TweetDaoColl: [java:global/kwetter/TweetDaoColl!dao.TweetDao, java:global/kwetter/TweetDaoColl]]]
+
+[2017-05-03T13:51:32.762+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292762] [levelValue: 800] [[
+  Portable JNDI names for EJB UserDaoColl: [java:global/kwetter/UserDaoColl, java:global/kwetter/UserDaoColl!dao.UserDao]]]
+
+[2017-05-03T13:51:32.766+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292766] [levelValue: 800] [[
+  Portable JNDI names for EJB TweetDaoImp: [java:global/kwetter/TweetDaoImp, java:global/kwetter/TweetDaoImp!dao.TweetDao]]]
+
+[2017-05-03T13:51:32.772+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292772] [levelValue: 800] [[
+  Portable JNDI names for EJB UserService: [java:global/kwetter/UserService, java:global/kwetter/UserService!service.UserService]]]
+
+[2017-05-03T13:51:32.780+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292780] [levelValue: 800] [[
+  Portable JNDI names for EJB UserRest: [java:global/kwetter/UserRest!rest.UserRest, java:global/kwetter/UserRest]]]
+
+[2017-05-03T13:51:32.786+0200] [Payara 4.1] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.util] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292786] [levelValue: 900] [[
+  RAR8000 : The method setDestinationLookup is not present in the class : org.apache.activemq.ra.ActiveMQActivationSpec]]
+
+[2017-05-03T13:51:32.786+0200] [Payara 4.1] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.util] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292786] [levelValue: 900] [[
+  RAR7097: No setter method present for the property destinationLookup in the class org.apache.activemq.ra.ActiveMQActivationSpec]]
+
+[2017-05-03T13:51:32.789+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292789] [levelValue: 800] [[
+  2017-05-03 13:51:32,789 [-thread-pool(1)] INFO  ActiveMQEndpointWorker         - Starting]]
+
+[2017-05-03T13:51:32.790+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=54 _ThreadName=p: thread-pool-1; w: 5] [timeMillis: 1493812292790] [levelValue: 800] [[
+  2017-05-03 13:51:32,790 [ad-pool-1; w: 5] INFO  ActiveMQEndpointWorker         - Establishing connection to broker [tcp://localhost:61616]]]
+
+[2017-05-03T13:51:32.796+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292796] [levelValue: 800] [[
+  Portable JNDI names for EJB UserDaoImp: [java:global/kwetter/UserDaoImp, java:global/kwetter/UserDaoImp!dao.UserDao]]]
+
+[2017-05-03T13:51:32.802+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292802] [levelValue: 800] [[
+  Portable JNDI names for EJB StartUp: [java:global/kwetter/StartUp, java:global/kwetter/StartUp!service.StartUp]]]
+
+[2017-05-03T13:51:32.806+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=54 _ThreadName=p: thread-pool-1; w: 5] [timeMillis: 1493812292806] [levelValue: 800] [[
+  2017-05-03 13:51:32,806 [ad-pool-1; w: 5] INFO  ActiveMQEndpointWorker         - Successfully established connection to broker [tcp://localhost:61616]]]
+
+[2017-05-03T13:51:32.906+0200] [Payara 4.1] [INFO] [] [org.jboss.weld.Event] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812292906] [levelValue: 800] [[
+  WELD-000411: Observer method [BackedAnnotatedMethod] private org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider.processAnnotatedType(@Observes ProcessAnnotatedType) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.]]
+
+[2017-05-03T13:51:33.343+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812293343] [levelValue: 800] [[
+  START IMPORT]]
+
+[2017-05-03T13:51:33.712+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812293712] [levelValue: 800] [[
+  Cannot find the resource bundle for the name com.sun.logging.enterprise.system.core.naming for class org.glassfish.concurrent.runtime.deployer.ConcurrentObjectFactory using org.glassfish.main.concurrent.impl [41]]]
+
+[2017-05-03T13:51:33.787+0200] [Payara 4.1] [INFO] [] [org.glassfish.tyrus.servlet.TyrusServletContainerInitializer] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812293787] [levelValue: 800] [[
+  Registering WebSocket filter for url pattern /*]]
+
+[2017-05-03T13:51:33.789+0200] [Payara 4.1] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812293789] [levelValue: 800] [[
+  Initializing Mojarra 2.2.13 ( 20160203-1910 unable to get svn info) for context '/kwetter']]
+
+[2017-05-03T13:51:34.541+0200] [Payara 4.1] [INFO] [] [org.primefaces.webapp.PostConstructApplicationEventListener] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812294541] [levelValue: 800] [[
+  Running on PrimeFaces 5.3]]
+
+[2017-05-03T13:51:34.657+0200] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812294657] [levelValue: 800] [[
+  Loading application [kwetter] at [/kwetter]]]
+
+[2017-05-03T13:51:34.701+0200] [Payara 4.1] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812294701] [levelValue: 800] [[
+  kwetter was successfully deployed in 4.281 milliseconds.]]
+
+[2017-05-03T13:56:06.385+0200] [Payara 4.1] [INFO] [] [websockets.TweetEndpoint] [tid: _ThreadID=26 _ThreadName=http-thread-pool(1)] [timeMillis: 1493812566385] [levelValue: 800] [[
+  Connection opened ...]]
+
+[2017-05-03T13:56:06.847+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812566847] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:06.846--ServerSession(992581928)--Connection(1686464099)--Thread(Thread[http-thread-pool(2),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-05-03T13:56:06.853+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812566853] [levelValue: 800] [[
+  bramdb]]
+
+[2017-05-03T13:56:06.855+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812566855] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:06.854--ServerSession(992581928)--Connection(719381671)--Thread(Thread[http-thread-pool(2),5,main])--SELECT ID, CONTENT, DATE, CREATEDBY_ID FROM TWEET WHERE (CREATEDBY_ID = ?)
+	bind => [1]]]
+
+[2017-05-03T13:56:06.878+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812566878] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:06.877--ServerSession(992581928)--Connection(949893574)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM user_follows t0, USER t1 WHERE ((t0.User_ID = ?) AND (t1.ID = t0.following_ID))
+	bind => [1]]]
+
+[2017-05-03T13:56:06.880+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812566880] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:06.88--ServerSession(992581928)--Connection(1237273051)--Thread(Thread[http-thread-pool(2),5,main])--SELECT ID, CONTENT, DATE, CREATEDBY_ID FROM TWEET WHERE (CREATEDBY_ID = ?)
+	bind => [2]]]
+
+[2017-05-03T13:56:07.147+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567147] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.147--ServerSession(992581928)--Connection(751943903)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [118]]]
+
+[2017-05-03T13:56:07.156+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567156] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.156--ServerSession(992581928)--Connection(682535720)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [117]]]
+
+[2017-05-03T13:56:07.160+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567160] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.16--ServerSession(992581928)--Connection(295682569)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [116]]]
+
+[2017-05-03T13:56:07.162+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567162] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.162--ServerSession(992581928)--Connection(597533100)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [115]]]
+
+[2017-05-03T13:56:07.164+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567164] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.164--ServerSession(992581928)--Connection(32000568)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [114]]]
+
+[2017-05-03T13:56:07.167+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567167] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.167--ServerSession(992581928)--Connection(1556235974)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [113]]]
+
+[2017-05-03T13:56:07.169+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567169] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.169--ServerSession(992581928)--Connection(866273501)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [112]]]
+
+[2017-05-03T13:56:07.171+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567171] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.171--ServerSession(992581928)--Connection(2113671108)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [110]]]
+
+[2017-05-03T13:56:07.174+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567174] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.174--ServerSession(992581928)--Connection(1048982473)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [111]]]
+
+[2017-05-03T13:56:07.177+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567177] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.177--ServerSession(992581928)--Connection(1883023017)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [109]]]
+
+[2017-05-03T13:56:07.180+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567180] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.18--ServerSession(992581928)--Connection(1366949075)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [108]]]
+
+[2017-05-03T13:56:07.182+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567182] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.182--ServerSession(992581928)--Connection(1281776407)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [107]]]
+
+[2017-05-03T13:56:07.184+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567184] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.183--ServerSession(992581928)--Connection(1139876137)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [106]]]
+
+[2017-05-03T13:56:07.185+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567185] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.185--ServerSession(992581928)--Connection(1458425360)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [105]]]
+
+[2017-05-03T13:56:07.188+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567188] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.188--ServerSession(992581928)--Connection(1223442298)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [104]]]
+
+[2017-05-03T13:56:07.193+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567193] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.192--ServerSession(992581928)--Connection(138144072)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [103]]]
+
+[2017-05-03T13:56:07.194+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567194] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.194--ServerSession(992581928)--Connection(614593370)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [102]]]
+
+[2017-05-03T13:56:07.196+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567196] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.196--ServerSession(992581928)--Connection(171819534)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [101]]]
+
+[2017-05-03T13:56:07.198+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567198] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.198--ServerSession(992581928)--Connection(883354922)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [100]]]
+
+[2017-05-03T13:56:07.200+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567200] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.2--ServerSession(992581928)--Connection(1669346143)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [99]]]
+
+[2017-05-03T13:56:07.203+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567203] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.203--ServerSession(992581928)--Connection(1217406806)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [98]]]
+
+[2017-05-03T13:56:07.204+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567204] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.204--ServerSession(992581928)--Connection(752464376)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [97]]]
+
+[2017-05-03T13:56:07.207+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567207] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.207--ServerSession(992581928)--Connection(789956340)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [96]]]
+
+[2017-05-03T13:56:07.209+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567209] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.209--ServerSession(992581928)--Connection(1298993794)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [95]]]
+
+[2017-05-03T13:56:07.211+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567211] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.211--ServerSession(992581928)--Connection(68036334)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [94]]]
+
+[2017-05-03T13:56:07.213+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567213] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.213--ServerSession(992581928)--Connection(1706627558)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [93]]]
+
+[2017-05-03T13:56:07.215+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567215] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.215--ServerSession(992581928)--Connection(1679448515)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [83]]]
+
+[2017-05-03T13:56:07.217+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567217] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.217--ServerSession(992581928)--Connection(1103544000)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [84]]]
+
+[2017-05-03T13:56:07.218+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567218] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.218--ServerSession(992581928)--Connection(873122112)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [85]]]
+
+[2017-05-03T13:56:07.220+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567220] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.22--ServerSession(992581928)--Connection(428988422)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [86]]]
+
+[2017-05-03T13:56:07.222+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567222] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.222--ServerSession(992581928)--Connection(796090038)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [87]]]
+
+[2017-05-03T13:56:07.225+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567225] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.225--ServerSession(992581928)--Connection(1538770214)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [88]]]
+
+[2017-05-03T13:56:07.227+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567227] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.227--ServerSession(992581928)--Connection(966084569)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [89]]]
+
+[2017-05-03T13:56:07.229+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567229] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.229--ServerSession(992581928)--Connection(785643781)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [90]]]
+
+[2017-05-03T13:56:07.230+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567230] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.23--ServerSession(992581928)--Connection(459314311)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [91]]]
+
+[2017-05-03T13:56:07.232+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567232] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.232--ServerSession(992581928)--Connection(2115763256)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [92]]]
+
+[2017-05-03T13:56:07.234+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567234] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.234--ServerSession(992581928)--Connection(1831061421)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [73]]]
+
+[2017-05-03T13:56:07.235+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567235] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.235--ServerSession(992581928)--Connection(1552482525)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [74]]]
+
+[2017-05-03T13:56:07.241+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567241] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.241--ServerSession(992581928)--Connection(1129476967)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [75]]]
+
+[2017-05-03T13:56:07.243+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567243] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.243--ServerSession(992581928)--Connection(1653189897)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [76]]]
+
+[2017-05-03T13:56:07.245+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567245] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.245--ServerSession(992581928)--Connection(300154970)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [77]]]
+
+[2017-05-03T13:56:07.247+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567247] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.246--ServerSession(992581928)--Connection(100627795)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [78]]]
+
+[2017-05-03T13:56:07.248+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567248] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.248--ServerSession(992581928)--Connection(1432811456)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [79]]]
+
+[2017-05-03T13:56:07.252+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567252] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.252--ServerSession(992581928)--Connection(2049505664)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [80]]]
+
+[2017-05-03T13:56:07.254+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567254] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.254--ServerSession(992581928)--Connection(1266667599)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [81]]]
+
+[2017-05-03T13:56:07.257+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567257] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.257--ServerSession(992581928)--Connection(903111070)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [82]]]
+
+[2017-05-03T13:56:07.259+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567259] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.259--ServerSession(992581928)--Connection(1466849299)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [63]]]
+
+[2017-05-03T13:56:07.260+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567260] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.26--ServerSession(992581928)--Connection(1782013831)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [64]]]
+
+[2017-05-03T13:56:07.262+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567262] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.262--ServerSession(992581928)--Connection(1602160422)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [65]]]
+
+[2017-05-03T13:56:07.264+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(2)] [timeMillis: 1493812567264] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:07.264--ServerSession(992581928)--Connection(1236358598)--Thread(Thread[http-thread-pool(2),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [66]]]
+
+[2017-05-03T13:56:22.168+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(3)] [timeMillis: 1493812582168] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 13:56:22.168--ServerSession(992581928)--Connection(590543941)--Thread(Thread[http-thread-pool(3),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [nino]]]
+
+[2017-05-03T13:56:22.182+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(3)] [timeMillis: 1493812582182] [levelValue: 800] [[
+  AAAAAAAAAAAAAAAAAAAAjavax.persistence.NoResultException: getSingleResult() did not retrieve any entities.]]
+
+[2017-05-03T13:56:22.188+0200] [Payara 4.1] [WARNING] [AS-EJB-00056] [javax.enterprise.ejb.container] [tid: _ThreadID=28 _ThreadName=http-thread-pool(3)] [timeMillis: 1493812582188] [levelValue: 900] [[
+  A system exception occurred during an invocation on EJB TweetService, method: public model.Tweet service.TweetService.create(java.lang.String,model.User)]]
+
+[2017-05-03T13:56:22.188+0200] [Payara 4.1] [WARNING] [] [javax.enterprise.ejb.container] [tid: _ThreadID=28 _ThreadName=http-thread-pool(3)] [timeMillis: 1493812582188] [levelValue: 900] [[
+  
+javax.ejb.EJBException
+	at com.sun.ejb.containers.EJBContainerTransactionManager.processSystemException(EJBContainerTransactionManager.java:750)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.completeNewTx(EJBContainerTransactionManager.java:700)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.postInvokeTx(EJBContainerTransactionManager.java:505)
+	at com.sun.ejb.containers.BaseContainer.postInvokeTx(BaseContainer.java:4542)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2021)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:1992)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:220)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:88)
+	at com.sun.proxy.$Proxy382.create(Unknown Source)
+	at service.__EJB31_Generated__TweetService__Intf____Bean__.create(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.weld.util.reflection.Reflections.invokeAndUnwrap(Reflections.java:433)
+	at org.jboss.weld.bean.proxy.EnterpriseBeanProxyMethodHandler.invoke(EnterpriseBeanProxyMethodHandler.java:127)
+	at org.jboss.weld.bean.proxy.EnterpriseTargetBeanInstance.invoke(EnterpriseTargetBeanInstance.java:56)
+	at org.jboss.weld.bean.proxy.InjectionPointPropagatingEnterpriseTargetBeanInstance.invoke(InjectionPointPropagatingEnterpriseTargetBeanInstance.java:67)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:100)
+	at service.TweetService$Proxy$_$$_Weld$EnterpriseProxy$.create(Unknown Source)
+	at websockets.TweetEndpoint.onMessage(TweetEndpoint.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.tyrus.core.AnnotatedEndpoint.callMethod(AnnotatedEndpoint.java:520)
+	at org.glassfish.tyrus.core.AnnotatedEndpoint.access$100(AnnotatedEndpoint.java:87)
+	at org.glassfish.tyrus.core.AnnotatedEndpoint$WholeHandler$1.onMessage(AnnotatedEndpoint.java:619)
+	at org.glassfish.tyrus.core.TyrusSession.notifyMessageHandlers(TyrusSession.java:576)
+	at org.glassfish.tyrus.core.TyrusEndpointWrapper.onMessage(TyrusEndpointWrapper.java:879)
+	at org.glassfish.tyrus.core.TyrusWebSocket.onMessage(TyrusWebSocket.java:216)
+	at org.glassfish.tyrus.core.frame.TextFrame.respond(TextFrame.java:139)
+	at org.glassfish.tyrus.core.ProtocolHandler.process(ProtocolHandler.java:807)
+	at org.glassfish.tyrus.core.TyrusWebSocketEngine$TyrusReadHandler.handle(TyrusWebSocketEngine.java:562)
+	at org.glassfish.tyrus.servlet.TyrusHttpUpgradeHandler.onDataAvailable(TyrusHttpUpgradeHandler.java:173)
+	at org.apache.catalina.connector.InputBuffer$ReadHandlerImpl.processDataAvailable(InputBuffer.java:498)
+	at org.apache.catalina.connector.InputBuffer$ReadHandlerImpl.onDataAvailable(InputBuffer.java:459)
+	at org.glassfish.grizzly.http.io.InputBuffer.invokeHandler(InputBuffer.java:1085)
+	at org.glassfish.grizzly.http.io.InputBuffer.invokeHandlerOnProperThread(InputBuffer.java:1076)
+	at org.glassfish.grizzly.http.io.InputBuffer.append(InputBuffer.java:959)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:271)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:526)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at model.Tweet.<init>(Tweet.java:39)
+	at service.TweetService.create(TweetService.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1081)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1153)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:4762)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:656)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:834)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at interceptor.VolgTrendInterceptor.aroundInvoke(VolgTrendInterceptor.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:895)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:834)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:73)
+	at org.jboss.weld.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:895)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:834)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doCall(SystemInterceptorProxy.java:163)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:895)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:834)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:374)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:4734)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:4722)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	... 48 more
+]]
+
+[2017-05-03T13:56:22.190+0200] [Payara 4.1] [INFO] [] [websockets.TweetEndpoint] [tid: _ThreadID=28 _ThreadName=http-thread-pool(3)] [timeMillis: 1493812582190] [levelValue: 800] [[
+  Error ...null]]
+
+[2017-05-03T13:57:33.094+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=346 _ThreadName=__ejb-thread-pool14] [timeMillis: 1493812653094] [levelValue: 800] [[
+  2017-05-03 13:57:33,094 [b-thread-pool14] INFO  ActiveMQEndpointWorker         - Stopping]]
+
+[2017-05-03T13:57:33.109+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812653109] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 13:57:33.109--ServerSession(992581928)--Connection(1502283954)--Thread(Thread[admin-thread-pool(1),5,main])--disconnect]]
+
+[2017-05-03T13:57:33.109+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812653109] [levelValue: 800] [[
+  [EL Info]: connection: 2017-05-03 13:57:33.109--ServerSession(992581928)--Thread(Thread[admin-thread-pool(1),5,main])--/file:/C:/Users/bramd/Documents/GitHub/kwetter/ketterMavenWebApp/target/kwetter/WEB-INF/classes/_KwetterPU logout successful]]
+
+[2017-05-03T13:57:34.648+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654648] [levelValue: 800] [[
+  [EL Fine]: server: 2017-05-03 13:57:34.647--Thread(Thread[admin-thread-pool(1),5,main])--Configured server platform: org.eclipse.persistence.platform.server.glassfish.GlassfishPlatform]]
+
+[2017-05-03T13:57:34.744+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654744] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.743--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The access type for the persistent class [class model.Group] is set to [FIELD].]]
+
+[2017-05-03T13:57:34.746+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654746] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.746--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the many to many mapping element [field users] is being defaulted to: class model.User.]]
+
+[2017-05-03T13:57:34.747+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654747] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.747--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The access type for the persistent class [class model.User] is set to [FIELD].]]
+
+[2017-05-03T13:57:34.748+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654748] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.748--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the many to many mapping element [field groups] is being defaulted to: class model.Group.]]
+
+[2017-05-03T13:57:34.749+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654749] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.749--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the one to many mapping element [field tweets] is being defaulted to: class model.Tweet.]]
+
+[2017-05-03T13:57:34.749+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654749] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.749--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the one to many mapping element [field followers] is being defaulted to: class model.User.]]
+
+[2017-05-03T13:57:34.750+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654750] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.75--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the one to many mapping element [field following] is being defaulted to: class model.User.]]
+
+[2017-05-03T13:57:34.750+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654750] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.75--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The access type for the persistent class [class model.Tweet] is set to [FIELD].]]
+
+[2017-05-03T13:57:34.751+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654751] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.751--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the many to one mapping element [field createdBy] is being defaulted to: class model.User.]]
+
+[2017-05-03T13:57:34.751+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654751] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.751--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the one to many mapping element [field likedBy] is being defaulted to: class model.User.]]
+
+[2017-05-03T13:57:34.752+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654752] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.752--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The alias name for the entity class [class model.Group] is being defaulted to: Group.]]
+
+[2017-05-03T13:57:34.752+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654752] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.752--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [groupName] is being defaulted to: GROUPNAME.]]
+
+[2017-05-03T13:57:34.753+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654753] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.753--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The alias name for the entity class [class model.User] is being defaulted to: User.]]
+
+[2017-05-03T13:57:34.753+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654753] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.753--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The table name for entity [class model.User] is being defaulted to: USER.]]
+
+[2017-05-03T13:57:34.754+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654754] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.753--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [avatarURL] is being defaulted to: AVATARURL.]]
+
+[2017-05-03T13:57:34.754+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654754] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.754--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [bio] is being defaulted to: BIO.]]
+
+[2017-05-03T13:57:34.755+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654755] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.755--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [type] is being defaulted to: TYPE.]]
+
+[2017-05-03T13:57:34.755+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654755] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.755--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [password] is being defaulted to: PASSWORD.]]
+
+[2017-05-03T13:57:34.756+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654756] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.756--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [websiteURL] is being defaulted to: WEBSITEURL.]]
+
+[2017-05-03T13:57:34.757+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654757] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.757--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [name] is being defaulted to: NAME.]]
+
+[2017-05-03T13:57:34.757+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654757] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.757--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [location] is being defaulted to: LOCATION.]]
+
+[2017-05-03T13:57:34.757+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654757] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.757--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [id] is being defaulted to: ID.]]
+
+[2017-05-03T13:57:34.758+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654758] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.758--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [username] is being defaulted to: USERNAME.]]
+
+[2017-05-03T13:57:34.758+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654758] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.758--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The alias name for the entity class [class model.Tweet] is being defaulted to: Tweet.]]
+
+[2017-05-03T13:57:34.758+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654758] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.758--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The table name for entity [class model.Tweet] is being defaulted to: TWEET.]]
+
+[2017-05-03T13:57:34.759+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654759] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.759--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [date] is being defaulted to: DATE.]]
+
+[2017-05-03T13:57:34.759+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654759] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.759--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [id] is being defaulted to: ID.]]
+
+[2017-05-03T13:57:34.759+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654759] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.759--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [content] is being defaulted to: CONTENT.]]
+
+[2017-05-03T13:57:34.760+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654760] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.76--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The source primary key column name for the many to many mapping [field followers] is being defaulted to: ID.]]
+
+[2017-05-03T13:57:34.760+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654760] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.76--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The source foreign key column name for the many to many mapping [followers] is being defaulted to: User_ID.]]
+
+[2017-05-03T13:57:34.760+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654760] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.76--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The target primary key column name for the many to many mapping [field followers] is being defaulted to: ID.]]
+
+[2017-05-03T13:57:34.761+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654761] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.761--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The target foreign key column name for the many to many mapping [followers] is being defaulted to: followers_ID.]]
+
+[2017-05-03T13:57:34.761+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654761] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.761--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The source primary key column name for the many to many mapping [field following] is being defaulted to: ID.]]
+
+[2017-05-03T13:57:34.762+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654762] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.762--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The source foreign key column name for the many to many mapping [following] is being defaulted to: User_ID.]]
+
+[2017-05-03T13:57:34.762+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654762] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.762--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The target primary key column name for the many to many mapping [field following] is being defaulted to: ID.]]
+
+[2017-05-03T13:57:34.762+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654762] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.762--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The target foreign key column name for the many to many mapping [following] is being defaulted to: following_ID.]]
+
+[2017-05-03T13:57:34.763+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654763] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.763--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The primary key column name for the mapping element [field createdBy] is being defaulted to: ID.]]
+
+[2017-05-03T13:57:34.763+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654763] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.763--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The foreign key column name for the mapping element [createdBy] is being defaulted to: CREATEDBY_ID.]]
+
+[2017-05-03T13:57:34.763+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654763] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.763--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The join table name for the many to many mapping [field likedBy] is being defaulted to: TWEET_USER.]]
+
+[2017-05-03T13:57:34.764+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654764] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.764--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The source primary key column name for the many to many mapping [field likedBy] is being defaulted to: ID.]]
+
+[2017-05-03T13:57:34.764+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654764] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.764--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The source foreign key column name for the many to many mapping [likedBy] is being defaulted to: Tweet_ID.]]
+
+[2017-05-03T13:57:34.764+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654764] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.764--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The target primary key column name for the many to many mapping [field likedBy] is being defaulted to: ID.]]
+
+[2017-05-03T13:57:34.765+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654765] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 13:57:34.765--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--The target foreign key column name for the many to many mapping [likedBy] is being defaulted to: likedBy_ID.]]
+
+[2017-05-03T13:57:34.809+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654809] [levelValue: 800] [[
+  [EL Info]: 2017-05-03 13:57:34.809--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--EclipseLink, version: Eclipse Persistence Services - 2.6.3.qualifier]]
+
+[2017-05-03T13:57:34.810+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654810] [levelValue: 800] [[
+  [EL Fine]: connection: 2017-05-03 13:57:34.81--Thread(Thread[admin-thread-pool(1),5,main])--Detected database platform: org.eclipse.persistence.platform.database.MySQLPlatform]]
+
+[2017-05-03T13:57:34.811+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654811] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 13:57:34.81--ServerSession(63091834)--Connection(1663568740)--Thread(Thread[admin-thread-pool(1),5,main])--connecting(DatabaseLogin(
+	platform=>DatabasePlatform
+	user name=> "root"
+	connector=>JNDIConnector datasource name=>null
+))]]
+
+[2017-05-03T13:57:34.812+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654812] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 13:57:34.811--ServerSession(63091834)--Connection(1379900495)--Thread(Thread[admin-thread-pool(1),5,main])--Connected: jdbc:mysql://localhost:3306/kwetter
+	User: root
+	Database: MySQL  Version: 10.1.10-MariaDB
+	Driver: MariaDB connector/J  Version: 1.5.8]]
+
+[2017-05-03T13:57:34.816+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654816] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 13:57:34.816--ServerSession(63091834)--Connection(1686515621)--Thread(Thread[admin-thread-pool(1),5,main])--connecting(DatabaseLogin(
+	platform=>MySQLPlatform
+	user name=> "root"
+	connector=>JNDIConnector datasource name=>null
+))]]
+
+[2017-05-03T13:57:34.817+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654817] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 13:57:34.817--ServerSession(63091834)--Connection(212360791)--Thread(Thread[admin-thread-pool(1),5,main])--Connected: jdbc:mysql://localhost:3306/kwetter
+	User: root
+	Database: MySQL  Version: 10.1.10-MariaDB
+	Driver: MariaDB connector/J  Version: 1.5.8]]
+
+[2017-05-03T13:57:34.820+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654820] [levelValue: 800] [[
+  [EL Info]: connection: 2017-05-03 13:57:34.82--ServerSession(63091834)--Thread(Thread[admin-thread-pool(1),5,main])--/file:/C:/Users/bramd/Documents/GitHub/kwetter/ketterMavenWebApp/target/kwetter/WEB-INF/classes/_KwetterPU login successful]]
+
+[2017-05-03T13:57:34.829+0200] [Payara 4.1] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.util] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654829] [levelValue: 900] [[
+  RAR8000 : The method setDestinationLookup is not present in the class : org.apache.activemq.ra.ActiveMQActivationSpec]]
+
+[2017-05-03T13:57:34.829+0200] [Payara 4.1] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.util] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654829] [levelValue: 900] [[
+  RAR7097: No setter method present for the property destinationLookup in the class org.apache.activemq.ra.ActiveMQActivationSpec]]
+
+[2017-05-03T13:57:34.830+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654830] [levelValue: 800] [[
+  2017-05-03 13:57:34,830 [-thread-pool(1)] INFO  ActiveMQEndpointWorker         - Starting]]
+
+[2017-05-03T13:57:34.831+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=52 _ThreadName=p: thread-pool-1; w: 3] [timeMillis: 1493812654831] [levelValue: 800] [[
+  2017-05-03 13:57:34,831 [ad-pool-1; w: 3] INFO  ActiveMQEndpointWorker         - Establishing connection to broker [tcp://localhost:61616]]]
+
+[2017-05-03T13:57:34.838+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654838] [levelValue: 800] [[
+  Portable JNDI names for EJB StartUp: [java:global/kwetter/StartUp, java:global/kwetter/StartUp!service.StartUp]]]
+
+[2017-05-03T13:57:34.845+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=52 _ThreadName=p: thread-pool-1; w: 3] [timeMillis: 1493812654845] [levelValue: 800] [[
+  2017-05-03 13:57:34,845 [ad-pool-1; w: 3] INFO  ActiveMQEndpointWorker         - Successfully established connection to broker [tcp://localhost:61616]]]
+
+[2017-05-03T13:57:34.858+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654858] [levelValue: 800] [[
+  Portable JNDI names for EJB UserService: [java:global/kwetter/UserService, java:global/kwetter/UserService!service.UserService]]]
+
+[2017-05-03T13:57:34.867+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654867] [levelValue: 800] [[
+  Portable JNDI names for EJB TweetService: [java:global/kwetter/TweetService, java:global/kwetter/TweetService!service.TweetService]]]
+
+[2017-05-03T13:57:34.875+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654875] [levelValue: 800] [[
+  Portable JNDI names for EJB UserDaoColl: [java:global/kwetter/UserDaoColl, java:global/kwetter/UserDaoColl!dao.UserDao]]]
+
+[2017-05-03T13:57:34.883+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654883] [levelValue: 800] [[
+  Portable JNDI names for EJB TweetRest: [java:global/kwetter/TweetRest!rest.TweetRest, java:global/kwetter/TweetRest]]]
+
+[2017-05-03T13:57:34.889+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654889] [levelValue: 800] [[
+  Portable JNDI names for EJB UserDaoImp: [java:global/kwetter/UserDaoImp, java:global/kwetter/UserDaoImp!dao.UserDao]]]
+
+[2017-05-03T13:57:34.897+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654897] [levelValue: 800] [[
+  Portable JNDI names for EJB TweetDaoImp: [java:global/kwetter/TweetDaoImp, java:global/kwetter/TweetDaoImp!dao.TweetDao]]]
+
+[2017-05-03T13:57:34.905+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654905] [levelValue: 800] [[
+  Portable JNDI names for EJB UserRest: [java:global/kwetter/UserRest!rest.UserRest, java:global/kwetter/UserRest]]]
+
+[2017-05-03T13:57:34.911+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812654911] [levelValue: 800] [[
+  Portable JNDI names for EJB TweetDaoColl: [java:global/kwetter/TweetDaoColl!dao.TweetDao, java:global/kwetter/TweetDaoColl]]]
+
+[2017-05-03T13:57:35.083+0200] [Payara 4.1] [INFO] [] [org.jboss.weld.Event] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812655083] [levelValue: 800] [[
+  WELD-000411: Observer method [BackedAnnotatedMethod] private org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider.processAnnotatedType(@Observes ProcessAnnotatedType) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.]]
+
+[2017-05-03T13:57:35.757+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812655757] [levelValue: 800] [[
+  START IMPORT]]
+
+[2017-05-03T13:57:36.043+0200] [Payara 4.1] [INFO] [] [org.glassfish.tyrus.servlet.TyrusServletContainerInitializer] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812656043] [levelValue: 800] [[
+  Registering WebSocket filter for url pattern /*]]
+
+[2017-05-03T13:57:36.045+0200] [Payara 4.1] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812656045] [levelValue: 800] [[
+  Initializing Mojarra 2.2.13 ( 20160203-1910 unable to get svn info) for context '/kwetter']]
+
+[2017-05-03T13:57:36.758+0200] [Payara 4.1] [INFO] [] [org.primefaces.webapp.PostConstructApplicationEventListener] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812656758] [levelValue: 800] [[
+  Running on PrimeFaces 5.3]]
+
+[2017-05-03T13:57:36.831+0200] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812656831] [levelValue: 800] [[
+  Loading application [kwetter] at [/kwetter]]]
+
+[2017-05-03T13:57:36.853+0200] [Payara 4.1] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493812656853] [levelValue: 800] [[
+  kwetter was successfully deployed in 3.808 milliseconds.]]
+
+[2017-05-03T13:58:06.190+0200] [Payara 4.1] [INFO] [] [websockets.TweetEndpoint] [tid: _ThreadID=29 _ThreadName=http-thread-pool(4)] [timeMillis: 1493812686190] [levelValue: 800] [[
+  Error ...Attempt to invoke when container is in Undeployed]]
+
+[2017-05-03T14:01:23.699+0200] [Payara 4.1] [INFO] [] [websockets.TweetEndpoint] [tid: _ThreadID=26 _ThreadName=http-thread-pool(1)] [timeMillis: 1493812883699] [levelValue: 800] [[
+  Error ...Attempt to invoke when container is in Undeployed]]
+
+[2017-05-03T14:01:24.839+0200] [Payara 4.1] [INFO] [] [websockets.TweetEndpoint] [tid: _ThreadID=30 _ThreadName=http-thread-pool(5)] [timeMillis: 1493812884839] [levelValue: 800] [[
+  Error ...Attempt to invoke when container is in Undeployed]]
+
+[2017-05-03T14:05:24.991+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=347 _ThreadName=__ejb-thread-pool15] [timeMillis: 1493813124991] [levelValue: 800] [[
+  2017-05-03 14:05:24,990 [b-thread-pool15] INFO  ActiveMQEndpointWorker         - Stopping]]
+
+[2017-05-03T14:05:25.064+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=638 _ThreadName=admin-thread-pool(4)] [timeMillis: 1493813125064] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 14:05:25.062--ServerSession(63091834)--Connection(912215304)--Thread(Thread[admin-thread-pool(4),5,main])--disconnect]]
+
+[2017-05-03T14:05:25.065+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=638 _ThreadName=admin-thread-pool(4)] [timeMillis: 1493813125065] [levelValue: 800] [[
+  [EL Info]: connection: 2017-05-03 14:05:25.065--ServerSession(63091834)--Thread(Thread[admin-thread-pool(4),5,main])--/file:/C:/Users/bramd/Documents/GitHub/kwetter/ketterMavenWebApp/target/kwetter/WEB-INF/classes/_KwetterPU logout successful]]
+
+[2017-05-03T14:05:26.832+0200] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=41 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813126832] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2017-05-03T14:05:26.879+0200] [Payara 4.1] [INFO] [NCLS-CORE-00092] [javax.enterprise.system.core] [tid: _ThreadID=745 _ThreadName=Thread-51] [timeMillis: 1493813126879] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2017-05-03T14:05:26.942+0200] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00028] [javax.enterprise.bootstrap] [tid: _ThreadID=745 _ThreadName=Thread-51] [timeMillis: 1493813126942] [levelValue: 800] [[
+  Unregistered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@62d73ead from service registry.]]
+
+[2017-05-03T14:05:26.943+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=745 _ThreadName=Thread-51] [timeMillis: 1493813126943] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2017-05-03T14:05:26.971+0200] [Payara 4.1] [INFO] [NCLS-JMX-00002] [javax.enterprise.system.jmx] [tid: _ThreadID=745 _ThreadName=Thread-51] [timeMillis: 1493813126971] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2017-05-03T14:05:26.971+0200] [Payara 4.1] [INFO] [NCLS-JMX-00001] [javax.enterprise.system.jmx] [tid: _ThreadID=745 _ThreadName=Thread-51] [timeMillis: 1493813126971] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2017-05-03T14:05:27.057+0200] [Payara 4.1] [INFO] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.service] [tid: _ThreadID=750 _ThreadName=RunLevelControllerThread-1493813127011] [timeMillis: 1493813127057] [levelValue: 800] [[
+  RAR7094: activemq-rar-5.14.4 shutdown successful.]]
+
+[2017-05-03T14:05:27.097+0200] [Payara 4.1] [INFO] [] [websockets.TweetEndpoint] [tid: _ThreadID=32 _ThreadName=http-listener-1-kernel(1) SelectorRunner] [timeMillis: 1493813127097] [levelValue: 800] [[
+  Connection closed ...]]
+
+[2017-05-03T14:05:27.136+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=765 _ThreadName=RunLevelControllerThread-1493813127113] [timeMillis: 1493813127136] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource]]]
+
+[2017-05-03T14:05:27.171+0200] [Payara 4.1] [INFO] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.service] [tid: _ThreadID=762 _ThreadName=Thread-59] [timeMillis: 1493813127171] [levelValue: 800] [[
+  RAR7094: __ds_jdbc_ra shutdown successful.]]
+
+[2017-05-03T14:05:27.172+0200] [Payara 4.1] [INFO] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.service] [tid: _ThreadID=766 _ThreadName=Thread-63] [timeMillis: 1493813127172] [levelValue: 800] [[
+  RAR7094: __xa_jdbc_ra shutdown successful.]]
+
+[2017-05-03T14:05:59.674+0200] [] [INFO] [NCLS-GFLAUNCHER-00005] [javax.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1493813159674] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk1.8.0_77\bin\java.exe
+-cp
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/modules/glassfish.jar
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-XX:MaxPermSize=192m
+-Xmx512m
+-client
+-javaagent:C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/monitor/flashlight-agent.jar
+-Djavax.xml.accessExternalSchema=all
+-Djavax.net.ssl.trustStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/cacerts.jks
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Dfelix.fileinstall.dir=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/autostart/
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dcom.sun.aas.installRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish
+-Dfelix.fileinstall.poll=5000
+-Djava.endorsed.dirs=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/modules/endorsed;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish/lib/endorsed
+-Djava.security.policy=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/server.policy
+-Dosgi.shell.telnet.maxconn=1
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dfelix.fileinstall.log.level=2
+-Djavax.net.ssl.keyStore=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/keystore.jks
+-Djava.security.auth.login.config=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/config/login.conf
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.grizzly.DEFAULT_MEMORY_MANAGER=org.glassfish.grizzly.memory.HeapMemoryManager
+-Dfelix.fileinstall.bundles.new.start=true
+-Dcom.sun.aas.instanceRoot=C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1
+-Dosgi.shell.telnet.port=6666
+-Dgosh.args=--nointeractive
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Dorg.jboss.weld.serialization.beanIdentifierIndexOptimization=false
+-Dosgi.shell.telnet.ip=127.0.0.1
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Djava.awt.headless=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djava.ext.dirs=C:\Program Files\Java\jdk1.8.0_77/lib/ext;C:\Program Files\Java\jdk1.8.0_77/jre/lib/ext;C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1/lib/ext
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-Djava.library.path=C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib;C:/ProgramData/Oracle/Java/javapath;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Program Files/Microsoft MPI/Bin;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Windows/System32/config/systemprofile/.dnx/bin;C:/Program Files/Microsoft DNX/Dnvm;C:/Program Files/Microsoft SQL Server/120/Tools/Binn;C:/Program Files/Microsoft SQL Server/130/Tools/Binn;C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit;C:/Program Files/Git/cmd;C:/Program Files (x86)/nodejs;C:/Program Files (x86)/Microsoft SQL Server/130/Tools/Binn;C:/Program Files (x86)/Microsoft SQL Server/130/DTS/Binn;C:/Program Files/Microsoft SQL Server/130/DTS/Binn;C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/130/Tools/Binn;C:/Program Files (x86)/Microsoft SQL Server/Client SDK/ODBC/130/Tools/Binn;C:/Program Files (x86)/Microsoft SQL Server/130/Tools/Binn/ManagementStudio;C:/Program Files (x86)/Microsoft VS Code/bin;C:/Program Files (x86)/Java/jdk1.7.0_55/bin;C:/Users/bramd/AppData/Local/Microsoft/WindowsApps;C:/tools/apache-maven-3.3.9/bin;C:/Program Files/Docker Toolbox;C:/Users/bramd/AppData/Roaming/npm;C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=false,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+C:/Users/bramd/Documents/GitHub/kwetter/payara41/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain
+-watchdog
+false]]
+
+[2017-05-03T14:06:12.161+0200] [Payara 4.1] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1493813172048] [timeMillis: 1493813172161] [levelValue: 800] [[
+  Running Payara Version: Payara Server  4.1.1.164 #badassfish (build 28)]]
+
+[2017-05-03T14:06:12.163+0200] [Payara 4.1] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1493813172048] [timeMillis: 1493813172163] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2017-05-03T14:06:12.358+0200] [Payara 4.1] [WARNING] [NCLS-RESOURCE-00004] [javax.enterprise.resources.listener] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1493813172056] [timeMillis: 1493813172358] [levelValue: 900] [[
+  Unable to deploy resource [activemq-rar-5.14.4] due to following exception: [A MultiException has 6 exceptions.  They are:
+1. java.lang.IllegalStateException: Service fish.payara.nucleus.requesttracing.RequestTracingService was started at level 2 but it has a run level of 10.  The full descriptor is SystemDescriptor(
+	implementation=fish.payara.nucleus.requesttracing.RequestTracingService
+	name=requesttracing-service
+	contracts={fish.payara.nucleus.requesttracing.RequestTracingService}
+	scope=org.glassfish.hk2.runlevel.RunLevel
+	qualifiers={}
+	descriptorType=CLASS
+	descriptorVisibility=NORMAL
+	metadata=runLevelValue={10},Bundle-SymbolicName={fish.payara.payara-modules.requesttracing-core},Bundle-Version={4.1.1.164}
+	rank=0
+	loader=OsgiPopulatorPostProcessor.HK2Loader(OSGiModuleImpl:: Bundle = [fish.payara.payara-modules.requesttracing-core [257]], State = [READY],68661650)
+	proxiable=null
+	proxyForSameScope=null
+	analysisName=null
+	id=221
+	locatorId=0
+	identityHashCode=1744583113
+	reified=true)
+2. java.lang.IllegalStateException: Unable to perform operation: post construct on com.sun.enterprise.transaction.JavaEETransactionManagerSimplified
+3. java.lang.IllegalArgumentException: While attempting to resolve the dependencies of com.sun.enterprise.container.common.impl.ComponentEnvManagerImpl errors were found
+4. java.lang.IllegalStateException: Unable to perform operation: resolve on com.sun.enterprise.container.common.impl.ComponentEnvManagerImpl
+5. java.lang.IllegalArgumentException: While attempting to resolve the dependencies of com.sun.enterprise.connectors.ConnectorRuntime errors were found
+6. java.lang.IllegalStateException: Unable to perform operation: resolve on com.sun.enterprise.connectors.ConnectorRuntime
+].]]
+
+[2017-05-03T14:06:12.445+0200] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1493813172056] [timeMillis: 1493813172445] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2017-05-03T14:06:12.637+0200] [Payara 4.1] [INFO] [SEC-SVCS-00100] [javax.enterprise.security.services] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1493813172056] [timeMillis: 1493813172637] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2017-05-03T14:06:12.696+0200] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1493813172056] [timeMillis: 1493813172696] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-05-03T14:06:12.708+0200] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1493813172056] [timeMillis: 1493813172708] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-05-03T14:06:12.715+0200] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1493813172056] [timeMillis: 1493813172715] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2017-05-03T14:06:12.725+0200] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1493813172056] [timeMillis: 1493813172725] [levelValue: 800] [[
+  Realm [user-realm] of classtype [com.sun.enterprise.security.auth.realm.jdbc.JDBCRealm] successfully created.]]
+
+[2017-05-03T14:06:12.806+0200] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1493813172048] [timeMillis: 1493813172806] [levelValue: 800] [[
+  Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry]]
+
+[2017-05-03T14:06:12.808+0200] [Payara 4.1] [INFO] [] [fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactory] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1493813172048] [timeMillis: 1493813172808] [levelValue: 800] [[
+  Registered Hazelcast BackingStoreFactory with persistence-type = hazelcast]]
+
+[2017-05-03T14:06:12.944+0200] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1493813172046] [timeMillis: 1493813172944] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 105ms - bound to [/0.0.0.0:8080]]]
+
+[2017-05-03T14:06:12.985+0200] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1493813172046] [timeMillis: 1493813172985] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 21ms - bound to [/0.0.0.0:8181]]]
+
+[2017-05-03T14:06:12.997+0200] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1493813172046] [timeMillis: 1493813172997] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 9ms - bound to [/0.0.0.0:4848]]]
+
+[2017-05-03T14:06:13.127+0200] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1493813172046] [timeMillis: 1493813173127] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 27ms - bound to [/0.0.0.0:3700]]]
+
+[2017-05-03T14:06:14.239+0200] [Payara 4.1] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1493813172056] [timeMillis: 1493813174239] [levelValue: 800] [[
+  HV000001: Hibernate Validator 5.1.2.Final]]
+
+[2017-05-03T14:06:14.715+0200] [Payara 4.1] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1493813172056] [timeMillis: 1493813174715] [levelValue: 800] [[
+  Loading application activemq-rar-5.14.4 done in 1.937 ms]]
+
+[2017-05-03T14:06:14.717+0200] [Payara 4.1] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1493813174717] [levelValue: 800] [[
+  Payara Server  4.1.1.164 #badassfish (28) startup time : Felix (12.086ms), startup services(2.675ms), total(14.761ms)]]
+
+[2017-05-03T14:06:14.718+0200] [Payara 4.1] [INFO] [] [fish.payara.nucleus.notification.NotificationService] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1493813174718] [levelValue: 800] [[
+  Payara Notification Service Started with configuration: NotificationExecutionOptions{enabled=true, notifierConfigurationExecutionOptionsList={LOG=NotifierConfigurationExecutionOptions{notifierType=LOG, enabled=true}}}]]
+
+[2017-05-03T14:06:14.719+0200] [Payara 4.1] [INFO] [] [fish.payara.nucleus.util.CleanupPostBoot] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1493813174719] [levelValue: 800] [[
+  Cleaning JarFileFactory Cache to prevent jar FD leaks]]
+
+[2017-05-03T14:06:14.745+0200] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1493813172056] [timeMillis: 1493813174745] [levelValue: 800] [[
+  Grizzly Framework 2.3.28 started in: 3ms - bound to [/0.0.0.0:7676]]]
+
+[2017-05-03T14:06:15.859+0200] [Payara 4.1] [INFO] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813175859] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2017-05-03T14:06:15.859+0200] [Payara 4.1] [INFO] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813175859] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2017-05-03T14:06:15.862+0200] [Payara 4.1] [INFO] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813175862] [levelValue: 800] [[
+  Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2017-05-03T14:06:15.895+0200] [Payara 4.1] [INFO] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813175895] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2017-05-03T14:06:16.060+0200] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813176060] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2017-05-03T14:06:16.065+0200] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813176065] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2017-05-03T14:06:16.066+0200] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813176066] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2017-05-03T14:06:16.084+0200] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813176084] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2017-05-03T14:06:16.086+0200] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813176086] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2017-05-03T14:06:16.204+0200] [Payara 4.1] [INFO] [AS-WEB-CORE-00306] [javax.enterprise.web.core] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813176204] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2017-05-03T14:06:16.206+0200] [Payara 4.1] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813176206] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2017-05-03T14:06:17.621+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813177621] [levelValue: 800] [[
+  [EL Fine]: server: 2017-05-03 14:06:17.609--Thread(Thread[admin-thread-pool(1),5,main])--Configured server platform: org.eclipse.persistence.platform.server.glassfish.GlassfishPlatform]]
+
+[2017-05-03T14:06:18.110+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178110] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.11--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The access type for the persistent class [class model.Group] is set to [FIELD].]]
+
+[2017-05-03T14:06:18.130+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178130] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.13--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the many to many mapping element [field users] is being defaulted to: class model.User.]]
+
+[2017-05-03T14:06:18.131+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178131] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.131--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The access type for the persistent class [class model.User] is set to [FIELD].]]
+
+[2017-05-03T14:06:18.131+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178131] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.131--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the many to many mapping element [field groups] is being defaulted to: class model.Group.]]
+
+[2017-05-03T14:06:18.132+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178132] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.132--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the one to many mapping element [field tweets] is being defaulted to: class model.Tweet.]]
+
+[2017-05-03T14:06:18.132+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178132] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.132--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the one to many mapping element [field followers] is being defaulted to: class model.User.]]
+
+[2017-05-03T14:06:18.133+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178133] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.133--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the one to many mapping element [field following] is being defaulted to: class model.User.]]
+
+[2017-05-03T14:06:18.134+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178134] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.134--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The access type for the persistent class [class model.Tweet] is set to [FIELD].]]
+
+[2017-05-03T14:06:18.135+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178135] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.135--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the many to one mapping element [field createdBy] is being defaulted to: class model.User.]]
+
+[2017-05-03T14:06:18.135+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178135] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.135--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The target entity (reference) class for the one to many mapping element [field likedBy] is being defaulted to: class model.User.]]
+
+[2017-05-03T14:06:18.136+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178136] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.136--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The alias name for the entity class [class model.Group] is being defaulted to: Group.]]
+
+[2017-05-03T14:06:18.146+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178146] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.146--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [groupName] is being defaulted to: GROUPNAME.]]
+
+[2017-05-03T14:06:18.148+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178148] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.147--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The alias name for the entity class [class model.User] is being defaulted to: User.]]
+
+[2017-05-03T14:06:18.148+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178148] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.148--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The table name for entity [class model.User] is being defaulted to: USER.]]
+
+[2017-05-03T14:06:18.149+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178149] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.149--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [avatarURL] is being defaulted to: AVATARURL.]]
+
+[2017-05-03T14:06:18.149+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178149] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.149--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [bio] is being defaulted to: BIO.]]
+
+[2017-05-03T14:06:18.150+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178150] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.15--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [type] is being defaulted to: TYPE.]]
+
+[2017-05-03T14:06:18.150+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178150] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.15--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [password] is being defaulted to: PASSWORD.]]
+
+[2017-05-03T14:06:18.151+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178151] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.151--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [websiteURL] is being defaulted to: WEBSITEURL.]]
+
+[2017-05-03T14:06:18.151+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178151] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.151--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [name] is being defaulted to: NAME.]]
+
+[2017-05-03T14:06:18.151+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178151] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.151--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [location] is being defaulted to: LOCATION.]]
+
+[2017-05-03T14:06:18.151+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178151] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.151--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [id] is being defaulted to: ID.]]
+
+[2017-05-03T14:06:18.152+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178152] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.151--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [username] is being defaulted to: USERNAME.]]
+
+[2017-05-03T14:06:18.152+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178152] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.152--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The alias name for the entity class [class model.Tweet] is being defaulted to: Tweet.]]
+
+[2017-05-03T14:06:18.153+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178153] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.152--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The table name for entity [class model.Tweet] is being defaulted to: TWEET.]]
+
+[2017-05-03T14:06:18.154+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178154] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.154--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [date] is being defaulted to: DATE.]]
+
+[2017-05-03T14:06:18.155+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178155] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.155--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [id] is being defaulted to: ID.]]
+
+[2017-05-03T14:06:18.156+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178156] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.156--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The column name for element [content] is being defaulted to: CONTENT.]]
+
+[2017-05-03T14:06:18.173+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178173] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.173--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The source primary key column name for the many to many mapping [field followers] is being defaulted to: ID.]]
+
+[2017-05-03T14:06:18.173+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178173] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.173--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The source foreign key column name for the many to many mapping [followers] is being defaulted to: User_ID.]]
+
+[2017-05-03T14:06:18.174+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178174] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.173--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The target primary key column name for the many to many mapping [field followers] is being defaulted to: ID.]]
+
+[2017-05-03T14:06:18.174+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178174] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.174--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The target foreign key column name for the many to many mapping [followers] is being defaulted to: followers_ID.]]
+
+[2017-05-03T14:06:18.174+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178174] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.174--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The source primary key column name for the many to many mapping [field following] is being defaulted to: ID.]]
+
+[2017-05-03T14:06:18.174+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178174] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.174--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The source foreign key column name for the many to many mapping [following] is being defaulted to: User_ID.]]
+
+[2017-05-03T14:06:18.175+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178175] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.175--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The target primary key column name for the many to many mapping [field following] is being defaulted to: ID.]]
+
+[2017-05-03T14:06:18.175+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178175] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.175--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The target foreign key column name for the many to many mapping [following] is being defaulted to: following_ID.]]
+
+[2017-05-03T14:06:18.182+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178182] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.182--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The primary key column name for the mapping element [field createdBy] is being defaulted to: ID.]]
+
+[2017-05-03T14:06:18.182+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178182] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.182--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The foreign key column name for the mapping element [createdBy] is being defaulted to: CREATEDBY_ID.]]
+
+[2017-05-03T14:06:18.183+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178183] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.183--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The join table name for the many to many mapping [field likedBy] is being defaulted to: TWEET_USER.]]
+
+[2017-05-03T14:06:18.183+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178183] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.183--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The source primary key column name for the many to many mapping [field likedBy] is being defaulted to: ID.]]
+
+[2017-05-03T14:06:18.183+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178183] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.183--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The source foreign key column name for the many to many mapping [likedBy] is being defaulted to: Tweet_ID.]]
+
+[2017-05-03T14:06:18.184+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178184] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.183--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The target primary key column name for the many to many mapping [field likedBy] is being defaulted to: ID.]]
+
+[2017-05-03T14:06:18.184+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178184] [levelValue: 800] [[
+  [EL Config]: metadata: 2017-05-03 14:06:18.184--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--The target foreign key column name for the many to many mapping [likedBy] is being defaulted to: likedBy_ID.]]
+
+[2017-05-03T14:06:18.836+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813178836] [levelValue: 800] [[
+  [EL Info]: 2017-05-03 14:06:18.836--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--EclipseLink, version: Eclipse Persistence Services - 2.6.3.qualifier]]
+
+[2017-05-03T14:06:19.040+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813179040] [levelValue: 800] [[
+  [EL Fine]: connection: 2017-05-03 14:06:19.04--Thread(Thread[admin-thread-pool(1),5,main])--Detected database platform: org.eclipse.persistence.platform.database.MySQLPlatform]]
+
+[2017-05-03T14:06:19.048+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813179048] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 14:06:19.048--ServerSession(1382464395)--Connection(1258659719)--Thread(Thread[admin-thread-pool(1),5,main])--connecting(DatabaseLogin(
+	platform=>DatabasePlatform
+	user name=> "root"
+	connector=>JNDIConnector datasource name=>null
+))]]
+
+[2017-05-03T14:06:19.049+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813179049] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 14:06:19.049--ServerSession(1382464395)--Connection(464768098)--Thread(Thread[admin-thread-pool(1),5,main])--Connected: jdbc:mysql://localhost:3306/kwetter
+	User: root
+	Database: MySQL  Version: 10.1.10-MariaDB
+	Driver: MariaDB connector/J  Version: 1.5.8]]
+
+[2017-05-03T14:06:19.050+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813179050] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 14:06:19.049--ServerSession(1382464395)--Connection(86837940)--Thread(Thread[admin-thread-pool(1),5,main])--connecting(DatabaseLogin(
+	platform=>MySQLPlatform
+	user name=> "root"
+	connector=>JNDIConnector datasource name=>null
+))]]
+
+[2017-05-03T14:06:19.050+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813179050] [levelValue: 800] [[
+  [EL Config]: connection: 2017-05-03 14:06:19.05--ServerSession(1382464395)--Connection(1861816813)--Thread(Thread[admin-thread-pool(1),5,main])--Connected: jdbc:mysql://localhost:3306/kwetter
+	User: root
+	Database: MySQL  Version: 10.1.10-MariaDB
+	Driver: MariaDB connector/J  Version: 1.5.8]]
+
+[2017-05-03T14:06:19.135+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813179135] [levelValue: 800] [[
+  [EL Info]: connection: 2017-05-03 14:06:19.135--ServerSession(1382464395)--Thread(Thread[admin-thread-pool(1),5,main])--/file:/C:/Users/bramd/Documents/GitHub/kwetter/ketterMavenWebApp/target/kwetter/WEB-INF/classes/_KwetterPU login successful]]
+
+[2017-05-03T14:06:19.225+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813179225] [levelValue: 800] [[
+  Portable JNDI names for EJB UserDaoColl: [java:global/kwetter/UserDaoColl, java:global/kwetter/UserDaoColl!dao.UserDao]]]
+
+[2017-05-03T14:06:19.247+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813179247] [levelValue: 800] [[
+  Portable JNDI names for EJB UserDaoImp: [java:global/kwetter/UserDaoImp, java:global/kwetter/UserDaoImp!dao.UserDao]]]
+
+[2017-05-03T14:06:19.255+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813179255] [levelValue: 800] [[
+  Portable JNDI names for EJB TweetDaoImp: [java:global/kwetter/TweetDaoImp, java:global/kwetter/TweetDaoImp!dao.TweetDao]]]
+
+[2017-05-03T14:06:19.271+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813179271] [levelValue: 800] [[
+  Portable JNDI names for EJB TweetRest: [java:global/kwetter/TweetRest!rest.TweetRest, java:global/kwetter/TweetRest]]]
+
+[2017-05-03T14:06:19.301+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813179301] [levelValue: 800] [[
+  Portable JNDI names for EJB StartUp: [java:global/kwetter/StartUp, java:global/kwetter/StartUp!service.StartUp]]]
+
+[2017-05-03T14:06:19.316+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813179316] [levelValue: 800] [[
+  Portable JNDI names for EJB UserService: [java:global/kwetter/UserService, java:global/kwetter/UserService!service.UserService]]]
+
+[2017-05-03T14:06:19.327+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813179327] [levelValue: 800] [[
+  Portable JNDI names for EJB TweetService: [java:global/kwetter/TweetService, java:global/kwetter/TweetService!service.TweetService]]]
+
+[2017-05-03T14:06:19.706+0200] [Payara 4.1] [INFO] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=67 _ThreadName=Thread-19] [timeMillis: 1493813179706] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://Bramdb:8686/jndi/rmi://Bramdb:8686/jmxrmi]]
+
+[2017-05-03T14:06:20.883+0200] [Payara 4.1] [INFO] [] [javax.enterprise.system.core.transaction.com.sun.jts.CosTransactions] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813180883] [levelValue: 800] [[
+  jts.startup_msg]]
+
+[2017-05-03T14:06:21.157+0200] [Payara 4.1] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=65 _ThreadName=admin-thread-pool(2)] [timeMillis: 1493813181157] [levelValue: 800] [[
+  Listening to REST requests at context: /management/domain.]]
+
+[2017-05-03T14:06:21.257+0200] [Payara 4.1] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.util] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813181257] [levelValue: 900] [[
+  RAR8000 : The method setDestinationLookup is not present in the class : org.apache.activemq.ra.ActiveMQActivationSpec]]
+
+[2017-05-03T14:06:21.257+0200] [Payara 4.1] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.util] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813181257] [levelValue: 900] [[
+  RAR7097: No setter method present for the property destinationLookup in the class org.apache.activemq.ra.ActiveMQActivationSpec]]
+
+[2017-05-03T14:06:21.265+0200] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00027] [javax.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1493813181265] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@62d73ead as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@5eed2d86.]]
+
+[2017-05-03T14:06:21.303+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813181303] [levelValue: 800] [[
+  2017-05-03 14:06:21,297 [-thread-pool(1)] INFO  ActiveMQEndpointWorker         - Starting]]
+
+[2017-05-03T14:06:21.317+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813181317] [levelValue: 800] [[
+  Portable JNDI names for EJB UserRest: [java:global/kwetter/UserRest!rest.UserRest, java:global/kwetter/UserRest]]]
+
+[2017-05-03T14:06:21.320+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=52 _ThreadName=p: thread-pool-1; w: 4] [timeMillis: 1493813181320] [levelValue: 800] [[
+  2017-05-03 14:06:21,313 [ad-pool-1; w: 4] INFO  ActiveMQEndpointWorker         - Establishing connection to broker [tcp://localhost:61616]]]
+
+[2017-05-03T14:06:21.388+0200] [Payara 4.1] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813181388] [levelValue: 800] [[
+  Portable JNDI names for EJB TweetDaoColl: [java:global/kwetter/TweetDaoColl!dao.TweetDao, java:global/kwetter/TweetDaoColl]]]
+
+[2017-05-03T14:06:21.437+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=14 _ThreadName=FelixStartLevel] [timeMillis: 1493813181437] [levelValue: 800] [[
+  C:\Users\bramd\Documents\GitHub\kwetter\payara41\glassfish\domains\domain1\autodeploy\bundles does not exist, please create it.]]
+
+[2017-05-03T14:06:21.462+0200] [Payara 4.1] [INFO] [] [org.jboss.weld.Version] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813181462] [levelValue: 800] [[
+  WELD-000900: 2.4.0 (Final)]]
+
+[2017-05-03T14:06:21.941+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=52 _ThreadName=p: thread-pool-1; w: 4] [timeMillis: 1493813181941] [levelValue: 800] [[
+  2017-05-03 14:06:21,941 [ad-pool-1; w: 4] INFO  ActiveMQEndpointWorker         - Successfully established connection to broker [tcp://localhost:61616]]]
+
+[2017-05-03T14:06:22.441+0200] [Payara 4.1] [INFO] [] [org.jboss.weld.Event] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813182441] [levelValue: 800] [[
+  WELD-000411: Observer method [BackedAnnotatedMethod] private org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider.processAnnotatedType(@Observes ProcessAnnotatedType) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.]]
+
+[2017-05-03T14:06:23.562+0200] [Payara 4.1] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=97 _ThreadName=Thread-30] [timeMillis: 1493813183562] [levelValue: 800] [[
+  Initializing Mojarra 2.2.13 ( 20160203-1910 unable to get svn info) for context '']]
+
+[2017-05-03T14:06:24.093+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813184093] [levelValue: 800] [[
+  START IMPORT]]
+
+[2017-05-03T14:06:24.902+0200] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=97 _ThreadName=Thread-30] [timeMillis: 1493813184902] [levelValue: 800] [[
+  Loading application [__admingui] at [/]]]
+
+[2017-05-03T14:06:24.905+0200] [Payara 4.1] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=97 _ThreadName=Thread-30] [timeMillis: 1493813184905] [levelValue: 800] [[
+  Loading application __admingui done in 3.639 ms]]
+
+[2017-05-03T14:06:26.288+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813186288] [levelValue: 800] [[
+  Cannot find the resource bundle for the name com.sun.logging.enterprise.system.core.naming for class org.glassfish.concurrent.runtime.deployer.ConcurrentObjectFactory using org.glassfish.main.concurrent.impl [41]]]
+
+[2017-05-03T14:06:26.348+0200] [Payara 4.1] [INFO] [] [org.glassfish.tyrus.servlet.TyrusServletContainerInitializer] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813186348] [levelValue: 800] [[
+  Registering WebSocket filter for url pattern /*]]
+
+[2017-05-03T14:06:26.398+0200] [Payara 4.1] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813186398] [levelValue: 800] [[
+  Initializing Mojarra 2.2.13 ( 20160203-1910 unable to get svn info) for context '/kwetter']]
+
+[2017-05-03T14:06:27.183+0200] [Payara 4.1] [INFO] [] [org.primefaces.webapp.PostConstructApplicationEventListener] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813187183] [levelValue: 800] [[
+  Running on PrimeFaces 5.3]]
+
+[2017-05-03T14:06:27.380+0200] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813187380] [levelValue: 800] [[
+  Loading application [kwetter] at [/kwetter]]]
+
+[2017-05-03T14:06:27.455+0200] [Payara 4.1] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=45 _ThreadName=admin-thread-pool(1)] [timeMillis: 1493813187455] [levelValue: 800] [[
+  kwetter was successfully deployed in 12.400 milliseconds.]]
+
+[2017-05-03T14:06:37.398+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813197398] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:37.397--ServerSession(1382464395)--Connection(2032165455)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-05-03T14:06:37.441+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813197441] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:37.441--ServerSession(1382464395)--Connection(1291453339)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, CONTENT, DATE, CREATEDBY_ID FROM TWEET WHERE (CREATEDBY_ID = ?)
+	bind => [1]]]
+
+[2017-05-03T14:06:37.479+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813197479] [levelValue: 800] [[
+  Tweet{id=0, content='123123123', date=Wed May 03 14:06:37 CEST 2017, createdBy=model.User@7202b818, likedBy=[]}]]
+
+[2017-05-03T14:06:37.486+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813197486] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:37.485--ClientSession(1326872226)--Connection(726435418)--Thread(Thread[http-thread-pool(4),5,main])--INSERT INTO TWEET (CONTENT, DATE, CREATEDBY_ID) VALUES (?, ?, ?)
+	bind => [123123123, 2017-05-03 14:06:37.431, 1]]]
+
+[2017-05-03T14:06:37.489+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813197489] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:37.489--ClientSession(1326872226)--Connection(726435418)--Thread(Thread[http-thread-pool(4),5,main])--SELECT LAST_INSERT_ID()]]
+
+[2017-05-03T14:06:39.058+0200] [Payara 4.1] [INFO] [] [websockets.TweetEndpoint] [tid: _ThreadID=27 _ThreadName=http-thread-pool(1)] [timeMillis: 1493813199058] [levelValue: 800] [[
+  Connection opened ...]]
+
+[2017-05-03T14:06:39.214+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199214] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.214--ServerSession(1382464395)--Connection(1208616617)--Thread(Thread[http-thread-pool(3),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-05-03T14:06:39.218+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199218] [levelValue: 800] [[
+  bramdb]]
+
+[2017-05-03T14:06:39.226+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199226] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.226--ServerSession(1382464395)--Connection(288137944)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM user_follows t0, USER t1 WHERE ((t0.User_ID = ?) AND (t1.ID = t0.following_ID))
+	bind => [1]]]
+
+[2017-05-03T14:06:39.229+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199229] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.229--ServerSession(1382464395)--Connection(613821914)--Thread(Thread[http-thread-pool(3),5,main])--SELECT ID, CONTENT, DATE, CREATEDBY_ID FROM TWEET WHERE (CREATEDBY_ID = ?)
+	bind => [2]]]
+
+[2017-05-03T14:06:39.272+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199272] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.272--ServerSession(1382464395)--Connection(1048990803)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [118]]]
+
+[2017-05-03T14:06:39.289+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199289] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.289--ServerSession(1382464395)--Connection(931724500)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [117]]]
+
+[2017-05-03T14:06:39.292+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199292] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.292--ServerSession(1382464395)--Connection(1637583496)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [116]]]
+
+[2017-05-03T14:06:39.295+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199295] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.295--ServerSession(1382464395)--Connection(99858937)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [115]]]
+
+[2017-05-03T14:06:39.296+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199296] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.296--ServerSession(1382464395)--Connection(165364184)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [114]]]
+
+[2017-05-03T14:06:39.297+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199297] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.297--ServerSession(1382464395)--Connection(2034590315)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [113]]]
+
+[2017-05-03T14:06:39.299+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199299] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.299--ServerSession(1382464395)--Connection(1152870401)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [112]]]
+
+[2017-05-03T14:06:39.302+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199302] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.302--ServerSession(1382464395)--Connection(1553149215)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [110]]]
+
+[2017-05-03T14:06:39.304+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199304] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.304--ServerSession(1382464395)--Connection(253063892)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [111]]]
+
+[2017-05-03T14:06:39.305+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199305] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.305--ServerSession(1382464395)--Connection(1561403239)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [109]]]
+
+[2017-05-03T14:06:39.308+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199308] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.308--ServerSession(1382464395)--Connection(572097444)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [108]]]
+
+[2017-05-03T14:06:39.311+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199311] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.311--ServerSession(1382464395)--Connection(1730656557)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [107]]]
+
+[2017-05-03T14:06:39.313+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199313] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.313--ServerSession(1382464395)--Connection(1124132047)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [106]]]
+
+[2017-05-03T14:06:39.316+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199316] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.316--ServerSession(1382464395)--Connection(2097390885)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [105]]]
+
+[2017-05-03T14:06:39.319+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199319] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.319--ServerSession(1382464395)--Connection(416764921)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [104]]]
+
+[2017-05-03T14:06:39.321+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199321] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.321--ServerSession(1382464395)--Connection(1682901195)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [103]]]
+
+[2017-05-03T14:06:39.323+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199323] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.323--ServerSession(1382464395)--Connection(2073704869)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [102]]]
+
+[2017-05-03T14:06:39.325+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199325] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.325--ServerSession(1382464395)--Connection(466649470)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [101]]]
+
+[2017-05-03T14:06:39.327+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199327] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.327--ServerSession(1382464395)--Connection(960119142)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [100]]]
+
+[2017-05-03T14:06:39.329+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199329] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.329--ServerSession(1382464395)--Connection(632233946)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [99]]]
+
+[2017-05-03T14:06:39.330+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199330] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.33--ServerSession(1382464395)--Connection(265440731)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [98]]]
+
+[2017-05-03T14:06:39.332+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199332] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.331--ServerSession(1382464395)--Connection(269940270)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [97]]]
+
+[2017-05-03T14:06:39.333+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199333] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.333--ServerSession(1382464395)--Connection(2077008955)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [96]]]
+
+[2017-05-03T14:06:39.335+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199335] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.335--ServerSession(1382464395)--Connection(641742167)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [95]]]
+
+[2017-05-03T14:06:39.336+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199336] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.336--ServerSession(1382464395)--Connection(1004603601)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [94]]]
+
+[2017-05-03T14:06:39.337+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199337] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.337--ServerSession(1382464395)--Connection(476134917)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [93]]]
+
+[2017-05-03T14:06:39.339+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199339] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.339--ServerSession(1382464395)--Connection(43171022)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [83]]]
+
+[2017-05-03T14:06:39.341+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199341] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.341--ServerSession(1382464395)--Connection(635423558)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [84]]]
+
+[2017-05-03T14:06:39.342+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199342] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.342--ServerSession(1382464395)--Connection(382462124)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [85]]]
+
+[2017-05-03T14:06:39.344+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199344] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.344--ServerSession(1382464395)--Connection(63929702)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [86]]]
+
+[2017-05-03T14:06:39.345+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199345] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.345--ServerSession(1382464395)--Connection(346866973)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [87]]]
+
+[2017-05-03T14:06:39.347+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199347] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.347--ServerSession(1382464395)--Connection(1341307189)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [88]]]
+
+[2017-05-03T14:06:39.349+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199349] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.349--ServerSession(1382464395)--Connection(112568047)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [89]]]
+
+[2017-05-03T14:06:39.351+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199351] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.351--ServerSession(1382464395)--Connection(2129252114)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [90]]]
+
+[2017-05-03T14:06:39.353+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199353] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.353--ServerSession(1382464395)--Connection(203385343)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [91]]]
+
+[2017-05-03T14:06:39.355+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199355] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.355--ServerSession(1382464395)--Connection(1451115096)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [92]]]
+
+[2017-05-03T14:06:39.356+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199356] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.356--ServerSession(1382464395)--Connection(2102858918)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [73]]]
+
+[2017-05-03T14:06:39.358+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199358] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.358--ServerSession(1382464395)--Connection(1308017985)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [74]]]
+
+[2017-05-03T14:06:39.359+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199359] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.359--ServerSession(1382464395)--Connection(978394513)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [75]]]
+
+[2017-05-03T14:06:39.361+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199361] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.361--ServerSession(1382464395)--Connection(513405953)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [76]]]
+
+[2017-05-03T14:06:39.362+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199362] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.362--ServerSession(1382464395)--Connection(1529753936)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [77]]]
+
+[2017-05-03T14:06:39.364+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199364] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.364--ServerSession(1382464395)--Connection(545864633)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [78]]]
+
+[2017-05-03T14:06:39.366+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199366] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.366--ServerSession(1382464395)--Connection(310773676)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [79]]]
+
+[2017-05-03T14:06:39.368+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199368] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.368--ServerSession(1382464395)--Connection(1139720193)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [80]]]
+
+[2017-05-03T14:06:39.370+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199370] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.37--ServerSession(1382464395)--Connection(1776344477)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [81]]]
+
+[2017-05-03T14:06:39.371+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199371] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.371--ServerSession(1382464395)--Connection(6121451)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [82]]]
+
+[2017-05-03T14:06:39.373+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199373] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.373--ServerSession(1382464395)--Connection(583318315)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [63]]]
+
+[2017-05-03T14:06:39.375+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199375] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.375--ServerSession(1382464395)--Connection(387946938)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [64]]]
+
+[2017-05-03T14:06:39.376+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813199376] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:39.376--ServerSession(1382464395)--Connection(2029822705)--Thread(Thread[http-thread-pool(3),5,main])--SELECT t1.ID, t1.AVATARURL, t1.BIO, t1.LOCATION, t1.NAME, t1.PASSWORD, t1.TYPE, t1.USERNAME, t1.WEBSITEURL FROM TWEET_USER t0, USER t1 WHERE ((t0.Tweet_ID = ?) AND (t1.ID = t0.likedBy_ID))
+	bind => [65]]]
+
+[2017-05-03T14:06:59.899+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813219899] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:59.899--ServerSession(1382464395)--Connection(1875178257)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-05-03T14:06:59.919+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813219919] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:59.919--ClientSession(1899183625)--Connection(906363493)--Thread(Thread[http-thread-pool(4),5,main])--INSERT INTO TWEET (CONTENT, DATE, CREATEDBY_ID) VALUES (?, ?, ?)
+	bind => [asdad, 2017-05-03 14:06:59.901, 1]]]
+
+[2017-05-03T14:06:59.920+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813219920] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:06:59.92--ClientSession(1899183625)--Connection(906363493)--Thread(Thread[http-thread-pool(4),5,main])--SELECT LAST_INSERT_ID()]]
+
+[2017-05-03T14:07:06.091+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(2)] [timeMillis: 1493813226091] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:06.091--ServerSession(1382464395)--Connection(590852170)--Thread(Thread[http-thread-pool(2),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-05-03T14:07:06.108+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(2)] [timeMillis: 1493813226108] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:06.108--ClientSession(1171150485)--Connection(168422761)--Thread(Thread[http-thread-pool(2),5,main])--INSERT INTO TWEET (CONTENT, DATE, CREATEDBY_ID) VALUES (?, ?, ?)
+	bind => [asdad, 2017-05-03 14:07:06.095, 1]]]
+
+[2017-05-03T14:07:06.114+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=http-thread-pool(2)] [timeMillis: 1493813226114] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:06.114--ClientSession(1171150485)--Connection(168422761)--Thread(Thread[http-thread-pool(2),5,main])--SELECT LAST_INSERT_ID()]]
+
+[2017-05-03T14:07:10.947+0200] [Payara 4.1] [INFO] [] [websockets.TweetEndpoint] [tid: _ThreadID=31 _ThreadName=http-thread-pool(5)] [timeMillis: 1493813230947] [levelValue: 800] [[
+  Connection closed ...]]
+
+[2017-05-03T14:07:11.890+0200] [Payara 4.1] [INFO] [] [websockets.TweetEndpoint] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813231890] [levelValue: 800] [[
+  Connection opened ...]]
+
+[2017-05-03T14:07:11.955+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813231955] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:11.955--ServerSession(1382464395)--Connection(1692342973)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-05-03T14:07:11.974+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813231974] [levelValue: 800] [[
+  bramdb]]
+
+[2017-05-03T14:07:43.574+0200] [Payara 4.1] [INFO] [] [websockets.TweetEndpoint] [tid: _ThreadID=28 _ThreadName=http-thread-pool(2)] [timeMillis: 1493813263574] [levelValue: 800] [[
+  Connection closed ...]]
+
+[2017-05-03T14:07:44.751+0200] [Payara 4.1] [INFO] [] [websockets.TweetEndpoint] [tid: _ThreadID=31 _ThreadName=http-thread-pool(5)] [timeMillis: 1493813264751] [levelValue: 800] [[
+  Connection opened ...]]
+
+[2017-05-03T14:07:44.904+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813264904] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:44.904--ServerSession(1382464395)--Connection(1583874957)--Thread(Thread[http-thread-pool(3),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-05-03T14:07:44.907+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813264907] [levelValue: 800] [[
+  bramdb]]
+
+[2017-05-03T14:07:52.592+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813272592] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:52.592--ServerSession(1382464395)--Connection(1896729631)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-05-03T14:07:52.606+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813272606] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:52.606--ClientSession(973903004)--Connection(33687829)--Thread(Thread[http-thread-pool(4),5,main])--INSERT INTO TWEET (CONTENT, DATE, CREATEDBY_ID) VALUES (?, ?, ?)
+	bind => [132, 2017-05-03 14:07:52.594, 1]]]
+
+[2017-05-03T14:07:52.608+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813272608] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:52.607--ClientSession(973903004)--Connection(33687829)--Thread(Thread[http-thread-pool(4),5,main])--SELECT LAST_INSERT_ID()]]
+
+[2017-05-03T14:07:52.639+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=31 _ThreadName=http-thread-pool(5)] [timeMillis: 1493813272639] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:52.639--ServerSession(1382464395)--Connection(1246511482)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-05-03T14:07:52.641+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=31 _ThreadName=http-thread-pool(5)] [timeMillis: 1493813272641] [levelValue: 800] [[
+  bramdb]]
+
+[2017-05-03T14:07:55.923+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(1)] [timeMillis: 1493813275923] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:55.923--ServerSession(1382464395)--Connection(1839288600)--Thread(Thread[http-thread-pool(1),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-05-03T14:07:55.933+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(1)] [timeMillis: 1493813275933] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:55.933--ClientSession(1954617534)--Connection(1668921957)--Thread(Thread[http-thread-pool(1),5,main])--INSERT INTO TWEET (CONTENT, DATE, CREATEDBY_ID) VALUES (?, ?, ?)
+	bind => [sd, 2017-05-03 14:07:55.925, 1]]]
+
+[2017-05-03T14:07:55.940+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=http-thread-pool(1)] [timeMillis: 1493813275940] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:55.94--ClientSession(1954617534)--Connection(1668921957)--Thread(Thread[http-thread-pool(1),5,main])--SELECT LAST_INSERT_ID()]]
+
+[2017-05-03T14:07:55.955+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813275955] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:55.955--ServerSession(1382464395)--Connection(1049125550)--Thread(Thread[http-thread-pool(3),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-05-03T14:07:55.957+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=29 _ThreadName=http-thread-pool(3)] [timeMillis: 1493813275957] [levelValue: 800] [[
+  bramdb]]
+
+[2017-05-03T14:07:58.519+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813278519] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:58.519--ServerSession(1382464395)--Connection(1823658184)--Thread(Thread[http-thread-pool(4),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-05-03T14:07:58.527+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813278527] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:58.527--ClientSession(397721045)--Connection(1645472468)--Thread(Thread[http-thread-pool(4),5,main])--INSERT INTO TWEET (CONTENT, DATE, CREATEDBY_ID) VALUES (?, ?, ?)
+	bind => [hgjyyj, 2017-05-03 14:07:58.522, 1]]]
+
+[2017-05-03T14:07:58.534+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=30 _ThreadName=http-thread-pool(4)] [timeMillis: 1493813278534] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:58.534--ClientSession(397721045)--Connection(1645472468)--Thread(Thread[http-thread-pool(4),5,main])--SELECT LAST_INSERT_ID()]]
+
+[2017-05-03T14:07:58.561+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=31 _ThreadName=http-thread-pool(5)] [timeMillis: 1493813278561] [levelValue: 800] [[
+  [EL Fine]: sql: 2017-05-03 14:07:58.561--ServerSession(1382464395)--Connection(102201675)--Thread(Thread[http-thread-pool(5),5,main])--SELECT ID, AVATARURL, BIO, LOCATION, NAME, PASSWORD, TYPE, USERNAME, WEBSITEURL FROM USER WHERE (USERNAME = ?)
+	bind => [bramdb]]]
+
+[2017-05-03T14:07:58.566+0200] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=31 _ThreadName=http-thread-pool(5)] [timeMillis: 1493813278566] [levelValue: 800] [[
+  bramdb]]
+
