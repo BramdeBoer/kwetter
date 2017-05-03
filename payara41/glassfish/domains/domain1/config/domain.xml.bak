@@ -58,10 +58,30 @@
       <property name="password" value=""></property>
     </jdbc-connection-pool>
     <jdbc-resource pool-name="mysql_localhost" jndi-name="mysql_localhostPool"></jdbc-resource>
+    <admin-object-resource res-adapter="jmsra" res-type="javax.jms.Queue" jndi-name="jms/KwetterGo/queue">
+      <property name="Name" value="queue"></property>
+    </admin-object-resource>
+    <admin-object-resource res-adapter="jmsra" res-type="javax.jms.Topic" jndi-name="jms/KwetterGo/topic">
+      <property name="Name" value="topic"></property>
+    </admin-object-resource>
+    <connector-connection-pool resource-adapter-name="jmsra" max-pool-size="250" steady-pool-size="1" name="jms/defaultConnectionFactory-Connection-Pool" connection-definition-name="javax.jms.ConnectionFactory" transaction-support=""></connector-connection-pool>
+    <connector-resource pool-name="jms/defaultConnectionFactory-Connection-Pool" jndi-name="jms/defaultConnectionFactory"></connector-resource>
+    <connector-connection-pool resource-adapter-name="activemq-rar-5.14.4" ping="true" name="jms/connectionFactory" connection-definition-name="javax.jms.ConnectionFactory"></connector-connection-pool>
+    <admin-object-resource res-adapter="activemq-rar-5.14.4" res-type="javax.jms.Queue" jndi-name="jms/queue/incoming" class-name="org.apache.activemq.command.ActiveMQQueue">
+      <property name="PhysicalName" value="incoming"></property>
+    </admin-object-resource>
+    <resource-adapter-config resource-adapter-name="activemq-rar-5.14.4" thread-pool-ids="thread-pool-1">
+      <property name="ServerUrl" value="tcp://localhost:61616"></property>
+      <property name="Password" value="admin"></property>
+      <property name="UseInboundSession" value="false"></property>
+      <property name="UserName" value="admin"></property>
+    </resource-adapter-config>
+    <connector-resource pool-name="jms/connectionFactory" jndi-name="jms/ConnectionFactory"></connector-resource>
   </resources>
   <servers>
     <server config-ref="server-config" name="server">
       <application-ref ref="__admingui" virtual-servers="__asadmin"></application-ref>
+      <application-ref ref="activemq-rar-5.14.4" virtual-servers="server"></application-ref>
       <resource-ref ref="jdbc/__TimerPool"></resource-ref>
       <resource-ref ref="jdbc/__default"></resource-ref>
       <resource-ref ref="jms/__defaultConnectionFactory"></resource-ref>
@@ -70,6 +90,11 @@
       <resource-ref ref="concurrent/__defaultManagedScheduledExecutorService"></resource-ref>
       <resource-ref ref="concurrent/__defaultManagedThreadFactory"></resource-ref>
       <resource-ref ref="mysql_localhostPool"></resource-ref>
+      <resource-ref ref="jms/KwetterGo/queue"></resource-ref>
+      <resource-ref ref="jms/KwetterGo/topic"></resource-ref>
+      <resource-ref ref="jms/defaultConnectionFactory"></resource-ref>
+      <resource-ref ref="jms/queue/incoming"></resource-ref>
+      <resource-ref ref="jms/ConnectionFactory"></resource-ref>
     </server>
   </servers>
   <nodes>
@@ -77,6 +102,7 @@
   </nodes>
   <configs>
     <config name="server-config">
+      <resource-ref ref="jms/queue/incoming" enabled="false"></resource-ref>
       <system-property name="JMS_PROVIDER_PORT" description="Port Number that JMS Service will listen for remote clients connection." value="7676"></system-property>
       <http-service>
         <access-log></access-log>
@@ -130,6 +156,7 @@
         </session-config>
       </web-container>
       <cdi-service></cdi-service>
+      <mdb-container></mdb-container>
       <diagnostic-service></diagnostic-service>
       <security-service activate-default-principal-to-role-mapping="true" default-principal-password="user" default-principal="regular">
         <auth-realm classname="com.sun.enterprise.security.auth.realm.file.FileRealm" name="admin-realm">
@@ -423,7 +450,7 @@
       <availability-service>
         <web-container-availability></web-container-availability>
         <ejb-container-availability sfsb-store-pool-name="jdbc/hastore"></ejb-container-availability>
-        <jms-availability></jms-availability>
+        <jms-availability availability-enabled="true"></jms-availability>
       </availability-service>
       <network-config>
         <protocols>
@@ -498,5 +525,16 @@
     <secure-admin-principal dn="CN=localhost-instance,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US"></secure-admin-principal>
   </secure-admin>
   <clusters></clusters>
-  <applications></applications>
+  <applications>
+    <application object-type="user" name="activemq-rar-5.14.4" location="${com.sun.aas.instanceRootURI}/applications/activemq-rar-5.14.4/">
+      <property name="archiveType" value="rar"></property>
+      <property name="implicitCdiEnabled" value="true"></property>
+      <property name="preserveAppScopedResources" value="false"></property>
+      <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/activemq-rar-5.14.4/activemq-rar-56799123838450522775.14.4.rar"></property>
+      <property name="defaultAppName" value="activemq-rar-56799123838450522775.14.4"></property>
+      <module name="activemq-rar-5.14.4">
+        <engine sniffer="connector"></engine>
+      </module>
+    </application>
+  </applications>
 </domain>

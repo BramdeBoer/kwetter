@@ -1,5 +1,8 @@
 package rest;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import jms.MessageSender;
 import model.Tweet;
 import model.User;
 import service.TweetService;
@@ -38,6 +41,16 @@ public class TweetRest {
         System.out.println(tweet.toString());
         return tweet;
     }
+
+
+    @POST
+    @Path("jms/{content}/{username}")
+    public Tweet createByJMS(@PathParam("content") String content, @PathParam("username") String username) {
+        MessageSender messageSender = new MessageSender();
+        messageSender.sendMessage(content + ";" + username);
+        return null;
+    }
+
 
     @DELETE
     @Path("{id}")

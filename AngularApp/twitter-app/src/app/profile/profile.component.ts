@@ -21,6 +21,9 @@ export class ProfileComponent implements OnInit {
   }
 
   private getAccount(username: string) {
+    if(!username){
+      username = 'bramdb';
+    }
     this.userService.getByUsername(username).subscribe(user => {
       this.user = user;
     });

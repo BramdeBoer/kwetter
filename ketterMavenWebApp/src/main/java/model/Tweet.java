@@ -1,5 +1,6 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import interceptor.VolgTrend;
 
 import javax.enterprise.inject.Model;
@@ -21,6 +22,8 @@ public class Tweet implements Comparable<Tweet> {
 
     @ManyToOne
     private User createdBy;
+
+    @JsonIgnore
     @OneToMany
     private List<User> likedBy;
 

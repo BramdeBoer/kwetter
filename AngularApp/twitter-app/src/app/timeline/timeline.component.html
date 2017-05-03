@@ -1,3 +1,7 @@
+<form class="form-inline">
+  <input [(ngModel)]="content" class="form-control" id="content" name="content" type="text" placeholder="{{ 'HOME.WHATSHAPPENING' | translate }}">
+  <button (click)="createTweet(content)" class="btn btn-primary">{{ 'HOME.POST' | translate }}</button>
+</form>
 <div *ngFor="let tweet of tweets" id="cards">
     <app-tweet [tweet]="tweet"></app-tweet>
 </div>

@@ -21,6 +21,12 @@ export class TimelineComponent implements OnInit {
     this.getTweets();
   }
 
+  public createTweet(content) {
+    this.tweetService.create(content, 'bramdb').subscribe(tweet => {
+      this.getTweets();
+    });
+  }
+
   public getTweets() {
     this.tweetService.getTimeline('bramdb', 0, 50).subscribe(tweets => {
       this.tweets = tweets;

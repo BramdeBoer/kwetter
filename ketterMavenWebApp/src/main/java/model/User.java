@@ -1,5 +1,7 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Model;
 import javax.persistence.*;
@@ -28,12 +30,19 @@ public class User {
     private String username;
     private String password;
 
+    @JsonIgnore
     @OneToMany @JoinTable( name = "user_follows")
     private List<User> following;
+
+    @JsonIgnore
     @OneToMany @JoinTable(name = "user_followers")
     private List<User> followers;
+
+    @JsonIgnore
     @OneToMany(mappedBy = "createdBy")
     private List<Tweet> tweets;
+
+    @JsonIgnore
     @ManyToMany(mappedBy = "users")
     private List<Group> groups;
 

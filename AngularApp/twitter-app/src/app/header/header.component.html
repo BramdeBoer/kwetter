@@ -16,7 +16,7 @@
         <li><a routerLink="profile">{{ 'HEADER.PROFILE' | translate }}</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><select #langSelect (change)="translate.use(langSelect.value)" class="form-control">
+        <li><select #langSelect (change)="translate.use(langSelect.value)" class="form-control lang-select">
           <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
         </select></li>
       </ul>
